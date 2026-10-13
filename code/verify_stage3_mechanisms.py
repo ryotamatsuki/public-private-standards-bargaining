@@ -64,7 +64,12 @@ def checks():
     assert D[1][1].subs(R,Q(64,1000))>0
     for var in (Q(57,1000),Q(64,1000)):
         assert D[0][0].subs(R,var)>0 and D[1][0].subs(R,var)>0
-        assert all((deep[3]+s.zeros(3)).is_positive_definite for _ in [0])
+        # Re-evaluate the product market at each royalty endpoint: strictly positive output.
+        solve_market(True,1,var)
+    # For both participating firm 1 and government 1, each gain is concave
+    # quadratic in r; strictly positive endpoints imply positivity throughout.
+    for expr in (D[0][0],D[1][0]):
+        assert s.Poly(expr,R).degree()==2 and s.Poly(expr,R).LC()<0
     # The contractor's alternative shallower interface dominates this deep contract
     # for each required signer at this single witness. No selective-stable deep-standard result.
     for typeindex in (0,1):
