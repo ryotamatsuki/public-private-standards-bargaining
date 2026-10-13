@@ -80,10 +80,10 @@ for label,expr in (
     print("PASS IS exact max fee",label)
 assert S.diff(pR0,s).subs(s,1)/2 < FR
 assert S.diff(pI0,s).subs(s,1)/2 < FI
-assert S.factor(S.diff(pr,s).subs(s,1))==2*(S.diff(pR0,s).subs(s,1)/2-F)
-assert S.factor(S.diff(wr,s).subs(s,1))==2*(FR-F)
-assert S.factor(S.diff(pi,s).subs(s,1))==2*(S.diff(pI0,s).subs(s,1)/2-F)
-assert S.factor(S.diff(wi,s).subs(s,1))==2*(FI-F)
+assert S.factor((S.factor(S.diff(pr,s).subs(s,1)))-(2*(S.diff(pR0,s).subs(s,1)/2-F)))==0
+assert S.factor((S.factor(S.diff(wr,s).subs(s,1)))-(2*(FR-F)))==0
+assert S.factor((S.factor(S.diff(pi,s).subs(s,1)))-(2*(S.diff(pI0,s).subs(s,1)/2-F)))==0
+assert S.factor((S.factor(S.diff(wi,s).subs(s,1)))-(2*(FI-F)))==0
 print("THEOREM RS(1) robust strong iff 0<F<=FR =",FR, float(FR))
 print("THEOREM IS(1) strong iff 0<F<=FI =",FI, float(FI))
 print("THEOREM both full-depth contracts coexist iff 0<F<=FR")
