@@ -88,7 +88,7 @@ fee=R(15,38)
 Fn=S.factor(m0*fee/A**2)
 assert Fn==15
 ymark=S.factor(Yphys.subs(v,v0))
-assert ymark==3*t*t-R(151,50)*t+R(2,5)
+assert S.factor(ymark-(3*t*t-R(151,50)*t+R(2,5)))==0
 root1=(151-S.sqrt(10801))/300
 root2=(151+S.sqrt(10801))/300
 assert S.factor(ymark.subs(t,root1))==0
