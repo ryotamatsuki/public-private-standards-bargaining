@@ -44,3 +44,6 @@ R9's common idiosyncratic valuation u across all producers does not by itself id
 
 ## Not proved
 No existence/uniqueness of public-private bargaining SPE, standards coalition structure, licensing Nash equilibrium, industry-wide adoption best responses, or standard optimality. This verified product-market continuation is only an input to Stage 2 literature audit and later mathematical construction.
+
+
+IMPORTANT 2026-10-13 CHANGE CONTROL: original benchmark with singleton M_ii=1 and fixed gamma is superseded for the **CURRENT PROJECT MODEL** by docs/stage1/ONE_SHOT_PROTOCOL.md. Original formula identities remain an audit of their OLD assumptions only, not the revised economy. See STAGE1_PROTOCOL_REAUDIT.md.

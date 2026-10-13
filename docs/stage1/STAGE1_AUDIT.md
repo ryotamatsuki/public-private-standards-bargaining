@@ -62,3 +62,6 @@ Freeze ONLY the Stage-1 audited market payoff mapping, ownership/accounting rule
 
 ## 10. Provenance
 All calculations by SymPy computation using code/verify_stage1.py; no independent person or formal prover verified the new theory. Literature notes rely on listed accessible abstracts, not a certified exhaustive survey. This Stage-1 report was materially AI-assisted and needs author review. No novel bargaining theorem has been proved.
+
+
+2026-10-13 RE-AUDIT: the fixed-gamma disconnected-standards benchmark and unspecified bargaining institution in this historical report are substantively revised. Current model/verified result is docs/stage1/ONE_SHOT_PROTOCOL.md and docs/stage1/STAGE1_PROTOCOL_REAUDIT.md; updated SymPy checks at code/verify_stage1_protocol.py. Old baseline numeric quantities must not be presented as revised-market results.
