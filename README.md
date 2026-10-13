@@ -4,7 +4,9 @@ Independent theoretical-economics project on joint government/firm standards neg
 
 ## Research status
 - Stage 0: GO TO AUDIT (2026-10-13). **This is not a novelty certificate.**
-- Stage 1: source and mathematical audit in progress on a dedicated branch; main is the stable project entrypoint.
+- Stage 1: one-shot source and mathematical audit prepared in Draft PR #1; main is the stable project entrypoint.
+- Stage 2: literature / whole-game novelty kill prepared in Draft PR #2, including 2026-10-13 scope correction.
+- Stage 3: bounded mechanism search prepared in Draft PR #3; **GO TO MINIMAL MODEL for Stage 4 falsification**, not theorem certification.
 - No proposition about the full bargaining game is proved, and no manuscript or journal submission is authorized.
 
 ## Research question
