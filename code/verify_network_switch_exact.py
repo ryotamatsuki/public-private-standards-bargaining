@@ -146,7 +146,8 @@ def main():
                     ("RS IR govt",WR.subs(t,1)-WN)])
     interval(Q(18459,10**5),U0,[
         ("IS IR firm",PI.subs(t,1)-PN),
-        ("IS IR govt",WI.subs(t,1)-WN)])
+        ("IS IR govt",WI.subs(t,1)-WN),
+        ("IS(1) govt above any RS outsider govt",WI.subs(t,1)-UR)])
     # Analytic stitching:
     # unique wdiff root alpha and increasing WR and WI near alpha imply
     # for v<alpha RS(1) dominates each IS in (P,W); v>=alpha
@@ -157,6 +158,7 @@ def main():
     # any RS is blocked by unanimous profitable IS(1).
     print("THEOREM [0.15,alpha): RS exists, all IS blocked")
     print("THEOREM [alpha,beta]: RS(1) and IS(1) both strongly stable")
+    print("NESTED TYPES: firms-only RS; governments-only IS across [alpha,beta]")
     print("THEOREM (beta,0.34]: IS(1) exists, all RS blocked")
     print("THRESHOLDS alpha~0.184595370845337 beta~0.278975090072072")
     print("SCOPE: θ other than v fixed; strict strong-Nash outcomes only.")
