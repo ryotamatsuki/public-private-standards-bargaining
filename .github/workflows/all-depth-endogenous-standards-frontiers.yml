@@ -1,0 +1,28 @@
+name: all-depth-endogenous-standards-frontiers
+on:
+  push:
+    paths:
+      - 'code/verify_all_depth_frontier_theorems.py'
+      - 'code/verify_high_fee_coexistence.py'
+      - 'code/verify_six_dimensional_corners.py'
+      - 'requirements.txt'
+      - '.github/workflows/all-depth-endogenous-standards-frontiers.yml'
+  pull_request:
+    paths:
+      - 'code/verify_all_depth_frontier_theorems.py'
+      - 'code/verify_six_dimensional_corners.py'
+      - 'requirements.txt'
+      - '.github/workflows/all-depth-endogenous-standards-frontiers.yml'
+permissions:
+  contents: read
+jobs:
+  exact-frontiers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python code/verify_all_depth_frontier_theorems.py
+      - run: python code/verify_high_fee_coexistence.py
