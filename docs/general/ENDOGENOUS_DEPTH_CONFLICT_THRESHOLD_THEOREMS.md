@@ -27,7 +27,17 @@ For every s and all five admissible parameters:
 In particular, the **same-full-depth public–private conflict wedge** is defined by
   D_P(G,Lambda,Delta,rho) := \hat P_R(1)−\hat P_I(1) >0,
   D_W(G,Lambda,Delta,rho) := \hat W_I(1)−\hat W_R(1) >0.
-This is an OPEN four-dimensional conflict set in the demand/technology parameter projection; the sign is independent of F. **It does NOT alone imply any jointly stable contract**, since every agent can compare all t≠s, and fee F then does not cancel. Neither old v-only switching root is the complete multidimensional outcome boundary.
+This is an OPEN four-dimensional conflict set in the demand/technology parameter projection; the sign is independent of F.
+In fact, with x=x_R(1)>0 and q=q_I(1)>0, the wedge is SHARPLY equivalent to
+  x>q AND CS_I(1)−CS_R(1) > 3(x²−q²) > 0.
+Thus private firms prefer the regional standard because their own per-market Cournot output/operating profit is higher in RS, yet resident governments prefer IS precisely when the greater consumer surplus under IS MORE THAN OFFSETS resident firms' lost worldwide profits. The fee F cancels from both comparisons since the participating resident firm incurs exactly the same full-depth fee under RS and IS. This is an exact necessary-and-sufficient FOUR-DIMENSIONAL inequality for strict SAME-DEPTH conflict, not yet sufficient for game-wide equilibrium coexistence.
+
+At the baseline (G,Lambda,Delta,rho)=(5/16,−1/16,3/32,1/4):
+  D_P=1115613/20340100≈0.05484796,
+  CS_I(1)−CS_R(1)=5268201/81360400≈0.06475047,
+  D_W=805749/81360400≈0.00990251.
+This quantitatively identifies the public–private wedge: the additional local consumer-surplus gain dominates domestic worldwide profit foregone in switching from RS to IS.
+ **It does NOT alone imply any jointly stable contract**, since every agent can compare all t≠s, and fee F then does not cancel. Neither old v-only switching root is the complete multidimensional outcome boundary.
 
 ## 4. Proposition B — rigorous generic endogenous-depth coexistence certificate
 Fix any admissible (G,Lambda,Delta,rho) in the all-interior SPD domain. Define the cost-free payoff curves as above. Define up to six fee ceilings (extended real infima), all over the indicated CONTINUOUS depth interval, not mesh points:
