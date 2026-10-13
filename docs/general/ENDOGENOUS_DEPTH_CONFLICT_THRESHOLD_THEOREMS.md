@@ -87,7 +87,22 @@ Thus **EVERY** F>310713952/1042430125 makes the full-depth RS(1) unstable to low
 
 Under the original cost variation with A=4/5 and m=4/5, F=5f/4; so physical real fixed-cost f threshold for full-depth RS local instability is (4/5)*(310713952/1042430125), keeping all original other primitives fixed.
 
-## 7. Novelty re-kill and research next targets
+## 7. SHARP exact fixed-cost bifurcation in fully standardized contract stability
+A distinct clean-room file \`code/verify_fee_phase_exact.py\` uses exact rational Sturm real-root counting on payoff numerators and denominators rather than the above exact Bernstein coefficients. Holding the FOUR market/technology coordinates at (G,Lambda,Delta,rho)=(5/16,−1/16,3/32,1/4), it verifies ALL t∈[0,1] and every participation condition at the endpoint NORMALIZED fees
+  F_R^* = 310713952/1042430125 ≈ 0.29806693470221807,
+  F_I^* = 39/128 = 0.3046875.
+Both fees are EXACT algebraic/rational functions of market primitives from the current standard's government welfare derivative at s=1.
+
+**SHARP THEOREM (fixed four market coordinates only):**
+1. Regional **RS(C,1)** is a strong-Nash contract outcome (even uniformly across every outsider's original non-binding messages) **if and only if 0<F≤F_R^***.
+2. International **IS(1)** is a strong-Nash contract outcome **if and only if 0<F≤F_I^***.
+3. Therefore two FULL-DEPTH standards coexist exactly for 0<F≤F_R^*, while for F_R^*<F≤F_I^* only IS(1) of these TWO FULL-DEPTH outcomes survives. Above F_I^*, neither of these two full-depth contracts is stable.
+4. At equality F=F_R^*, RS government has W_R'(1)=0 but W_R'(s)>0 for every s<1; similarly IS government W_I'(1)=0 at F=F_I^*, with W_I'(s)>0 for s<1. Hence the boundaries are INCLUDED by strict-improvement strong Nash. All joining IR conditions are STRICT at their respective fee endpoints; alternative standard depths are tested globally, with no graphing/grid approximation.
+5. For F>F_R^*, P_R'(1)<0 AND W_R'(1)<0, so the four incumbent RS signers can profitably lower the shared standardization depth; for F>F_I^*, P_I'(1)<0 AND W_I'(1)<0, so all six IS signers can profitably lower the IS depth. These deviations prove the converse to (1) and (2).
+
+**Important non-result:** This theorem does NOT prove the FULL STANDARD TYPE RS disappears at F_R^*. RS(s<1) might remain stable; similarly IS(s<1) can persist beyond F_I^*. It therefore establishes a SHARP threshold for *full-depth* equilibrium outcomes, not a complete equilibrium existence/exit threshold for all endogenous depths or all five-dimensional parameters. The source of the mathematical bifurcation is a binding first-order condition at the upper depth bound, not a new exogenous network-switching regime.
+
+## 8. Novelty re-kill and research next targets
 The closest direct inherited results in Economides–Skrzypacz (2003) already compare network standard coalitions, Ghosh–Morita (2012) already distinguish insider/outsider product distinctiveness, and Bourreau–Doğan–Manant (2016) explicitly endogenize size and scope of RJV product development. These sources must be compared at THEOREM LEVEL. Hart–Kurz/Pareto multidimensional bargaining literature could immediately absorb parts of the veto/coexistence logic. The new candidate is NOT the generic statement 'v stronger → IS', nor a bare two-player veto: it is the fee-invariant SAME-DEPTH ranking vs fee-dependent ENDOGENOUS-DEPTH joint stability, the regular multidimensional parameter hypersurface f_coex, and the government/private threshold slope separation.
 
 Before publication: (i) independent Stage4A verify every generic inequality, payoff, coalition-message edge case and cost normalization; (ii) tighten generic sufficient ceilings toward necessary-and-sufficient coexistence-exit conditions by solving Pareto frontiers at arbitrary depths, including RS outsider corner regimes; (iii) derive sign of derivative of the cost ceiling w.r.t. network and differentiation parameters under specific sufficient regularity assumptions, distinguish own-network effects from cross compatibility; (iv) Stage6 novelty absorption. Do not merge branch on mathematical success alone.
