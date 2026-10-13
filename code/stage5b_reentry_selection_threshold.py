@@ -117,6 +117,14 @@ assert F.subs(eta,R(385,1000))>0 and F.subs(eta,R(386,1000))<0
 assert S.Poly(S.diff(F,eta),eta).count_roots(R(385,1000),R(386,1000))==0
 assert S.diff(F,eta).subs(eta,R(385,1000))<0
 assert S.simplify(wg.subs(eta,R(39,100)))==R(1693455,37482172)>0
+# On reentry branch, government welfare itself first FALLS and then
+# RISES as differentiation increases. The unique turning point is
+# near eta=0.3450299075 and distinct from eta_KKT and eta_c.
+dw=S.cancel(S.diff(wg,eta))
+dn,_=S.fraction(dw)
+assert S.Poly(dn,eta).count_roots(R(31,100),R(39,100))==1
+assert dw.subs(eta,R(31,100))<0 and dw.subs(eta,R(39,100))>0
+assert dn.subs(eta,R(34,100))!=0 and dn.subs(eta,R(35,100))!=0
 assert S.simplify(at1(wa).subs(eta,R(31,100))-at1(wc))==0
 # Exactly ONE root eta_c in (0.31,0.39) makes government indifferent.
 # For eta<=0.31, RS(1) corner payoff is eta-INDEPENDENT.
