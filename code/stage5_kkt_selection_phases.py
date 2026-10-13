@@ -140,7 +140,7 @@ def fee_1400():
         "1400 outsider active after reentry: firm decreases")
     optimum=Q(48,103)
     assert lo<optimum<hi
-    assert S.factor(S.diff(PC,s))==-Q(400,289)*(103*s-48)
+    assert S.simplify(S.diff(PC,s)+Q(400,289)*(103*s-48))==0
     assert S.diff(PC,s,2)<0
     Pstar=S.simplify(PC.subs(s,optimum))
     Wstar=S.simplify(WC.subs(s,optimum))
