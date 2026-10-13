@@ -63,8 +63,17 @@ assert 1-gamma-kappa==R(1,25)
 assert S.factor((m+2*b.subs(t,1)).subs(v,R(16,25)))>0
 for ep in (0,1):
     det=S.factor((m*(m+b)-2*d*d).subs(t,ep))
-    assert det.subs(v,0)>0 and det.subs(v,R(16,25))>0
-    assert S.Poly(det,v).count_roots(0,R(16,25))==0
+    assert det.subs(v,0)>0 and det.subs(v,R(16,25))>=0
+    # At v=16/25 the NS market has m=gamma: its strictly
+    # SPD demand region is OPEN at that excluded boundary. Correct
+    # audit must allow det(s=0)=0 AT v=16/25, but not before.
+    der=S.Poly(S.diff(det,v),v)
+    assert der.eval(0)<0 and der.count_roots(0,R(16,25))==0
+    if ep==0:
+        assert S.factor(det-(m-gamma)*(m+2*gamma))==0
+        assert det.subs(v,R(16,25))==0
+    else:
+        assert det.subs(v,R(16,25))>0
 print("PASS network bifurcation: v*=(-72+2√1383)/5≈",
       vstar.evalf(13),flush=True)
 print("PASS 0<=v<v*: outsider active for all s; "
