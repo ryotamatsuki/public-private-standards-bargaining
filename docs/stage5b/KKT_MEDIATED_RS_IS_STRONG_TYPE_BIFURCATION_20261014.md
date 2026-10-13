@@ -53,7 +53,9 @@ The denominator is strictly positive for eta in [31/100,39/100]. Rational Sturm 
 Therefore:
 `eta_KKT=0.31 < eta_c≈0.38547436 < 0.39`.
 
-At and before eta_KKT, outsider-zero regime **shields** the full-depth RS government payoff completely from eta. After the outsider reenters, the active branch changes the payoff incidence; the sign change happens at eta_c, not exactly at eta_KKT. The market mechanism is genuine: the outsider is inactive in the baseline and active at the outcome where the standard ranking reverses. This is stronger than changing phi while leaving outsider support fixed, as in Stage5.
+At and before eta_KKT, outsider-zero regime **shields** the full-depth RS government payoff completely from eta. After the outsider reenters, the active branch changes the payoff incidence; the sign change happens at eta_c, not exactly at eta_KKT.
+
+**Additional nonmonotonicity theorem:** immediately after the outsider reenters, the RS participating government's national welfare initially FALLS as eta increases, despite the outsider gaining a foothold. It reaches its unique minimum on the genuine active branch at `eta_min≈0.3450299075` (strictly between 0.31 and eta_c), and then rises, eventually crossing the fixed IS national welfare at eta_c. An exact rational Sturm count gives exactly one zero of `d[W_RS^A(1;eta)-W_IS(1)]/deta` on `(0.31,0.39)`, with derivative negative at 0.31 and positive at 0.39. The sequence is therefore **KKT reentry at 0.31 -> RS government-welfare trough at approx. 0.34503 -> strong-type switch at approx. 0.38547**. The source-model channel combines outsider entry, within-market competitive displacement and a CS response, so do not label it a pure network externality effect. The market mechanism is genuine: the outsider is inactive in the baseline and active at the outcome where the standard ranking reverses. This is stronger than changing phi while leaving outsider support fixed, as in Stage5.
 
 ## 4. Complete first-stage reduced-strong outcome theorem on this entire eta segment
 
