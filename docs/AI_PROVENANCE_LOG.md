@@ -1,0 +1,8 @@
+# AI / computation provenance
+- 2026-10-13: ChatGPT GPT-6 prepared an AI-assisted Stage 0 snapshot, Stage 1 canonical model, mathematical audit, symbolic verifier and CI. ChatGPT read the workflow repository (v2.9 + main refinements), old R9 model source and accessible publication descriptions. Not external referee verification.
+- Computation: SymPy 1.14 exact simplification, matrix Cournot derivation, FOC/SOC, transfer neutrality and corner KKT. The GitHub CI script is independently executable but follows the same derived model assumptions; it is not an independent clean-room mathematical reviewer.
+- Source Stage-0 local archive SHA256: 48a1aa355b3fe578100b5d85a920d42f5f1f247f069aca927fc219cb5780dd9b.
+- Human author understanding/review: PENDING. External human verification: NONE. Formal verification: NOT PERFORMED; applicability evaluated at later Stage 4A.
+- Stage 1 confirms conditional downstream equilibrium identities only. It does not establish the novel six-actor bargaining game or theorem priority.
+
+- 2026-10-13 Stage 1 revision: GPT-6, GitHub primary workflow, web publisher/author records, and SymPy exact computation. Adapted Hart-Kurz Γ exact-announcement unanimity (NOT a verified general theorem); redefined singleton self-network benefit and gamma(depth); enumerated 81 benchmark profiles plus coalition deviations. Source-paper full proof and novelty absorption review deferred to Stage 2. Author approval and independent mathematical referee pending.

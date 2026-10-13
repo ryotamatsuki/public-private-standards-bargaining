@@ -1,0 +1,11 @@
+# Stage 1 protocol-revision audit | 2026-10-13
+
+**Scoped verdict: GO TO NOVELTY GATE on a verified finite benchmark, not a general bargaining solution.**
+
+The original Stage 1 conditional-Cournot benchmark used singleton diagonal 1 and fixed gamma. User elected own-network benefits for singletons plus Ghosh–Morita-style standard-depth-dependent product differentiation. Accordingly, original numerics are HISTORICAL ONLY. The current revised market uses diagonal 1-v everywhere and gamma_ij=gamma0+kappa*s_ij(z). No older R9 national-welfare theorem may be carried over without re-derivation.
+
+One-shot institution: Hart–Kurz-Γ-inspired EXACT-MATCH unanimity of **full contract terms**; no proposer privilege or tie breaking; simultaneous disjoint legal agreements may coexist; overlap cannot sign two due exclusive announcements. This is an explicit institution assumption, not a theorem that all standards groups use it. Refusal returns to nonzero-production SQ Cournot continuation. All public recognition and private IP ownership remain separately modeled; one actor cannot grant another's right. Matching terms and signatures are identified by complete z.
+
+Symbolic/finite checks: 3-market SPD demand + exact rational Cournot FOC and CS, profits, royalties, real setup costs, govt national accounting, cross-country externalities. 2-country benchmark 81 pure message profiles, 65 pure Nash. All SQ Nash by unilateral inability to coordinate; accepted interface and platform Nash in the example. Full coordinated deviations of 4 actors show SQ and platform blocked, interface not blocked in tested small menu. Fixed-cost K=3/100 flips signer participation for platform in 3-country case. This is NO global CPNE/strong-Nash theorem; mixed Nash existence follows finite normal-form structure; continuous transfers and endogenous later adoption are unproven.
+
+Stage 2: inspect exact Hart–Kurz, Yi, Simcoe, Ray–Vohra, Bernheim–Peleg–Whinston propositions and parent classes; distinguish matching-game equivalence from any NEW split-government/private-technology rights outcome; test alternative rule without smuggling a richer contract menu. No full manuscript or theory freeze. Computation/AI are NOT independent human or author verification.
