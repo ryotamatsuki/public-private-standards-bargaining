@@ -33,10 +33,10 @@ def general_proposition():
     # D>0, -2D<B<0, B²>4DC, C+B+D>0.
     # s_{-,+}=(-B +- sqrt(B²-4DC))/(2D)
     # Implicit-function derivative ds_root/dz= -Y_z/Y_s.
-    assert S.diff(Y,r)==-2*s*d
-    assert S.diff(Y,e)==2*s*(1+r*s)
-    assert S.diff(Y,k)==s
-    assert S.diff(Y,v)==-2-s
+    assert S.expand(S.diff(Y,r)+2*s*d)==0
+    assert S.expand(S.diff(Y,e)-2*s*(1+r*s))==0
+    assert S.expand(S.diff(Y,k)-s)==0
+    assert S.expand(S.diff(Y,v)+2+s)==0
     # Hence increasing r stretches the outsider-zero interval if d>0:
     # left root moves left, right root moves right; increasing outsider
     # differentiation eta and member substitution kappa CONTRACTS it;
