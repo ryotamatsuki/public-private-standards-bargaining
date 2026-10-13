@@ -108,6 +108,22 @@ So the exact, strict ordering is
      W_RS(KKT) < W_IS < W_RS(invalid interior).
 Both firms and governments accept the RS and IS same-depth contracts relative to NS; RS firms prefer RS, governments prefer IS. The invalid interior formula would instead conclude the government prefers RS, **reversing the sign of the national standard-type policy recommendation at the SAME standardization rate**.
 
+**Stronger zero-network regression (novelty stress test):**
+The reversal is not even specific to network externalities. Set
+theta=(v,gamma0,kappa,eta,rho,phi)=(0,1/4,0,6/25,25,200), s=1/2.
+Both the network effect v and the within-member differentiation coefficient
+kappa are zero. All NS/RS/IS demand matrices stay SPD with substitute goods.
+Y(s)=(1200s^2-1202s+175)/100 has two roots strictly in (0,1), with
+Y(1/2)=-63/50, and b/m=1/4<t_star. At this very same contract depth:
+P_RS(KKT)=58 > P_IS=937/25=37.48,
+W_RS(KKT)=**103** < W_IS=**10309/100 = 103.09**
+             < W_RS(invalid interior)=**51578272275/498673561 = 103.430934...**.
+All participant payoffs exceed NS, so the comparison is not an infeasible-
+participation artifact. Choose a=27,c0=26,h=25,f=200 for nonnegative
+physical marginal cost everywhere. All comparisons are rational identities
+checked in the Stage4 script. The absence of network externality further
+limits any claim to a network-industries-only phenomenon.
+
 This last result is a **same-depth policy preference reversal**, not yet a proof that the FULL continuum-depth game's RS/IS strong-equilibrium outcome SET changes. In the exact-announcement Stage1 protocol, both IR-matched standards can appear as pure SPNE and SQ always remains a pure SPNE. To claim an across-type strong-Nash selection reversal, the entire continuous set of deviations in both RS and IS must be certified under both continuation maps; this has NOT been done.
 
 ## Independent referee / novelty gate
