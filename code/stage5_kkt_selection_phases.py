@@ -95,7 +95,7 @@ def general_corner_conflict():
     u=S.symbols("u",nonnegative=True)
     h=2*u**3+15*u**2+12*u-4
     assert h.subs(u,0)<0 and h.subs(u,1)>0
-    assert S.factor(S.diff(h,u))==6*u*u+30*u+12
+    assert S.expand(S.diff(h,u)-(6*u*u+30*u+12))==0
     print("PASS general b/m welfare threshold; unique positive root",
           S.nroots(h)[-1],flush=True)
 
