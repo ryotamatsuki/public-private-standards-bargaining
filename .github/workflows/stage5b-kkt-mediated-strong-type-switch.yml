@@ -1,0 +1,24 @@
+name: stage5b-kkt-mediated-strong-type-switch
+on:
+  push:
+    paths:
+      - code/stage5b_reentry_selection_threshold.py
+      - requirements.txt
+      - .github/workflows/stage5b-kkt-mediated-strong-type-switch.yml
+  pull_request:
+    paths:
+      - code/stage5b_reentry_selection_threshold.py
+      - requirements.txt
+      - .github/workflows/stage5b-kkt-mediated-strong-type-switch.yml
+permissions:
+  contents: read
+jobs:
+  exact-eta-threshold-continuum:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python code/stage5b_reentry_selection_threshold.py
