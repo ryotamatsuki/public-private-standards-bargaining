@@ -29,7 +29,12 @@ def continuation(theta):
     assert S.cancel(2*H**3*S.diff(pi,s)
                     -(3*m*(A+h*s)*K-4*f*s*H**3))==0
     assert S.degree(S.expand(3*m*(A+h*s)*K-4*f*s*H**3),s)<=4
-    assert m>0
+    assert A>0 and m>0 and h>=0 and f>0
+    assert S.cancel(2*pr+po+3*cr-
+        (3*(a*(2*x+y)-cr-(c-h*s)*2*x-c*y)-2*f*s*s))==0
+    assert S.cancel(3*pi+3*ci-
+        (3*(a*3*qi-ci-(c-h*s)*3*qi)-3*f*s*s))==0
+    assert S.cancel(3*pn+3*cn-(3*(a*3*qn-cn-c*3*qn)))==0
     for p in (m-g,m+2*g,m-b,m*(m+b)-2*d*d,m+2*b,x,y,qi,qn):
         assert positive(p),("SPD/INTERIOR DOMAIN FAILED",p)
     MR=S.Matrix([[m,b,d],[b,m,d],[d,d,m]])
@@ -94,6 +99,10 @@ def prove_is_margin():
     assert S.factor(S.diff(q,s)-K/(2*H**2))==0
     assert S.factor(2*H**3*S.diff(3*m*q*q-f*s*s,s)
                     -(3*m*(A+h*s)*K-4*f*s*H**3))==0
+    Kexample=S.factor(K.subs({A:Q(4,5),h:Q(1,20),g:Q(1,4),
+                              k:Q(1,5),m:1-v}))
+    assert S.factor(Kexample-Q(3,4)*(v-Q(13,100)))==0
+    print("PASS closed-form IS private feasibility threshold: v>13/100")
     print("PASS general IS private-profit quartic and K<=0 veto criterion")
 
 if __name__=="__main__":
