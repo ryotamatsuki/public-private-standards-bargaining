@@ -49,6 +49,7 @@ def strict_positive_sturm(expr,label):
     Distinct independent method from previous Bernstein certificate.
     """
     num,den=S.fraction(S.cancel(expr))
+    if den.subs(s,0)<0: num,den=-num,-den
     for idx,poly in enumerate((num,den)):
         p=S.Poly(poly,s)
         assert p.eval(0)>0 and p.eval(1)>0,(label,idx,"ENDPOINT")
