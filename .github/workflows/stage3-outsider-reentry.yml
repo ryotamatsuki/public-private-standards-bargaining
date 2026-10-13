@@ -1,0 +1,25 @@
+name: stage3-outsider-reentry
+on:
+  push:
+    paths:
+      - 'code/verify_stage3_outsider_reentry.py'
+      - 'requirements.txt'
+      - '.github/workflows/stage3-outsider-reentry.yml'
+  pull_request:
+    paths:
+      - 'code/verify_stage3_outsider_reentry.py'
+      - 'requirements.txt'
+      - '.github/workflows/stage3-outsider-reentry.yml'
+permissions:
+  contents: read
+jobs:
+  exact-io-kkt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python code/verify_stage3_outsider_reentry.py
