@@ -59,6 +59,10 @@ def prove_generic():
                     (3*m*physical_x**2-f*s*s))==0
     assert S.factor((PI.subs(mu))*A*A/m-
                     (3*m*physical_q**2-f*s*s))==0
+    # SHARP economic decomposition of the same-depth disagreement wedge:
+    # resident firm's operating-profit loss is outweighed by national CS gain.
+    assert S.factor((PR-PI)-3*(x*x-qi*qi))==0
+    assert S.factor((WI-WR)-(CSI-CSR-3*(x*x-qi*qi)))==0
     # F cancels EXACTLY when both options specify the SAME depth.
     assert S.factor((PR-PI).diff(F))==0
     assert S.factor((WR-WI).diff(F))==0
@@ -89,8 +93,10 @@ def prove_witness():
       ("RS SPD m-b",1-b),("RS SPD det",1+b-2*d*d),
       ("IS SPD 1+2b",1+2*b)
     ):bernstein_positive(ev(z));print("PASS",kind)
-    assert ev((PR-PI).subs(s,1))>0
-    assert ev((WI-WR).subs(s,1))>0
+    assert ev((PR-PI).subs(s,1))==Q(1115613,20340100)
+    assert ev((CSI-CSR).subs(s,1))==Q(5268201,81360400)
+    assert ev((WI-WR).subs(s,1))==Q(805749,81360400)
+    assert ev((CSI-CSR).subs(s,1))>ev((PR-PI).subs(s,1))>0
     for label,expr in [
       ("private RS(1)>IS(t) ALL depths",PR.subs(s,1)-PI),
       ("government IS(1)>RS(t) ALL depths",WI.subs(s,1)-WR),
