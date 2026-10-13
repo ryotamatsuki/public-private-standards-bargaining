@@ -158,7 +158,7 @@ def main():
     # any RS is blocked by unanimous profitable IS(1).
     print("THEOREM [0.15,alpha): RS exists, all IS blocked")
     print("THEOREM [alpha,beta]: RS(1) and IS(1) both strongly stable")
-    print("NESTED TYPES: firms-only RS; governments-only IS across [alpha,beta]")
+    print("NESTED TYPES on (alpha,beta): firms-only RS, governments-only IS; endpoints may tie")
     print("THEOREM (beta,0.34]: IS(1) exists, all RS blocked")
     print("THRESHOLDS alpha~0.184595370845337 beta~0.278975090072072")
     print("SCOPE: θ other than v fixed; strict strong-Nash outcomes only.")
