@@ -157,8 +157,35 @@ def public_rs_is_ranking_reversal():
           float(wr),float(wi),float(fake))
 
 
+
+
+def public_ranking_reversal_at_zero_network():
+    """Stronger counterexample: govt preference reversal is not network-specific."""
+    a=instance(Q(0),Q(1,4),Q(0),Q(6,25),Q(25),Q(200))
+    left,right=S.solve(a["yy"],s)
+    half=Q(1,2)
+    assert 0<left<half<right<1
+    assert S.factor(a["yy"]-(1200*s*s-1202*s+175)/100)==0
+    assert a["yy"].subs(s,half)==-Q(63,50)
+    assert (a["b"]/a["m"]).subs(s,half)==Q(1,4)
+    pr=a["pc"].subs(s,half)
+    pi=a["pi"].subs(s,half)
+    wr=a["wc"].subs(s,half)
+    wi=a["wi"].subs(s,half)
+    fake=S.cancel(a["wa"]).subs(s,half)
+    assert pr==Q(58) and pi==Q(937,25)
+    assert wr==Q(103) and wi==Q(10309,100)
+    assert fake==Q(51578272275,498673561)
+    assert pr>pi>a["pn"] and wi>wr>a["wn"]
+    assert wr<wi<fake
+    # Implementation: a=27, c0=26, h=25, f=200; min MC=1.
+    print("PASS policy rank reversal with v=0 and kappa=0")
+    print("  W_RS(KKT),W_IS,W_RS(invalid interior) =",
+          float(wr),float(wi),float(fake))
+
 if __name__=="__main__":
     check_global_formula()
     boundary_pinned_strong_rs()
     public_rs_is_ranking_reversal()
+    public_ranking_reversal_at_zero_network()
     print("PASS Stage 4 theorem candidates; Stage 6 novelty remains NO-GO")
