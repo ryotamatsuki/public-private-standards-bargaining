@@ -110,6 +110,12 @@ F=420000*eta**4-632000*eta**3-55000*eta**2+194840*eta-40007
 assert S.simplify(wg+3*F/(40*(2*eta+1)**2*(10*eta-13)**2))==0
 assert S.Poly(F,eta).count_roots(R(31,100),R(39,100))==1
 assert F.subs(eta,R(31,100))>0 and F.subs(eta,R(39,100))<0
+# Certified SIMPLE root: regular comparative-statics hypersurface follows
+# from the implicit-function theorem near theta*, since all strong
+# depth monotonicity, SPD and IR margins are strict on compact sets.
+assert F.subs(eta,R(385,1000))>0 and F.subs(eta,R(386,1000))<0
+assert S.Poly(S.diff(F,eta),eta).count_roots(R(385,1000),R(386,1000))==0
+assert S.diff(F,eta).subs(eta,R(385,1000))<0
 assert S.simplify(wg.subs(eta,R(39,100)))==R(1693455,37482172)>0
 assert S.simplify(at1(wa).subs(eta,R(31,100))-at1(wc))==0
 # Exactly ONE root eta_c in (0.31,0.39) makes government indifferent.
