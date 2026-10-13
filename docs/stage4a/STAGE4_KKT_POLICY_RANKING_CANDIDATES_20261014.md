@@ -48,7 +48,7 @@ At s=s_-, true P_R = 0.8376035891744...; true W_R=1.8724326586642...;
 P_N=105/338=0.3106508875...; W_N=495/676=0.7322485207....
 At lower exit:
 P'_left=+2.0672707522..., P'_right=-2.5342349849...;
-W'_left=+12.199..., W'_right=+9.1326921701....
+W'_left=+12.2003626614..., W'_right=+9.1326921701....
 
 **Global proof, not sampled-grid optimization.**
 - Sturm root-count and rational endpoint signs prove P_R'(s)>0 on [0,2/25] when calculated from the ACTIVE continuation; all physically active depths below s_- are contained here.
@@ -112,7 +112,7 @@ This last result is a **same-depth policy preference reversal**, not yet a proof
 
 ## Independent referee / novelty gate
 These 3 mathematical candidates are specific comparative statics and existence statements, not a substantive novelty certificate. The market-exit kink is familiar complementarity/KKT theory. Ghosh–Morita (2012, IJIO 30, 137–152, DOI 10.1016/j.ijindorg.2011.07.003) already studies 2 collaborating firms and outsider product distinctiveness, prices and welfare; its displayed full introduction and abstract have been checked but a proposition-by-proposition full-text audit of KKT corners has NOT been completed.
-Bourreau–Dogan–Manant (2016, IJIO 46, 77–106, DOI 10.1016/j.ijindorg.2016.01.001) already examines endogenous cooperation scope and coalition size; published institutional abstract verified, specific corner-case theorem coverage NOT verified. The model uses *exogenous* network v; the phenomenon already arises at v=0. Claims that these results uniquely depend on network externalities or that they are wholly absent from earlier work are NOT justified.
+Bourreau–Dogan–Manant (2016, IJIO 46, 77–106, DOI 10.1016/j.ijindorg.2016.04.004) already examines endogenous cooperation scope and coalition size; published institutional abstract verified, specific corner-case theorem coverage NOT verified. The model uses *exogenous* network v; the phenomenon already arises at v=0. Claims that these results uniquely depend on network externalities or that they are wholly absent from earlier work are NOT justified.
 
 Next research gate: prove or disprove that the actual reduced first-stage strong-equilibrium *TYPE SET* differs from the all-interior extrapolation over continuous s, for an open 6D parameter set; then independent clean-room Stage4A and theorem-level Stage6 absorption. Remain **NO-GO**, Draft PR #22 UNMERGED.
 
