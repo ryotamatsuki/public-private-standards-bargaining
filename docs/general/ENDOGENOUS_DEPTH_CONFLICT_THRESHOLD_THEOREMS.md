@@ -41,9 +41,9 @@ Fix any admissible (G,Lambda,Delta,rho) in the all-interior SPD domain. Define t
   f_GOV_I = \hat W_I(1)−W_N.
 Let f_coex be the MINIMUM of all eight ceilings. [All notation f refers to NORMALIZED fee F, not physical f].
 
-**THEOREM:** If f_coex>0 and 0<F<f_coex, then full-depth RS(C,1) (for each bilateral identity C) AND full-depth IS(1) are jointly strong-Nash stable, with RS robust against ANY outsiders' irrelevant original contract messages. Proof:
-- For all t<1, P_R(1)−P_I(t)=\hat P_R(1)−\hat P_I(t)−F(1−t²)>0 from f_RI; at t=1 use D_P>0, which is implied by f_RI>0.
-- W_I(1)−W_R(t)>0 analogously from f_IR; at t=1 f_IR>0 implies D_W>0.
+**THEOREM:** If f_coex>0 and 0<F<f_coex, then full-depth RS(C,1) (for each bilateral identity C) AND full-depth IS(1) are jointly strong-Nash stable, with RS robust against ANY outsiders' irrelevant original contract messages. For the economically emphasized STRICT government–firm preference conflict additionally impose D_P>0 AND D_W>0. Those strict same-depth signs are **independent assumptions**, not logical consequences of f_RI>0 and f_IR>0 (which may allow equality at t=1). Proof:
+- For all t<1, P_R(1)−P_I(t)=\hat P_R(1)−\hat P_I(t)−F(1−t²)>0 from f_RI; at t=1 even equality poses no STRICT blocking deviation under strong Nash; for the focal strict conflict theorem impose D_P>0 separately.
+- W_I(1)−W_R(t)>0 analogously from f_IR; at t=1 even equality poses no STRICT blocking deviation under strong Nash; for the focal strict conflict theorem impose D_W>0 separately.
 - W_R'(t),W_I'(t)>0 for t>0 from f_GR,f_GI. Hence no profitable renegotiation to another RS depth or another IS depth, because member governments would lose; the other-type switch is vetoed by incumbent firms (RS→IS) or governments (IS→RS).
 - All four member IR inequalities hold from remaining ceilings.
 The stronger **uniform** RS stability explicitly protects against preannounced IS messages by outsiders, so the lemma is valid independently of that predecessor audit concern.
