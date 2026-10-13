@@ -146,6 +146,16 @@ def sample(mu,menu):
         assert ordinary_brutish(prof,menu,pay)==exp
         base=strong_brutish(prof,menu,pay)
         assert base==theory_matched(c,menu,pay),(c,base)
+        # Deliberately UNMATCH a contract by deleting exactly one
+        # required signer. In such NS histories the missing actor can
+        # finish the contract alone; Nash iff that actor does NOT
+        # strictly gain by completing it. This is a direct refutation
+        # of the false claim that EVERY no-standard message is Nash.
+        for missing in essential:
+            near=list(prof);near[missing]=SQ
+            assert resulting(near)==SQ
+            expected_ne=(pay[c][missing]<=pay[SQ][missing])
+            assert ordinary_brutish(near,menu,pay)==expected_ne,(c,missing)
         if c[0]=="R":
             outside=[i for i in range(6) if i not in essential]
             every=True
