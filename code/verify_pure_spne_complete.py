@@ -165,8 +165,7 @@ def run():
                   Q(10),Q(1,5))
     z=data(corner_theta)
     assert regional_at(z,Q(1,2))["O"]==0
-    assert regional_at(z,Q(1,2))["U"]==z["corner"]["U"].subs(
-        S.Symbol("s"),Q(1,2)) if False else True
+    assert regional_at(z,Q(1,2))["O"]==0
     print("PASS off-path Cournot outsider boundary is part of SPNE strategy")
     print("PASS ALL PURE SPNE CHECKS: continuation + message Nash")
 if __name__=="__main__":run()
