@@ -57,7 +57,17 @@ def profitable(payoffs,limits):
         if d.subs(s,0)<0:n=-n
         if n==0:return False
         pols.append(S.Poly(n,s))
-    roots=S.Poly(pols[0]*pols[1],s).intervals(eps=Q(1,10**12))
+    # Refine until root boxes no longer touch a feasible boundary; an
+    # arbitrarily small positive interval (0,sqrt(2)/10**30), for example,
+    # must NOT be erased by a fixed floating/numeric resolution.
+    product=S.Poly(pols[0]*pols[1],s)
+    precision=12
+    while True:
+        roots=product.intervals(eps=Q(1,10**precision))
+        touches_boundary=any((lo<=0<hi or lo<1<=hi)
+                              for (lo,hi),_ in roots)
+        if not touches_boundary:break
+        precision*=2
     points=[];last=Q(0)
     for (left,right),mult in roots:
         if right<0 or left>1:continue
@@ -106,6 +116,9 @@ def prove_is_margin():
     print("PASS general IS private-profit quartic and K<=0 veto criterion")
 
 if __name__=="__main__":
+    # Permanent adversarial regression: a near-zero irrational root creates
+    # a strict profitable-depth interval invisible at fixed 1e-12 isolation.
+    assert profitable((Q(2,10**60)-s*s,S.Integer(1)),(0,0))
     prove_is_margin()
     base=["1","1/5","1/5","1/5","1/4","3/20","3/40"]
     cases=[("1/10","N","0",False),("1/10","R","3/5",True),
