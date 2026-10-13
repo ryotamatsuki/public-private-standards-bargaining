@@ -62,7 +62,7 @@ def formulas(v,kind):
     CS=S.factor((m+b)*x*x+2*d*x*y+m*y*y/2)
     P=[S.factor(3*m*q*q-(f*t*t if i<num else 0))
        for i,q in enumerate((x,x,y))]
-    return dict(P=P,W=[S.factor(q+CS) for q in P],CS=CS)
+    return dict(P=P,W=[S.factor(q+CS) for q in P],CS=CS,Q=(x,x,y))
 
 def positive_on_unit(expr):
     """Sturm interval root proof, intentionally not upstream Bernstein argument."""
@@ -83,9 +83,42 @@ def compare_independently(v,kind,expr):
                     t,S.Rational(x.numerator,x.denominator))-
                     S.Rational(rhs.numerator,rhs.denominator))==0
 
+def global_continuation(v,kind,obj):
+    """Independent all-depth Sturm SPD/interiority and exact Cournot FOCs."""
+    vv=S.Rational(v.numerator,v.denominator)
+    m=1-vv;g=S.Rational(1,4);k=S.Rational(3,20);eta=k/2
+    b=g+(k-vv)*t;d=g-eta*t
+    if kind=="RS":
+        mat=S.Matrix([[m,b,d],[b,m,d],[d,d,m]])
+        cost=S.Matrix([S.Rational(1,5)*(1-t),
+                       S.Rational(1,5)*(1-t),S.Rational(1,5)])
+    elif kind=="IS":
+        mat=S.Matrix([[m,b,b],[b,m,b],[b,b,m]])
+        cost=S.Matrix([S.Rational(1,5)*(1-t)]*3)
+    else:
+        assert kind=="NS"
+        mat=S.Matrix([[m,g,g],[g,m,g],[g,g,m]])
+        cost=S.Matrix([S.Rational(1,5)]*3)
+    for j in (1,2,3):positive_on_unit(mat[:j,:j].det())
+    q=S.Matrix(obj["Q"])
+    for i in range(3):
+        positive_on_unit(q[i])
+        assert S.factor(((mat+m*S.eye(3))*q)[i]-(1-cost[i]))==0
+    assert m>0 # independent firm quantity SOC = -2m <0
+
+def reject_nonspd_stress():
+    """Fail closed rather than extrapolate witness interior branch."""
+    try:
+        direct(F(9,10),"NS",F(0))
+    except AssertionError:
+        print("OUTSIDE DOMAIN correctly rejected: v=0.9 violates SPD")
+        return
+    raise AssertionError("Unexpectedly admitted non-SPD quantity game")
+
 def low():
     v=F(1,10);rs,iss,ns=(formulas(v,x) for x in ("RS","IS","NS"))
     for kind,obj in (("RS",rs),("IS",iss),("NS",ns)):
+        global_continuation(v,kind,obj)
         compare_independently(v,kind,obj)
     P,W=rs["P"][0],rs["W"][0];IP,IW=iss["P"][0],iss["W"][0]
     for fn in (P,W,IP,IW):positive_on_unit(-S.diff(fn,t,2))
@@ -138,5 +171,5 @@ def indifference_regression():
           "ΔG/outsider=",float(IS["W"][2]-RS["W"][2]))
 
 if __name__=="__main__":
-    low();high();indifference_regression()
+    low();high();indifference_regression();reject_nonspd_stress()
     print("PASS: two exact witness contract outcome results survive; generic six-gains lemma REJECTED.")
