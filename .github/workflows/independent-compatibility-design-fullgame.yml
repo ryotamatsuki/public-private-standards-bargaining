@@ -1,0 +1,24 @@
+name: independent-compatibility-design-fullgame
+on:
+  push:
+    paths:
+      - 'code/verify_two_choice_full_game.py'
+      - 'requirements.txt'
+      - '.github/workflows/independent-compatibility-design-fullgame.yml'
+  pull_request:
+    paths:
+      - 'code/verify_two_choice_full_game.py'
+      - 'requirements.txt'
+      - '.github/workflows/independent-compatibility-design-fullgame.yml'
+permissions:
+  contents: read
+jobs:
+  two-design-exact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python code/verify_two_choice_full_game.py
