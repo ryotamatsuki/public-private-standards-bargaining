@@ -54,7 +54,7 @@ svert=(R(12,5)+v)/6
 assert svert.subs(v,0)>0 and svert.subs(v,R(16,25))<1
 assert Yphys.subs(t,0).subs(v,R(16,25))>0
 assert Yphys.subs(t,1).subs(v,R(16,25))>0
-assert S.factor(S.diff(Dscr,v))==2*v+R(144,5)
+assert S.factor(S.diff(Dscr,v)-(2*v+R(144,5)))==0
 # SPD for all v∈[0,16/25) and s∈[0,1]:
 # m−gamma>0; m−b(1)=1−gamma−kappa=1/25>0;
 # m+2b(1)>0; RS determinant concave in s,
