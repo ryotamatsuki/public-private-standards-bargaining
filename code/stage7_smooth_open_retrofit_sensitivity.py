@@ -71,6 +71,37 @@ def compare_target():
     print('PASS selected government discontinuity a->0+ removed locally',
           flush=True)
 
+def exact_singularity_welfare_inequality():
+    """Compare a discontinuous full K+phi/2 extra retrofit cost with
+    a smooth O-to-O design-difference phi*a^2/2 at same c=1.
+    At positive design mismatch, two member firms' Cournot quantities
+    and domestic consumer surplus depend on min(0,a)=0, so same gross
+    W gap between full IS and private RS as at a=0; initial sunk costs
+    cancel govt comparisons. G3's mandatory retrofit is key veto.
+    """
+    m=s.m
+    z=1+s.rho
+    b=s.g-s.v
+    d=s.g
+    D=2*m*(2*m+b)-2*d*d
+    x=(2*m*z-d)/D
+    y=(2*m+b-2*d*z)/D
+    csR=(m+b)*x*x+2*d*x*y+m*y*y/2
+    csr=s.phi/2
+    qI=z/(2*(m+b))
+    CS_I=F(3,2)*(m+2*b)*qI*qI
+    delta=(3*m*qI*qI-csr+CS_I)-(3*m*x*x-csr+csR)
+    assert delta==F(681773932073,10742687846912)
+    assert 0<delta<s.cost(s.PUBLIC,F(1,2))
+    assert s.phi*F(3,5)**2/2<delta
+    print("PASS exact gross government preference W_I-W_R=",delta,
+          "float",float(delta),flush=True)
+    print("Old nonzero misalignment invokes conversion K+phi/2=.57",
+          "even as delta a tends to 0; smooth conversion fee is",
+          "phi*a*a/2 and is below real W gain for all 0<a<=.6.",
+          flush=True)
+
+
 def full_finite_pilot_under_smooth_retrofit():
     # Re-solve the ORIGINAL 1000 initial finite profiles from scratch
     # after replacing the within-open-specification refit cost, so
@@ -82,7 +113,13 @@ def full_finite_pilot_under_smooth_retrofit():
         print('SMOOTH REFIT FULL FINITE SPE K',K,
               'count',len(x),'types',dict(kinds),'policy',dict(govt),
               flush=True)
-        assert x  # verified nonempty; do not hardcode assumed counts
+        expected=3 if K==0 else 1
+        assert len(x)==expected,(K,len(x),expected)
+        assert kinds==Counter({'IS':expected})
+        assert govt== (Counter({'L':2,'M':1}) if K==0
+                      else Counter({'M':1}))
+        print("PASS all 1000 independent-firm profiles recomputed under",
+              "smooth real retrofit resource costs",flush=True)
 
 
 def collapse_passive_adopter_flags():
@@ -103,6 +140,7 @@ def collapse_passive_adopter_flags():
 
 if __name__=="__main__":
     collapse_passive_adopter_flags()
+    exact_singularity_welfare_inequality()
     compare_target()
     full_finite_pilot_under_smooth_retrofit()
     print('NOT PROVED: full symmetric continuous refit game SPE;')
