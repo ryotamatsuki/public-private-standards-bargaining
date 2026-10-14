@@ -1,0 +1,677 @@
+{
+  "baseline": "d1d267cd8eaa349a06df7ff4cd102343d22f7ff5",
+  "method": "exact rational matrix derivation and Bernstein signs",
+  "certificates": [
+    {
+      "name": "F_strictly_concave_a_numerator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        8,
+        4,
+        8
+      ],
+      "count": 405,
+      "min": "930775999745648839",
+      "max": "1281823662373510000",
+      "zeros": 0,
+      "sha256": "87f5663b3317fd174ffe657570a5699ed95bbe75dd2bbbf6133ea497f0ac5460",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "F_strictly_concave_a_denominator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        8,
+        4,
+        8
+      ],
+      "count": 405,
+      "min": "9167772662183100050",
+      "max": "10073163337039360800",
+      "zeros": 0,
+      "sha256": "2aa2d0f4c8513874a498153d352b3d719e1c46be1bb958b7c77f463bfd2a3f44",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "F_a_positive_at_zero_numerator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        1,
+        2,
+        0
+      ],
+      "count": 6,
+      "min": "8144791874208",
+      "max": "13291101291600",
+      "zeros": 0,
+      "sha256": "7ea431b4272b3d047997385e1741f2cbf3e142f6adc06940af5e8841b7946299",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "F_a_positive_at_zero_denominator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        0,
+        3,
+        0
+      ],
+      "count": 4,
+      "min": "221518693813925",
+      "max": "224713315827200",
+      "zeros": 0,
+      "sha256": "934d1545d8e84fd8e0ab5d61819a62c49a3a8d85ef5fe1295f3034d523504ff6",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "outsider_quantity_increases_a_numerator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        3,
+        2,
+        2
+      ],
+      "count": 36,
+      "min": "18473600",
+      "max": "38968776",
+      "zeros": 0,
+      "sha256": "454336c9c14493eb965823669e4526a16d6959a344d41490ba05bb5aac9d3226",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "outsider_quantity_increases_a_denominator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        4,
+        2,
+        4
+      ],
+      "count": 75,
+      "min": "428200249",
+      "max": "448846596",
+      "zeros": 0,
+      "sha256": "bea556761e641ddc12974957bc2cf49ae2416d51690911fc268c70d59755109f",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "outsider_quantity_nonincreases_c_numerator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        3,
+        0,
+        3
+      ],
+      "count": 16,
+      "min": "0",
+      "max": "9443616",
+      "zeros": 1,
+      "sha256": "f157766b367f40172050b1cc7308888b14ecce747e8a43e7ecd919bee9a78865",
+      "weak": true,
+      "pass": true
+    },
+    {
+      "name": "outsider_quantity_nonincreases_c_denominator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        4,
+        2,
+        4
+      ],
+      "count": 75,
+      "min": "428200249",
+      "max": "448846596",
+      "zeros": 0,
+      "sha256": "bea556761e641ddc12974957bc2cf49ae2416d51690911fc268c70d59755109f",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "zero_a_full_c_founder_participation_numerator",
+      "variables": [
+        "t"
+      ],
+      "degrees": [
+        0
+      ],
+      "count": 1,
+      "min": "3978543839391",
+      "max": "3978543839391",
+      "zeros": 0,
+      "sha256": "d63e3854103208809592becd2f04122e62b0a0d03e2869165df49d6e64c2534b",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "zero_a_full_c_founder_participation_denominator",
+      "variables": [
+        "t"
+      ],
+      "degrees": [
+        0
+      ],
+      "count": 1,
+      "min": "134283598086400",
+      "max": "134283598086400",
+      "zeros": 0,
+      "sha256": "203d7bf90ddce125dca12dae172471cebbec983bce01e334dc0370b2f0e9d860",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "zero_a_full_c_outsider_veto_numerator",
+      "variables": [
+        "t"
+      ],
+      "degrees": [
+        0
+      ],
+      "count": 1,
+      "min": "2895324709503",
+      "max": "2895324709503",
+      "zeros": 0,
+      "sha256": "ae77a34b11e90f03a5d801c0be957c7b8a5ec48143c903181e7cd529bcf9c29a",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "zero_a_full_c_outsider_veto_denominator",
+      "variables": [
+        "t"
+      ],
+      "degrees": [
+        0
+      ],
+      "count": 1,
+      "min": "268567196172800",
+      "max": "268567196172800",
+      "zeros": 0,
+      "sha256": "9e4ddbfc87d5f581b05f5f81ce3973a39aa1c49d17a7f85f404ca55115ea0c27",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "full_c_low_a_outsider_veto_numerator",
+      "variables": [
+        "t",
+        "u"
+      ],
+      "degrees": [
+        4,
+        4
+      ],
+      "count": 25,
+      "min": "2895324709503",
+      "max": "258944395756127817591/6250000",
+      "zeros": 0,
+      "sha256": "e69e56ff93d8694837f09471825a5a87cf620e7c0dd7bfb94beb01cea9afd8c3",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "full_c_low_a_outsider_veto_denominator",
+      "variables": [
+        "t",
+        "u"
+      ],
+      "degrees": [
+        4,
+        4
+      ],
+      "count": 25,
+      "min": "268567196172800",
+      "max": "4313558925836985888/15625",
+      "zeros": 0,
+      "sha256": "558d3d5a510d555df2f80b0338e0ee9ea8c30139614f2bb3077edacc9c849ee3",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "world_welfare_increases_c_numerator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        6,
+        4,
+        6
+      ],
+      "count": 245,
+      "min": "277010469120000",
+      "max": "5222070855427241727433773/15625000000",
+      "zeros": 0,
+      "sha256": "d9aae2b790f4c37cf1dee2e56c107aa5fbee440a0e0baf4a792d938e99bf920e",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "world_welfare_increases_c_denominator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        6,
+        3,
+        6
+      ],
+      "count": 196,
+      "min": "221518693813925",
+      "max": "146341696158814048549461/625000000",
+      "zeros": 0,
+      "sha256": "c6d9a38f8380183e148d1eefc1bd9a69a38fe572ee6d8661ca9adaf96606655e",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "world_welfare_increases_a_numerator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        6,
+        3,
+        7
+      ],
+      "count": 224,
+      "min": "1143016900422044481769/100000000",
+      "max": "77951004594924",
+      "zeros": 0,
+      "sha256": "8d649bdde7c9c4e785647b4dfaae3a054d316d9680886184ef25ee5c38e6bd95",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "world_welfare_increases_a_denominator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        6,
+        3,
+        6
+      ],
+      "count": 196,
+      "min": "221518693813925",
+      "max": "146341696158814048549461/625000000",
+      "zeros": 0,
+      "sha256": "c6d9a38f8380183e148d1eefc1bd9a69a38fe572ee6d8661ca9adaf96606655e",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "full_c_private_a_marginal_positive_at_30_numerator",
+      "variables": [
+        "t"
+      ],
+      "degrees": [
+        6
+      ],
+      "count": 7,
+      "min": "362898159133587/8",
+      "max": "2076667371835060791/1000",
+      "zeros": 0,
+      "sha256": "c524b8bc17922fb4a916798704f7c3708519f43441589c3cc8bf6a269ffa2e7c",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "full_c_private_a_marginal_positive_at_30_denominator",
+      "variables": [
+        "t"
+      ],
+      "degrees": [
+        6
+      ],
+      "count": 7,
+      "min": "141164404312419125/2",
+      "max": "141672536073306629/2",
+      "zeros": 0,
+      "sha256": "74be9df4e9aa90ba3d1908a41d6023440a395b353069beba73f474f1d5784ea0",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "private_a_marginal_increases_c_above_30_numerator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        5,
+        2,
+        4
+      ],
+      "count": 90,
+      "min": "2204705756074932/5",
+      "max": "1282332533371923132693/15625",
+      "zeros": 0,
+      "sha256": "b86f4c1fd53820b692ec647fbef51f2f44af8d3346b8fc4d77bda9db37bb07bb",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "private_a_marginal_increases_c_above_30_denominator",
+      "variables": [
+        "t",
+        "u",
+        "w"
+      ],
+      "degrees": [
+        8,
+        4,
+        8
+      ],
+      "count": 405,
+      "min": "117603500575059123361/25",
+      "max": "7711829972335106777125385640081/1562500000000",
+      "zeros": 0,
+      "sha256": "bc1bb44f0558f6fac457cb53df4d06fa373e780736c01a58f0b1edb185133305",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "private_a_marginal_negative_at_61_numerator",
+      "variables": [
+        "t",
+        "u"
+      ],
+      "degrees": [
+        6,
+        3
+      ],
+      "count": 28,
+      "min": "1068223651698262905922347/125000",
+      "max": "1965256948859768018231/8",
+      "zeros": 0,
+      "sha256": "110b86c741e053672d90e8f745955cdf8a0d2bc7576985a7f81933cc078937ef",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "private_a_marginal_negative_at_61_denominator",
+      "variables": [
+        "t",
+        "u"
+      ],
+      "degrees": [
+        6,
+        3
+      ],
+      "count": 28,
+      "min": "5744715543114983470625",
+      "max": "146341696158814048549461/25",
+      "zeros": 0,
+      "sha256": "4e22731770687f889a8754b18930aa6ad1f743dcd388850e9a7f518d0a2d5533",
+      "weak": false,
+      "pass": true
+    },
+    {
+      "name": "three_aligned_total_private_gap",
+      "variables": [
+        "t",
+        "u",
+        "w",
+        "h"
+      ],
+      "degrees": [
+        8,
+        8,
+        8,
+        6
+      ],
+      "count": 5103,
+      "min": "0",
+      "max": "1277024367325947/9570312500000",
+      "zeros": 1,
+      "sha256": "8fc4894869b556a13f6a7db394cd07b46a8b393f12e1794951409de4285b3c66",
+      "weak": true,
+      "pass": true
+    },
+    {
+      "name": "three_crossed_total_private_gap",
+      "variables": [
+        "t",
+        "u",
+        "w",
+        "h"
+      ],
+      "degrees": [
+        8,
+        8,
+        8,
+        6
+      ],
+      "count": 5103,
+      "min": "0",
+      "max": "1277024367325947/9570312500000",
+      "zeros": 7,
+      "sha256": "05c4cc0ebc81ac28b4074aec3ff325c5584f8d34aa92fb00d392b15a99aff34d",
+      "weak": true,
+      "pass": true
+    }
+  ],
+  "identities": {
+    "outsider_quantity_min": "8702/20693",
+    "outsider_profit_min": "5622566697/10705006225",
+    "entrant_quantity_upper": "17444/29403",
+    "entrant_net_upper": "73552349/145544850",
+    "no_private_entry_margin": "1238290904859517/62322341010667650",
+    "no_public_entry_margin": "2789676069011/26856719617280",
+    "entry_upper_increases_c": "1376/9801",
+    "public_equilibrium_welfare": "3*(WI-K), since all initial a=0"
+  },
+  "rational_examples": [
+    {
+      "c": "1",
+      "a": "0",
+      "eta": "7/50",
+      "K": "11/20",
+      "F_minus_public_private": {
+        "rational": "3978543839391/134283598086400",
+        "float": 0.029627921027489505
+      },
+      "F_a": {
+        "rational": "2640357818208/44303738762785",
+        "float": 0.059596726866444336
+      },
+      "member_policy_gain": {
+        "rational": "681773932073/10742687846912",
+        "float": 0.0634639991209441
+      },
+      "outsider_policy_gain": {
+        "rational": "-5580996671231/268567196172800",
+        "float": -0.020780634235165886
+      },
+      "world_RS_minus_public": {
+        "rational": "-28507699932419/268567196172800",
+        "float": -0.10614736400672231
+      }
+    },
+    {
+      "c": "1",
+      "a": "1/2",
+      "eta": "7/50",
+      "K": "11/20",
+      "F_minus_public_private": {
+        "rational": "6437660560367/137495323705600",
+        "float": 0.046820941882729665
+      },
+      "F_a": {
+        "rational": "8609993692603/918053119601900",
+        "float": 0.00937853541234803
+      },
+      "member_policy_gain": {
+        "rational": "6851905659073/274990647411200",
+        "float": 0.02491686798652168
+      },
+      "outsider_policy_gain": {
+        "rational": "-36744703282239/274990647411200",
+        "float": -0.13362164723840145
+      },
+      "world_RS_minus_public": {
+        "rational": "13416219304701/274990647411200",
+        "float": 0.04878791126535809
+      }
+    },
+    {
+      "c": "19/20",
+      "a": "0",
+      "eta": "7/50",
+      "K": "11/20",
+      "F_minus_public_private": {
+        "rational": "1452972691083/162236263840000",
+        "float": 0.008955905767874098
+      },
+      "F_a": {
+        "rational": "25010064845568/419744759643391",
+        "float": 0.05958398353041068
+      },
+      "member_policy_gain": {
+        "rational": "30697551792049/324472527680000",
+        "float": 0.09460755279202995
+      },
+      "outsider_policy_gain": {
+        "rational": "-847947379227/64894505536000",
+        "float": -0.013066551200649864
+      },
+      "world_RS_minus_public": {
+        "rational": "-57155366687963/324472527680000",
+        "float": -0.17614855438341004
+      }
+    },
+    {
+      "c": "929/1000",
+      "a": "0",
+      "eta": "7/50",
+      "K": "27/50",
+      "F_minus_public_private": {
+        "rational": "1504089173633507751/5356140007510512500000",
+        "float": 0.0002808158807507714
+      },
+      "F_a": {
+        "rational": "528394976220016857600/8869780278682226124389",
+        "float": 0.05957249893663882
+      },
+      "member_policy_gain": {
+        "rational": "9224764444569052232359/85698240120168200000000",
+        "float": 0.10764240236011682
+      },
+      "outsider_policy_gain": {
+        "rational": "13057336708112443/97940845851620800000",
+        "float": 0.00013331860261748353
+      },
+      "world_RS_minus_public": {
+        "rational": "-18460954058757702852343/85698240120168200000000",
+        "float": -0.21541812332285115
+      }
+    },
+    {
+      "c": "929/1000",
+      "a": "0",
+      "eta": "7/50",
+      "K": "11/20",
+      "F_minus_public_private": {
+        "rational": "1504089173633507751/5356140007510512500000",
+        "float": 0.0002808158807507714
+      },
+      "F_a": {
+        "rational": "528394976220016857600/8869780278682226124389",
+        "float": 0.05957249893663882
+      },
+      "member_policy_gain": {
+        "rational": "9224764444569052232359/85698240120168200000000",
+        "float": 0.10764240236011682
+      },
+      "outsider_policy_gain": {
+        "rational": "-966351121808095557/97940845851620800000",
+        "float": -0.009866681397382516
+      },
+      "world_RS_minus_public": {
+        "rational": "-17603971657556020852343/85698240120168200000000",
+        "float": -0.20541812332285114
+      }
+    }
+  ],
+  "rejected_blanket_F_ac_positive": {
+    "c": "1",
+    "a": "0",
+    "eta": "1/10",
+    "F_ac": "-13843846307339136/4583886331091550025",
+    "float": -0.003020111169301734,
+    "status": "FALSE"
+  },
+  "three_private_zero_faces": {
+    "aligned": [
+      {
+        "t": "1",
+        "u": "1",
+        "w": "0",
+        "h": "0"
+      }
+    ],
+    "crossed": [
+      {
+        "t": "1",
+        "u": "1",
+        "w": "0"
+      },
+      {
+        "t": "1",
+        "u": "1",
+        "w": "0",
+        "h": "0"
+      },
+      {
+        "t": "1",
+        "u": "1",
+        "w": "0",
+        "h": "1"
+      }
+    ]
+  }
+}
