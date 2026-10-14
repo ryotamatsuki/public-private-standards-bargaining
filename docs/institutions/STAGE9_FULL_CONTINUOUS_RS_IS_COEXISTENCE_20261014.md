@@ -81,6 +81,18 @@ There is NO arbitrary postpolicy Nash equilibrium selection behind the coexisten
 
 **Important interpretive caution:** the outside firm may earn MORE than an inside member in the private RS equilibrium, despite being a nonmember. It does not imply a free entrant can instantly use protected X IP; its product sells independently with own baseline, not X technology. The **nature of technology rights and the legacy-product outside option** is central to this result.
 
+## Corollary — Ex-ante public unanimity versus ex-post national veto
+
+On the SAME two actual FULL-CONTINUOUS SPE trajectories, the private RS final economy produces 3 active firms, of which 2 pay the proprietary setup K, while the mandated public IS final economy has 3 adopters who each pay one public setup K. Let W_R^0 denote an incumbent national W in RS with setup K=0, W_O a nonmember home W under RS, and W_I^0 a national W under universal O(1,0) with K=0. The equilibrium final allocations yield:
+- 2 incumbent-government welfare values under RS: `W_R^0-K`; excluded government `W_O`.
+- Under public IS: ALL three governments have `W_I^0-K`.
+- Incumbent-country ex ante final-allocation gain from public IS vs RS: `W_I^0-W_R^0=681773932073/10742687846912≈.063463999121>0`, **independent of K**.
+- Outsider-country ex ante final-allocation gain is positive exactly for `K<K_{gov3}=W_I^0-W_O=142130961223809/268567196172800≈.529219365765`.
+- WORLD-sum of 3 national W: IS–RS `=K_{world}-K` with exact `K_{world}=176219657827459/268567196172800≈.656147364007`. It is positive for K<K_world and negative for K>K_world. Be careful: **the global-welfare ranking does NOT favor IS throughout the whole coexistence interval.**
+- At the explicit coexistence witness **K=1/2**, all THREE national governments strictly prefer the terminal public-IS allocation ex ante, and global government welfare would rise by `41936059741059/268567196172800≈.15614736400672` if the economy had followed the public-IS equilibrium path instead of the private-RS path. Yet, CONDITIONAL on proprietary RS ALREADY being installed, a newly imposed mandatory public O(1,0) requires additional genuine refit investment; incumbent government then strictly prefers not to mandate. Two incompatible statements would be incorrect: (i) that governments universally prefer RS ex ante; or (ii) that a switch after private development is costless.
+
+This gives a narrow but economically meaningful **time-of-commitment / sunk-capital / national-regulatory-veto equilibrium multiplicity**: domestic representatives can all prefer the alternative equilibrium's finished allocation, but a policy shift after irreversible exclusionary private investment is no longer the same real resource allocation. The result is CONDITIONAL on legally proprietary X, the availability of separate public O(1,0), the capital-stock real conversion cost, national unanimity and the specified game chronology. It is NOT claimed theoretically unprecedented given the Farrell–Saloner installed-base coordination literature.
+
 ## Publication and future priorities
 
 This is a REAL mathematical improvement over previous stages: full-continuous **two-type coexistence** in the same six-player sequential game. It remains an **application/synthesis** of established themes (standards competition, incompatibility, installed capital and joint public regulation), not yet demonstrably a novel fundamental theorem relative to Farrell–Saloner (1985/1986), Belleflamme (2002), Ghosh–Morita (2012), Spulber (2019), and Takarada on international standards. Stage6 prior originality NO-GO applies to earlier simpler mechanisms; don't silently transfer novelty approval or rejection to every new mechanism without focused literature search.
