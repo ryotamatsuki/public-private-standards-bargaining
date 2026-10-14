@@ -1,0 +1,23 @@
+name: stage7-open-reference-smooth-retrofit
+on:
+  push:
+    paths:
+      - code/stage7_smooth_open_retrofit_sensitivity.py
+      - code/stage5_integrated_independent_standards_and_government.py
+      - .github/workflows/stage7-open-reference-smooth-retrofit.yml
+  pull_request:
+    paths:
+      - code/stage7_smooth_open_retrofit_sensitivity.py
+      - code/stage5_integrated_independent_standards_and_government.py
+      - .github/workflows/stage7-open-reference-smooth-retrofit.yml
+permissions:
+  contents: read
+jobs:
+  regulatory-reference-continuity-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python code/stage7_smooth_open_retrofit_sensitivity.py
