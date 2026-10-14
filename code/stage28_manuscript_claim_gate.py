@@ -23,7 +23,7 @@ def manuscript_claim_guard():
         assert paper in manuscript and paper in audit,paper
     for required in ("pure-strategy", "three-country",
                      "cannot subsequently be recovered",
-                     "does not imply", "full text", "mixed"):
+                     "does not imply", "full published", "mixed"):
         assert required.lower() in manuscript.lower(),required
     for required in ("STOP extension search", "CRITICAL overlap risk",
                      "Full published Gandal", "R2. 3-country combinatorics",
@@ -41,7 +41,6 @@ def exact_theorem_trace():
     st27.exact_policy_regimes()
     # Every observed privately optimal coalition voting comparison
     # in the draft remains in baseline Stage14 national sign rectangle.
-    st27.institutional_policy=st27.government_policy
     st26.institutional_policy_matrix()
     # Exact world-welfare identity written in English draft.
     K=S.symbols("K")
