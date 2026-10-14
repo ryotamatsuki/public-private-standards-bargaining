@@ -14,6 +14,18 @@ Allow ALL THREE independent parameters to vary continuously and simultaneously:
 \boxed{\phi\in[.12,.33].}
 \]
 
+**Stronger exact sufficient open interval:** the same proof also applies for every
+
+\[
+\boxed{
+\frac{1300995704448}{10862756385725}<\phi<
+\frac{1345490921}{4004358400}
+}
+\qquad (\text{approximately }0.1197666281<\phi<0.3360066174).
+\]
+
+The closed window [0.12,0.33] is a convenient strictly interior subset of this stronger exact open interval. Neither endpoint of the open interval is claimed, and these are *certificate bounds*, not economic bifurcation points.
+
 **Theorem ST23.1.** With open public O(1,0) legally preexisting, all three governments independently entitled to propose mandatory M, national simple-majority 2/3, national ties YES, no government compensation and original incremental open-family physical-cost rules, **every pure-strategy subgame-perfect Nash equilibrium terminates in public mandatory universal IS**. At least one such SPE exists, namely all firms initially selecting N and all governments subsequently mandating O(1,0) with universal firm compliance. This is a classification of *terminal pure-SPE outcomes*, NOT uniqueness of initial O/N investments, NOT absence of mixed SPE, NOT a necessary-and-sufficient global phase partition. Full technical action sets are continuous triangles 0<=a_i<=c_i<=1 for every initial O founder; initial N is always available.
 
 ### 1. Exact global 2-O / 1-N nonintervention equilibrium exclusion over variable phi
@@ -38,7 +50,7 @@ For a>3/4, if B>=0 the same political majority mandates M (national tie votes YE
 Optional outer coefficientwise certificate bounds (not the economic necessary/sufficient interval):
 - low-a governmental Bernstein constraint: phi < 866739877263279/1109042981916800 ~= 0.7815205464;
 - high-a corporate Bernstein constraint: phi > 1300995704448/10862756385725 ~= 0.1197666281.
-These are threshold bounds of the stated polynomial-Bernstein method. In particular [.12,.33] lies strictly inside both conditions. They are not proven actual economic transition points.
+These are threshold bounds of the stated polynomial-Bernstein method. In particular [.12,.33] lies strictly inside both conditions. For every phi strictly above the high-a lower certificate limit, all high-a Bernstein coefficients remain strictly positive (their slopes with respect to phi are all positive). For every phi strictly below the low-a upper certificate limit, all low-a Bernstein coefficients remain strictly positive (all slopes are nonpositive, and zero-slope coefficients have strictly positive intercept). This supplies the exact OPEN phi continuation needed for the stronger interval. They are not proven actual economic transition points.
 
 ### 2. All 0/1-O history governments STRICTLY mandate M
 
@@ -61,7 +73,7 @@ At the worst K=14/25, Delta_N is strictly positive whenever
 \simeq0.3360066174.
 \]
 
-The entire closed phi∈[.12,.33] lies strictly inside this government approval bound. Thus *all three* national governments strictly prefer mandatory public IS after any NNN or singleton-O initial history, for every c,a. For nO=0/1 this is global private-design policy classification, not a finite grid.
+The closed phi∈[.12,.33] and the full stronger open interval ending at this government approval bound satisfy strict approval (at the upper endpoint approval is only weak, so it is deliberately excluded). Thus *all three* national governments strictly prefer mandatory public IS after any NNN or singleton-O initial history, for every c,a. For nO=0/1 this is global private-design policy classification, not a finite grid.
 
 ### 3. Public mandate implementation is STRICTLY dominant by every firm
 
@@ -72,11 +84,11 @@ K_{\max}+\phi/2 < 25/33,
 \quad\phi<326/825\simeq0.3951515152.
 \]
 
-Again the entire interval [.12,.33] satisfies this uniformly in all eta,K and all prior c,a choices. Consequently the governmental policy comparison in cases nO=0,1,2,3 uses the same uniquely implemented public Cournot O(1,0) continuation as Stage19–21. This step is essential: Stage22's broad phi range by itself did not establish dominance for INITIAL N firms.
+Again the entire closed interval [.12,.33] and the stronger exact open interval satisfy this uniformly in all eta,K and all prior c,a choices. Consequently the governmental policy comparison in cases nO=0,1,2,3 uses the same uniquely implemented public Cournot O(1,0) continuation as Stage19–21. This step is essential: Stage22's broad phi range by itself did not establish dominance for INITIAL N firms.
 
 ### 4. Three-O L pure-SPE exclusion from Stage22
 
-Stage22 proves that for all real three-O designs the two redundancy lemmas and the exhaustive non-redundant technical rank-order cases force public M in any hypothetical L-SPE. Exact all-real polynomial-Bernstein certificates cover this for every 0<phi<=452295327/649779200≈.6960754161. Since [.12,.33] lies within that interval, its conclusion applies UNIFORMLY here. This is an exclusion of three-O PRIVATE L SPE, not an assertion that EVERY off-path three-O history mandates M.
+Stage22 proves that for all real three-O designs the two redundancy lemmas and the exhaustive non-redundant technical rank-order cases force public M in any hypothetical L-SPE. Exact all-real polynomial-Bernstein certificates cover this for every 0<phi<=452295327/649779200≈.6960754161. Since [.12,.33] and the stronger exact open interval lie within that interval, its conclusion applies UNIFORMLY here. This is an exclusion of three-O PRIVATE L SPE, not an assertion that EVERY off-path three-O history mandates M.
 
 ### 5. Nonempty SPE: NNN→M and all firms comply
 
@@ -91,7 +103,7 @@ At NNN, the three governments mandate M strictly by part (2), and all firms comp
 | 2 | No; firm redundancy plus all-real B or negative f_a dichotomy | ST23.1 part (1) |
 | 3 | No; Stage22 exact three-OPEN proof | ST23.1 part (4) |
 
-As all M continuations result in strict universal conformity, every possible pure SPE terminal outcome is IS. NNN→M establishes existence. **This is a full pure-SPE *outcome classification* on a genuine open-dimensional 3D (eta,K,phi) rectangle, holding 4 remaining market primitives fixed**. It remains a sufficient result; it does not prove the EXACT boundary where RS emerges under parameter perturbations.
+As all M continuations result in strict universal conformity, every possible pure SPE terminal outcome is IS. NNN→M establishes existence. **This is a full pure-SPE *outcome classification* on a genuine 3-parameter (eta,K,phi) box, with an even stronger exact open phi interval, holding 4 remaining market primitives fixed**. It remains a sufficient result; it does not prove the EXACT boundary where RS emerges under parameter perturbations.
 
 ## Model generality, novelty and next stage
 
