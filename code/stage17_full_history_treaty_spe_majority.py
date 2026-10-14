@@ -264,7 +264,20 @@ def majority_theorem():
     # by govt_pledge_equilibrium with majority. Therefore
     # genuine full continuous NNN public IS SPE under majority.
     assert I_net>P_N
+    # STRONGER than a single privately optimized a*: ANY symmetric
+    # bilateral open h=(O(1,a0),O(1,a0),N), a0∈[.25,.61],
+    # is killed as a potential majority-equilibrium initial history.
+    # Stage14 EXACT Bernstein proves G1/G2 strictly approve M
+    # throughout the WHOLE eta x a rectangle. Stage15 proves
+    # after founder's choice N, remaining O(1,a0) singleton
+    # yields unanimous M; no pledged cash necessary.
+    # Gain phi*a0²/2>0 uniformly with exact rational lower bound.
     assert (phi*R(1,4)**2/2)>0
+    assert phi*R(1,4)**2/2==R(7,1600)
+    print("THEOREM no initial symmetric two-O OPEN profile",
+          "(O(1,a0),O(1,a0),N) with ANY a0∈[.25,.61]",
+          "can be an SPE under majority; profitable founder",
+          "N deviation has gain >=7/1600 exactly",flush=True)
     for ds in ((Q(1,20),Q(1,50),-Q(1,9)),
                (Q(1,20),Q(1,50),-Q(1,3))):
         t,passes,msg=govt_pledge_equilibrium(ds,"majority")
