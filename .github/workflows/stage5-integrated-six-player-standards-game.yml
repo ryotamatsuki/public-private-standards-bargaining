@@ -1,0 +1,23 @@
+name: stage5-integrated-six-player-standards-game
+on:
+  push:
+    paths:
+      - code/stage5_integrated_independent_standards_and_government.py
+      - requirements.txt
+      - .github/workflows/stage5-integrated-six-player-standards-game.yml
+  pull_request:
+    paths:
+      - code/stage5_integrated_independent_standards_and_government.py
+      - requirements.txt
+      - .github/workflows/stage5-integrated-six-player-standards-game.yml
+permissions:
+  contents: read
+jobs:
+  finite-menu-independent-six-player-spe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python code/stage5_integrated_independent_standards_and_government.py
