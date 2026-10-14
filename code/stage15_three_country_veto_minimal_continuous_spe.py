@@ -275,6 +275,8 @@ def numeric_witnesses():
               'G1 desired M gain',round(WincIS-WincRS,9),
               'G3 veto M loss',round(WoutRS-WoutIS,9),
               'world RS - IS',round(WRSworld-WISworld,9),
+              'ex-post public mandate total welfare gain',
+              round(2*(WincIS-WincRS)+(WoutIS-WoutRS),9),
               'majority developer deviation gain',
               round(nodedevprofit-publicfounderprofit,9),
               flush=True)
