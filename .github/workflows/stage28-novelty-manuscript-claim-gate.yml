@@ -1,0 +1,32 @@
+name: stage28-novelty-manuscript-claim-gate
+on:
+  push:
+    paths:
+      - code/stage28_manuscript_claim_gate.py
+      - docs/institutions/STAGE28_NOVELTY_STOP_SEARCH_GATE_20261014.md
+      - docs/manuscript/STAGE28_ABSTRACT_INTRODUCTION_OUTLINE.md
+      - .github/workflows/stage28-novelty-manuscript-claim-gate.yml
+  pull_request:
+    paths:
+      - code/stage28_manuscript_claim_gate.py
+      - docs/institutions/STAGE28_NOVELTY_STOP_SEARCH_GATE_20261014.md
+      - docs/manuscript/STAGE28_ABSTRACT_INTRODUCTION_OUTLINE.md
+      - .github/workflows/stage28-novelty-manuscript-claim-gate.yml
+permissions:
+  contents: read
+jobs:
+  novelty-and-frozen-claims:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install sympy mpmath
+      - name: Verify frozen welfare and institutional propositions
+        run: python code/stage28_manuscript_claim_gate.py
+      - name: Verify full parameter theorem baseline claims
+        run: python code/stage26_nested_policy_welfare_cutoffs.py
+      - name: Verify full constitutional and corporate SPE audit
+        run: python code/stage27_agenda_hitting_set_spe_classification.py
