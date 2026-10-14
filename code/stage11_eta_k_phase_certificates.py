@@ -60,7 +60,7 @@ def theorem():
     tensor_positive(-S.diff(f,a,2),{a:U,e:R(7,50)*T},(U,T),'P_aa<0 for all eta')
     tensor_positive(S.diff(f,a,e),{a:U,e:R(7,50)*T},(U,T),'P_aeta>0 for all eta')
     origin=S.factor(S.diff(f,a).subs(a,0))
-    assert origin==R(14693184)*(R(8604325)*e-R(306108))/R(221518693813925)
+    assert S.factor(origin-R(14693184)*(R(8604325)*e-R(306108))/R(221518693813925))==0
     assert origin.subs(e,eta_on)==0
     assert S.diff(f,a).subs({a:1,e:R(7,50)})<0
     assert S.diff(f,a).subs({a:R(1,4),e:R(1,10)})>0
