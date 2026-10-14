@@ -42,7 +42,8 @@ jobs:
             echo "Blocking unresolved cross-reference or citation"
             exit 1
           fi
-          pdfinfo manuscript/main.pdf | grep Pages
+          ls -lh manuscript/main.pdf
+          grep -q 'Output written on main.pdf' manuscript/main.log
       - uses: actions/upload-artifact@v4
         with:
           name: stage29-full-manuscript-pdf
