@@ -38,6 +38,7 @@ def main():
                      "at least two","three-country","Costinot",
                      "Gandal", "Ruiz"):
         assert required.lower() in full.lower(),required
+    assert not re.search(r"\bStage\s*\d+\b",full), "Internal research-stage labels found in journal-facing manuscript"
     banned=["first to endogenize","first to use a voting",
             "the unique SPE","our theory holds in every economy",
             "majority is always efficient"]
