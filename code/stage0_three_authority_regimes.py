@@ -74,7 +74,6 @@ def certify():
     a=market(Q(41,100))
     assert Q(59,100)-Q(2,5)>0
     assert Q(59,100)*(Q(59,100)+Q(14,100))-2*Q(2,5)**2>0
-    assert a["Y"] if False else True
     assert S.factor(a["qA"][2]-(a["A"]-2*a["d"]*a["z"])/a["D"])==0
     assert S.factor(1-2*a["d"]*a["qC"][0]-
                     (a["A"]-2*a["d"]*a["z"])/a["A"])==0
