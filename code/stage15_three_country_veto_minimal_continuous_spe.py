@@ -209,13 +209,13 @@ def both_spe_and_majority_firm_counterexample():
           flush=True)
 
 def numeric_witnesses():
-    from scipy.optimize import brentq
-    fprime=S.lambdify((e,a),S.diff(private,a),'numpy')
-    fn=S.lambdify((e,a),private,'numpy')
-    oo=S.lambdify((e,a),pout,'numpy')
-    cr=S.lambdify((e,a),CS,'numpy')
+    import mpmath as mp
+    fprime=S.lambdify((e,a),S.diff(private,a),'mpmath')
+    fn=S.lambdify((e,a),private,'mpmath')
+    oo=S.lambdify((e,a),pout,'mpmath')
+    cr=S.lambdify((e,a),CS,'mpmath')
     for ev in (.10,.12,.14):
-        av=brentq(lambda v:fprime(ev,v),.25,.61)
+        av=float(mp.findroot(lambda v:fprime(ev,v),(.25,.61)))
         K=.55
         WincRS=fn(ev,av)+cr(ev,av)-K
         WincIS=float(WI0)-K-float(phi)*av*av/2
