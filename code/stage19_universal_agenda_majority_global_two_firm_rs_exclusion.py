@@ -79,7 +79,7 @@ def public_vote_outcome(delta,proposal_rights,rule):
     No party can pay/receive a side transfer here.
     """
     assert rule in ('unanimity','majority')
-    num=sum(x>=0 for x in delta)
+    num=sum(1 for x in delta if x>=0)
     quorum=3 if rule=='unanimity' else 2
     can_propose=any(delta[i]>=0 for i in proposal_rights)
     return num>=quorum and can_propose
