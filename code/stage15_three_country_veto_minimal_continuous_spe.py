@@ -103,8 +103,10 @@ def fixed_private_payoff_upper_bounds():
     # =K+phi/2(1+a²) >= K+phi/2. So public M investor
     # always earns <=P_I^net_before_setup - K.
     # Original a_R*(eta) REGIONAL member earns strictly more.
-    s14.bernstein_positive(private-PIstar,
-       "private RS profit beats public IS across eta x a rectangle")
+    T,U=S.symbols("T U")
+    s11.tensor_positive(private-PIstar,
+       {e:R(1,10)+R(1,25)*T,a:R(1,4)+R(9,25)*U},
+       (T,U),"private RS profit beats public IS across eta x a rectangle")
     # If one initially private RS founder switches to N, the
     # remaining O(1,a*) is the ONLY private inventor. Government
     # countries' gain from M is strict:
