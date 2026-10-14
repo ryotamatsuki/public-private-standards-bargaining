@@ -226,6 +226,30 @@ def report(K,eta,expected_n,expected_policies,expected_types):
           'government policy',policies,'final standard types',types,flush=True)
     return equilibria
 
+def unrestricted_continuous_NNN_deviation_bound():
+    """Analytical deviation proof for ALL continuous (c_i,a_i) from NNN.
+
+    With nonnegative cross substitution, the Cournot FOC for any active
+    firm gives q_i <= z_i/(2*m). Every possible government response
+    still has z_i<=1+rho. A deviator investing c_i>0 pays K upfront,
+    so final profit <=3*(1+rho)^2/(4*m)-K. Thus at sufficiently high K
+    NONE of the INFINITELY MANY technology deviations can profit.
+    This is a Stage1 Nash bound conditional on the public governance
+    continuation, NOT a full continuous all-history SPE existence proof.
+    """
+    PN=3*m/(4*(m+g)**2)
+    gross_limit=3*(1+rho)**2/(4*m)
+    K_critical=gross_limit-PN
+    assert gross_limit==F(33,25)
+    assert PN==F(7425,12769)
+    assert K_critical==F(235752,319225)
+    assert K_critical<F(3,4)
+    assert government_policy((N,N,N),F(3,4),F(3,100))[0][0]=='L'
+    assert gross_limit-F(3,4)<PN
+    print("PASS unrestricted continuous unilateral-deviation exclusion",
+          "whenever K >=",K_critical,flush=True)
+
+
 def check_provenance_and_specific_subgames():
     # Private actions ARE INDEPENDENT labels, c and a; no joint
     # proposer or multi-agent joint deviations at the firm stage.
@@ -260,6 +284,7 @@ def check_provenance_and_specific_subgames():
 
 if __name__=='__main__':
     check_provenance_and_specific_subgames()
+    unrestricted_continuous_NNN_deviation_bound()
     report(F(0),F(3,100),10,{'M':1,'C':6,'L':3},{'IS':10})
     report(F(1,2),F(3,100),14,{'M':1,'L':13},
            {'IS':2,'RS':12})
