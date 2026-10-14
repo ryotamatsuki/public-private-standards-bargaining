@@ -1,0 +1,192 @@
+\section{Robustness, mechanisms, and limits}\label{sec:robustness}
+
+The central theorem is not a claim that the precise threshold of two agenda holders arises in every model of international standardization. Its force comes from the conjunction of two properties established in the preceding sections. First, a government cannot change the content of the public standard when exercising an agenda right: it can only bring a legally specified interface to a national vote. Second, firms understand this possibility before deciding how much irreversible compatibility capital to build. Our comparative statics hold across an explicit rectangle of the original parameters, but the public reference and political institution remain economically substantive assumptions.
+
+\subsection{A local neighborhood of primitive parameters}\label{subsec:local}
+
+One concern with a theory certified over a specific parameter rectangle is that its equilibrium classification could disappear under an arbitrarily small perturbation of the primitives. To examine that concern, we retain the entire original game and let all seven parameters vary in a nondegenerate product neighborhood:
+\begin{equation}
+\begin{gathered}
+ \eta\in[.10,.14],\qquad K\in[.54,.56],\qquad
+ \phi\in[.13,.30],\\
+ \rho\in[.319,.321],\qquad
+ \kappa\in[.019,.021],\\
+ v\in[.009999,.010001],\qquad
+ \gamma_0\in[.139999,.140001].
+\end{gathered}
+\label{eq:robust-box}
+\end{equation}
+For every point in this box, strict compliance, initial \(NNN\)-to-\(M\) existence, and exclusion of a privately retained pure equilibrium under \(r\le2\) and \(|\calA|\ge2\) remain valid. The first five parameters admit appreciable simultaneous perturbations relative to the last two; the intervals for \(v,\gamma_0\) are intentionally conservative. Their endpoints are not inferred economic bifurcation thresholds. They merely yield a transparent exact certificate of a genuine seven-dimensional local stability result. The constructive \emph{necessity} direction of Proposition~\ref{prop:agenda}, under which exactly one proposer can sustain the complementary bilateral RS, has not separately been re-certified over this entire seven-dimensional box.
+
+\begin{proposition}[Local sufficiency of the agenda threshold]
+\label{prop:robust}
+For all primitives in (\ref{eq:robust-box}), if \(r\in\{1,2\}\)
+and \(|\calA|\ge2\), every pure-strategy SPE terminal standard type
+is mandatory public IS. At least one such SPE exists.
+\end{proposition}
+
+\noindent The certificate behind Proposition~\ref{prop:robust}
+uses the same four corporate investment-count cases as
+Proposition~\ref{prop:agenda}.
+The two-developer proof requires strict signs for the
+low-\(a\) national approval and high-\(a\) private derivative
+polynomials. The three-developer proof requires nonnegative
+policy-gain numerators in the aligned and crossed
+technical-order cases. Each is represented on a unit cube
+by a polynomial Bernstein basis; nonnegative coefficients
+then certify the sign throughout the corresponding
+continuous region. Exact-rational code verifies the
+five-parameter rectangles in
+\(\eta,\phi,\rho,\kappa\), together with the remaining
+technology coordinates, at the endpoints of \(\phi\).
+Because each sign numerator is affine in \(\phi\), endpoint
+certification implies the intervening continuum.
+
+Adding \(v\) and \(\gamma_0\) introduces a complication:
+some three-developer Bernstein coefficients are exactly zero
+at the boundary where all relevant private technologies
+coincide with \(O(1,0)\).
+Strictly positive coefficients are stable under small perturbations,
+but zero coefficients require a separate argument.
+The relevant boundary welfare numerators vanish identically
+for \emph{all} \(v,\gamma_0\), not merely at their baseline values.
+After clearing the strictly positive public-technology denominator,
+every other coefficient has a rational lower bound above \(1/50\).
+An explicit power-basis coefficient-norm estimate bounds
+its joint \(v,\gamma_0\) perturbation below \(0.013\)
+on the stated narrow intervals.
+Hence none of the nonzero coefficients changes sign,
+and all structural zeros remain zeros.
+Appendix~\ref{app:certificates} states the algebraic objects,
+normalizations, and scripts corresponding to these assertions.
+The appendix is part of the proof, not an invitation to
+accept a finite numerical parameter grid as sufficient.
+
+\subsection{What carries the result}\label{subsec:mechanism}
+
+Three features do the economic work.
+
+\paragraph{Independent public agenda rights.}
+With two authorized proposers, a two-country coalition
+that gains from the mandate cannot be silenced by
+a single excluded national government.
+If only one government controls the agenda and that
+government is outside the privately compatible pair,
+its refusal blocks an otherwise successful vote.
+The institutional comparison therefore changes the
+set of effectively available policies, not a firm's
+underlying marginal costs.
+
+\paragraph{Continuous irreversible private design.}
+An installed private technology may induce national
+opposition to the public mandate. Yet it is not enough
+for national opposition to exist at an arbitrary
+technology profile. The firm may have paid for
+compatibility or commonality that does not enter any
+effective pair minimum, or may be able to trim a
+costly commonality attribute without changing the
+policy continuation. These private deviations sharply
+restrict the histories that can be supported in a
+pure initial-stage equilibrium. Without this
+investment argument, the set-theoretic agenda
+observation would be an incomplete equilibrium
+theorem.
+
+\paragraph{A credible public fallback.}
+The public \(O(1,0)\) reference is already legally
+available, and an open developer can complete its
+missing compatibility stock without paying a second
+fixed setup. These conditions make post-mandate
+compliance strictly attractive and make the
+government's policy comparison well-defined
+at every private investment history. If the public
+interface were patented, costly to negotiate, subject
+to a design choice by governments, or usable only
+through private licensing, a new continuation game
+would be required. Our proof does not extend to such
+systems by relabeling the current parameter values.
+
+\subsection{Relation to existing research}\label{subsec:literature}
+
+The literature already provides several reasons to
+expect private and national standard-setting
+incentives to diverge. \citet{KatzShapiro1985}
+study network externalities and compatibility in
+imperfect competition, and \citet{FarrellSaloner1988}
+compare coordination through standard-setting
+committees and markets. \citet{AuriolBenaim2000}
+analyze decentralized standardization dynamics.
+Thus neither network-mediated coordination problems
+nor inefficient decentralization is a novel claim.
+
+The international policy setting is particularly
+close to \citet{GandalShy2001}, who study
+government recognition of foreign standards and
+three-country standardization unions with an excluded
+nonmember. \citet{Klimenko2009} analyzes
+strategic international compatibility policies
+and the possibility of excessive or insufficient
+compatibility, while \citet{Costinot2008} compares
+mutual recognition with national-treatment rules
+and finds institutional welfare rankings sensitive
+to the economic environment. Our objective is
+not to relabel these policy distortions as new.
+The present rule variable is the set of national
+governments authorized to \emph{introduce} a single
+common public mandate and the quorum needed to
+adopt it, after privately selected sunk
+technical investments.
+
+There is also close conceptual overlap with
+\citet{FarrellSimcoe2012}, who study a
+standards-setting war of attrition with neutral
+intervention, screening, and ex-ante incentives
+to improve proposals. Their analysis explicitly
+contemplates a two-vote rule in a different
+standards-governance environment.
+\citet{Ruiz2004} examines governments'
+foreign-standard recognition alongside
+endogenous firms' product characteristics.
+We therefore do not claim to be the first
+to connect standard-setting rules with
+innovation or to endogenize product differentiation
+under government standardization policy.
+The more limited proposition tested here concerns
+a pure-equilibrium \emph{terminal-outcome set}
+under a specific three-country national
+agenda/quorum constitution and continuous
+sunk open-technology stocks.
+
+This literature comparison remains a manuscript
+positioning argument, not an exhaustive
+priority certification. In particular,
+the full final published propositions and
+proof appendices of all the closest
+international-standards papers have not yet
+been checked independently.
+A submission decision should preserve
+that qualification and complete the
+remaining source audit.
+
+\subsection{Scope of equilibrium and welfare claims}\label{subsec:limits}
+
+The model excludes proprietary X/Y interfaces,
+private recognition and licensing mechanisms,
+budget-balanced intergovernmental transfers,
+and endogenous public standard design.
+The national tie rule selects YES and
+the constitution fixes which governments
+can propose. Replacing any of these may
+alter continuation equilibria and invalidate
+the institutional result. In addition,
+the paper classifies only pure-strategy
+SPE terminal standard types; it neither
+enumerates all pure initial strategies
+under the public equilibrium nor
+rules out mixed SPEs. Finally,
+the ex-ante welfare comparison ranks
+two \emph{specified feasible equilibrium
+investment paths}; it is not the
+unconstrained first-best technology
+allocation. These restrictions delimit
+the intended policy interpretation.
