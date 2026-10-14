@@ -1,0 +1,29 @@
+name: stage25-seven-parameter-norm-certificates
+on:
+  push:
+    paths:
+      - code/stage25_seven_parameter_norm_robustness.py
+      - docs/institutions/STAGE25_SEVEN_PARAMETER_EXACT_ROBUSTNESS_20261014.md
+      - .github/workflows/stage25-seven-parameter-norm-certificates.yml
+  pull_request:
+    paths:
+      - code/stage25_seven_parameter_norm_robustness.py
+      - docs/institutions/STAGE25_SEVEN_PARAMETER_EXACT_ROBUSTNESS_20261014.md
+      - .github/workflows/stage25-seven-parameter-norm-certificates.yml
+permissions:
+  contents: read
+jobs:
+  exact-seven-parameter-outcome:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install sympy
+      - run: python code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py
+      - run: python code/stage21_three_open_global_no_private_spe.py
+      - run: python code/stage23_full_spe_phi_interval.py
+      - run: python code/stage24_five_parameter_full_spe_certificate.py
+      - run: python code/stage25_seven_parameter_norm_robustness.py
