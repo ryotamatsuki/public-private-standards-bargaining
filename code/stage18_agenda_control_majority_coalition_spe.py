@@ -191,6 +191,31 @@ def majority_outsider_agenda_spe():
           'have private RS SPE (outsider veto or agenda power),',
           'all alongside public IS NNN.',flush=True)
 
+def exact_national_vote_permutation_regression():
+    # Independent source: instantiate exact rational near-optimal
+    # common design at eta=.14 and K=.55, then feed the exact
+    # three-country national welfare gain triples into Stage17's
+    # actual conditional-donation Nash constructor under both rules.
+    E=R(7,50); aa=R(119,200); KK=R(11,20)
+    benefit=S.cancel(st14.gov_O_approval).subs({eta:E,a:aa})
+    outsiderloss=S.cancel(st14.po+st14.cs-WI0+KK).subs({eta:E,a:aa})
+    assert outsiderloss>benefit>0
+    D1=(benefit,benefit,-outsiderloss)
+    D2=(benefit,-outsiderloss,benefit)
+    D3=(-outsiderloss,benefit,benefit)
+    for h, ds in [('members12',D1),('members13',D2),
+                  ('members23',D3)]:
+        U=st17.govt_pledge_equilibrium(ds,'unanimity',True)
+        M=st17.govt_pledge_equilibrium(ds,'majority',True)
+        assert U[1] is False and U[0]==(F(0),F(0)),(h,U)
+        assert M[1]==(h!='members23') and M[0]==(F(0),F(0)),(h,M)
+        print('PASS exact national coalition',h,
+              'unanimity=NO majority='+('YES' if M[1] else 'NO'),
+              'G1 net mandate preference',ds[0],flush=True)
+    print('PASS public IS survives both voting rules by',
+          'parent Stage17 full-history construction',flush=True)
+
+
 def reg_vote_cutoff_diagnostic():
     import mpmath as mp
     mp.mp.dps=35
@@ -209,4 +234,5 @@ if __name__=='__main__':
     verify_full_triangle_political_vs_design_dichotomy()
     exact_permutation_invariance_under_nonintervention()
     majority_outsider_agenda_spe()
+    exact_national_vote_permutation_regression()
     reg_vote_cutoff_diagnostic()
