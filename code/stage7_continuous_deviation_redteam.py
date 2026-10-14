@@ -78,7 +78,68 @@ def screen(K,eta,limit=20):
         for item in survived:print("NOT YET REFUTED",item,flush=True)
     return cracks,survived
 
+def targeted_policy_discontinuity():
+    K,eta=F(1,2),F(3,100)
+    a1=('O',F(1),F(0))
+    a3=('O',F(1),F(3,5))
+    initial=(N,a1,a3)
+    initialpolicy,_=government_policy(initial,K,eta)
+    print("WITNESS ORIGINAL POLICY",initialpolicy[0],
+          "P3",initialpolicy[3][0][2],flush=True)
+    candidate=(
+        ('original',a3),
+        ('finite_action_same_spec',('O',F(1),F(0))),
+        ('offmenu_99pct',('O',F(99,100),F(0))),
+        ('offmenu_999pct',('O',F(999,1000),F(0))),
+        ('offmenu_9999pct',('O',F(9999,10000),F(0))),
+        ('offmenu_unified_c_marginal_a',('O',F(1),F(1,100))),
+    )
+    for tag,d in candidate:
+        h=(N,a1,d)
+        pol,options=government_policy(h,K,eta)
+        gain=pol[3][0][2]-initialpolicy[3][0][2]
+        print("DIRECT EXACT WITNESS",tag,
+              "firm3action",d,"policy",pol[0],
+              "firm3_profit",pol[3][0][2],"DIFF",gain,
+              "float",float(gain),
+              "gov_feasible_options",tuple(
+                  (z[0],z[1],sum(z[3][1]),z[3][1][0])
+                  for z in options),
+              flush=True)
+    assert government_policy(
+        (N,a1,('O',F(99,100),F(0))),K,eta)[0][0]=='L'
+    assert government_policy(
+        (N,a1,('O',F(999,1000),F(0))),K,eta)[0][0]=='L'
+    assert government_policy(
+        (N,a1,('O',F(9999,10000),F(0))),K,eta)[0][0]=='L'
+    assert government_policy(
+        (N,a1,('O',F(1),F(0))),K,eta)[0][3][0][2]<=initialpolicy[3][0][2]
+    assert government_policy(
+        (N,a1,('O',F(9999,10000),F(0))),K,eta)[0][3][0][2]>initialpolicy[3][0][2]
+    print("PASS exact knife-edge certifiable technology mismatch",flush=True)
+
+
+def onpath_multiple_adopter_ne():
+    from stage5_integrated_independent_standards_and_government import (
+        continuation)
+    for K in (F(0),F(1,2)):
+        es=firm_nash(K,F(3,100))
+        counts=Counter()
+        examples=[]
+        for h,pol in es:
+            if pol[0]=='L':
+                counts['L']+=1
+                continue
+            n=len(adoption_pure_nash(h,pol[0],pol[1],K,F(3,100)))
+            counts[n]+=1
+            if n>1:examples.append((h,pol[0],n))
+        print("ONPATH ADOPTION MULTIPLICITY K",K,
+              "eq counts",counts,"examples",examples[:5],flush=True)
+
+
 if __name__=="__main__":
+    targeted_policy_discontinuity()
+    onpath_multiple_adopter_ne()
     k0=screen(F(0),F(3,100))
     kh=screen(F(1,2),F(3,100))
     print("CAUTION: a finite rational neighborhood SCREEN cannot PROVE",
