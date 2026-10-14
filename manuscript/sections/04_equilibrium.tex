@@ -1,0 +1,159 @@
+\section{Proposal rights and equilibrium standardization}\label{sec:equilibria}
+
+A government can favor public standardization and nevertheless fail to obtain it. With one agenda holder, an excluded country may block a proposal that both regional-standard members would approve. The significance of this veto depends, however, on whether the firms can sustain their initial choices once they anticipate the government's decision. We examine the entire date-1 investment equilibrium rather than taking a bilateral private standard as given.
+
+\subsection{The agenda-intersection mechanism}\label{subsec:agenda-geometry}
+
+Let \(S\subseteq\{1,2,3\}\) denote two governments that weakly approve a mandate at a fixed policy history. The presence of two favorable votes need not suffice under restricted agenda control: equation~(\ref{eq:vote-rule}) also requires \(\calA\cap S\ne\varnothing\). With three countries,
+\begin{equation}
+ \calA\cap S\ne\varnothing
+ \quad\text{for every two-element }S
+ \quad\Longleftrightarrow\quad|\calA|\ge2.
+ \label{eq:hitting}
+\end{equation}
+This is an elementary set-intersection fact, not an independent economic theorem. It matters for standards policy only if we can prove that a winning coalition exists at every technologically supportable no-intervention equilibrium.
+
+Table~\ref{tab:constitution} states the full result. An entry reporting RS and IS indicates the existence of an SPE with each terminal standard type; it neither counts all investment vectors nor excludes further public-IS equilibria.
+
+\begin{table}[ht]
+\centering
+\caption{Pure-SPE terminal standard types under each constitution}
+\label{tab:constitution}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Required YES votes & \(|\calA|=1\) & \(|\calA|=2\) & \(|\calA|=3\)\\
+\midrule
+\(r=1\) & RS and IS & IS only & IS only\\
+\(r=2\) & RS and IS & IS only & IS only\\
+\(r=3\), unanimity & RS and IS & RS and IS & RS and IS\\
+\bottomrule
+\end{tabular}
+\vspace{2mm}
+\begin{minipage}{.94\linewidth}\footnotesize
+\textit{Note:} Technology is fixed at (\ref{eq:baseline-box}); results hold for all \(\eta,K\) in the stated rectangle and all legal real investments \(O(c_i,a_i)\). IS-only means all \emph{pure-SPE terminal outcomes} use the public interface, not that every initial investment vector is identical.
+\end{minipage}
+\end{table}
+
+\subsection{A sharp institutional threshold}\label{subsec:main-constitutional}
+
+\begin{proposition}[The minimum effective agenda set]
+\label{prop:agenda}
+Under the reduced three-country open-technology game and
+(\ref{eq:baseline-box}), let \(\calA\) be any nonempty set of governments
+independently entitled to propose the public mandate.
+\begin{enumerate}
+\item If \(r\in\{1,2\}\), every pure-strategy SPE terminates in public
+      international standardization if and only if \(|\calA|\ge2\).
+\item If \(r\in\{1,2\}\) and \(|\calA|=1\), a privately developed
+      two-firm regional standard founded by the \emph{two non-agenda
+      countries} is a pure-strategy SPE terminal outcome, alongside a
+      public-IS equilibrium.
+\item If \(r=3\), each of the three privately optimal regional
+      two-firm coalitions can support a pure-strategy SPE with no
+      public intervention, irrespective of \(\calA\), and public IS
+      is also attainable in an SPE.
+\end{enumerate}
+The result applies to the complete continuous private initial-action
+space, including unequal designs and three-firm investment. It
+does not assert uniqueness of initial actions or exclude mixed SPEs.
+\end{proposition}
+
+\noindent\emph{Why the threshold is sufficient.}
+Take \(r\le2\) and \(|\calA|\ge2\).
+By Lemma~\ref{lem:sparse}, zero or one initial developer always
+induces \(M\). A hypothetical private pure-SPE outcome with exactly
+two developers cannot retain \(L\). Unequal individual design
+stocks permit a strict cost-saving reduction that leaves effective
+bilateral technology unchanged and cannot create a newly successful
+pro-public vote. With a common design \(O(c,a)\), sufficiently low
+commonality \(a\) makes both founder governments strictly support
+a mandate. At higher \(a\), if the member governments instead
+strictly oppose the mandate, a founder can profitably lower its
+commonality while preserving nonintervention. In either case,
+the candidate \(L\) investment vector cannot be a Nash equilibrium.
+
+A three-developer candidate requires an additional argument.
+Changing one firm's design now affects several pairwise links,
+so a symmetric optimum cannot simply be imposed.
+Nevertheless, a firm with uniquely maximal \(a_i\) has wasted
+irreversible expenditure: reducing it to the next-highest
+level does not change any pair minimum. Conditional on an
+\(L\) outcome, an analogous reduction eliminates any uniquely
+maximal \(c_i\) without provoking a new governmental majority.
+The surviving design patterns must therefore tie both maxima.
+They fall into two exhaustive technical-order classes.
+Exact national welfare inequalities then identify at least two
+governments that weakly prefer \(M\) in either class.
+By (\ref{eq:hitting}), one of them holds a proposal right;
+its mandate passes for \(r\le2\). Appendix~\ref{app:global}
+states the detailed reduction and its boundary certificates.
+
+\noindent\emph{Why the threshold is necessary.}
+Suppose only country 1 may propose. Firms 2 and 3 can jointly
+invest in \(O(1,a_R^*(\eta))\), leaving firm 1 at \(N\).
+At this history the agenda holder's policy gain is
+\(K_V(\eta)-K<0\), by (\ref{eq:bilateral-votes}), and therefore
+it never introduces \(M\). Nonintervention is credible.
+Neither founder benefits by switching to \(N\), since the
+resulting singleton investment history induces \(M\) and
+pays less than the regionally optimal private profit.
+A change to another legal \(O(c,a)\) cannot improve the
+founder's payoff while \(L\) persists, by the private
+optimum and pairwise minimum technology; a change
+inducing \(M\) is also unprofitable, because sunk
+design expenditure is not recovered. The outside
+firm cannot profit by entering with any admissible
+open design: a global bound on its Cournot gross
+profit falls short of the necessary setup expense.
+The underlying all-real inequalities, rather than
+a finite investment grid, are reproduced in
+Appendix~\ref{app:bilateral}.
+
+These deviations exhaust the date-1 unilateral alternatives.
+The policy game at every other private history has a
+credible pure continuation, and a passed mandate induces
+strict compliance by Lemma~\ref{lem:adoption}.
+Hence the complementary bilateral region is an
+actual pure SPE, not just a hypothetically surviving
+governmental vote.
+
+When unanimity \(r=3\) is required, the same private
+configuration survives for any founder pair: the excluded
+government strictly votes NO, whatever \(\calA\).
+Conversely, the initial \(NNN\) profile is an SPE
+under every nonempty agenda set and every \(r\le3\).
+All governments strictly support \(M\) there; a
+unilateral initial developer still faces \(M\),
+with the same public market return but an additional
+irreversible expense \(\phi a_i^2/2\).
+This completes the proof of Proposition~\ref{prop:agenda}.
+
+\subsection{Equilibrium sets and constitutional change}\label{subsec:constitution}
+
+The private equilibrium protected by a single outsider
+agenda holder does not mean the two founding
+governments would prefer regional separation.
+Both would adopt the public interface if either
+could introduce it. The agenda holder's own
+national interest prevents that potential majority
+from exercising its votes.
+
+Granting the right to propose to any second government
+removes this bottleneck. The effect goes beyond reversing
+a vote at an already installed private standard:
+a previously privately optimal regional investment
+profile ceases to be an equilibrium of the
+full sequential game. Constitutionally allocated
+agenda power changes what firms choose to develop,
+even when private engineering costs, markets, and
+available interfaces remain unchanged.
+
+None of this implies that a broader agenda is
+world-welfare improving. With unanimity or narrow
+agenda control, RS and IS equilibria coexist; a
+constitutional comparison must account for the
+initial sunk investments supporting each.
+The relevant welfare question is not just whether
+a mandate would be attractive after a regional
+standard has already been installed.

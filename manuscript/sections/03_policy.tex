@@ -1,0 +1,139 @@
+\section{Compliance and national policy incentives}\label{sec:policy}
+
+We begin with the continuation game after private investment. Two distinctions are central. A firm that has already invested in the open family faces a different incremental cost from a firm that has not invested. Moreover, a government's desire to replace a particular private standard is not sufficient to infer that such a standard can arise in a pure equilibrium of the \emph{preceding} investment game.
+
+\subsection{A public mandate is implemented}\label{subsec:adoption}
+
+Following a public mandate, an active compliant firm uses \(O(1,0)\); a noncompliant firm exits. With no other compliant producers, the firm's gross Cournot return is \(3/(4m)\). When one or two other firms comply, its operating return is, respectively,
+\begin{equation}
+ \pi_I^{(2)}
+ =3m\left(\frac{1+\rho}{2m+\gamma_0-v}\right)^2,
+ \quad
+ \pi_I^{(3)}
+ =3m\left(\frac{1+\rho}{2(m+\gamma_0-v)}\right)^2.
+ \label{eq:adoption-profits}
+\end{equation}
+On (\ref{eq:baseline-box}), the isolated-adopter return is the smallest of the three. No initial history can require an \(N\) firm to spend more than \(K+\phi/2\) to comply, or a previous \(O\) firm to spend more than \(\phi/2\) in additional outlays. Since
+\begin{equation}
+ \frac{3}{4m}=\frac{25}{33}
+ >\frac{14}{25}+\frac{7}{100},
+ \label{eq:adoption-margin}
+\end{equation}
+adoption is strictly preferable to exit regardless of the other firms' actions.
+
+\begin{lemma}[Mandatory compliance]\label{lem:adoption}
+For every initial technology profile and every parameter in
+(\ref{eq:baseline-box}), all firms' compliance with an enacted public
+mandate is the unique Nash continuation of the compliance subgame.
+\end{lemma}
+\begin{proof}
+Equation (\ref{eq:adoption-profits}) computes the operating payoff for
+each possible number of other adopters. Inequality
+(\ref{eq:adoption-margin}) compares their minimum with the largest
+incremental installation cost faced by any firm. Sunk costs do not
+change the payoff from compliance versus exit. Hence compliance is
+strictly dominant for each firm, and its unique Nash profile consists
+of three adopters.
+\end{proof}
+
+The induced public Cournot quantities and national welfare are therefore those in (\ref{eq:qi})--(\ref{eq:WI}), independently of the prior private designs. Let \(\mathcal W_i^L(h)\) denote country \(i\)'s payoff if intervention does not occur at the observed initial history \(h\). Define its net policy gain
+\begin{equation}
+ \Delta_i(h)=\mathcal W_i^M(h)-\mathcal W_i^L(h).
+ \label{eq:policy-gain}
+\end{equation}
+Our explicit motion and tie conventions imply the public mandate passes if and only if
+\begin{equation}
+ \left|\{i:\Delta_i(h)\ge0\}\right|\ge r
+ \quad\text{and}\quad
+ \calA\cap\{i:\Delta_i(h)\ge0\}\ne\varnothing.
+ \label{eq:vote-rule}
+\end{equation}
+This simple expression will help isolate the role of agenda power. It applies \emph{at a fixed history}; later we must ask which histories are privately supportable.
+
+\subsection{Histories with at most one private developer}\label{subsec:zero-one}
+
+When the initial profile has no developers or only one, there is no compatible private pair. The Cournot matrix remains at its all-\(N\) values, even if one firm has sunk an open-technology development cost. Let \(W_N^g\) be one country's initial gross firm-profit-plus-consumer-surplus value when all products have \(z_i=1\) and off-diagonal \(M_{ij}=\gamma_0\). Then
+\begin{equation}
+ q_N=\frac{1}{2(m+\gamma_0)},\quad
+ W_N^g=3m q_N^2+
+ \frac{3}{2}(m+2\gamma_0)q_N^2.
+ \label{eq:WN}
+\end{equation}
+An initially \(N\) country's net policy gain from \(M\) is
+\[
+ \Delta_N=W_I-K-W_N^g.
+\]
+For an initial \(O(c,a)\) developer, comparing the two \emph{same-sunk-cost} histories yields
+\[
+ \Delta_O=W_I-W_N^g+\frac{\phi c^2}{2}
+         =\Delta_N+K+\frac{\phi c^2}{2}.
+\]
+Both gains are strictly positive throughout (\ref{eq:baseline-box}), since \(W_I-W_N^g>K_{\max}=.56\). Thus all governments vote YES after zero or one private developer, irrespective of the constitution's nonempty agenda set and quorum.
+
+\begin{lemma}[Unanimous demand for intervention at sparse histories]
+\label{lem:sparse}
+After any initial profile with zero or one privately developed open
+interface, the three national governments strictly prefer the public
+mandate. Hence every nonempty agenda set and every quorum \(r\le3\)
+enacts \(M\).
+\end{lemma}
+The strict comparison is the same after any feasible \(O(c,a)\)
+singleton investment: private compatibility externalities are absent
+until a second open developer arrives.
+
+\subsection{A privately optimal bilateral regional standard}\label{subsec:bilateral}
+
+Consider firms 1 and 2 developing a common \(O(1,a)\), while firm 3 remains undeveloped. Set
+\begin{equation}
+ b=\gamma_0+\kappa a-v,\qquad d=\gamma_0-\eta a,
+ \qquad z=1+\rho,\qquad
+ D=2m(2m+b)-2d^2.
+ \label{eq:bilateral-definitions}
+\end{equation}
+Solving (\ref{eq:cournot-foc}) for the two insiders and the outsider gives
+\begin{equation}
+ x(a,\eta)=\frac{2mz-d}{D},
+ \qquad
+ y(a,\eta)=\frac{2m+b-2dz}{D}.
+ \label{eq:xy}
+\end{equation}
+Here \(x\) is either founder's quantity in each national market, and \(y\) is the outsider's. National consumer surplus is
+\begin{equation}
+ C_R(a,\eta)
+ =(m+b)x^2+2dxy+\frac{m}{2}y^2.
+ \label{eq:CR}
+\end{equation}
+The founder's total private return before the fixed setup \(K\), and the outsider's gross profit, are
+\begin{equation}
+ f(a,\eta)=3m x^2-\frac{\phi}{2}(1+a^2),
+ \qquad
+ \pi_O(a,\eta)=3m y^2.
+ \label{eq:private-returns}
+\end{equation}
+
+For our parameter rectangle, an installed bilateral open cohort chooses full compatibility \(c=1\) and a unique interior commonality level
+\begin{equation}
+ a_R^*(\eta)\in(.25,.61),\quad
+ f_a(a_R^*(\eta),\eta)=0,\quad
+ f_{aa}<0,\quad \frac{da_R^*}{d\eta}>0.
+ \label{eq:a-star}
+\end{equation}
+These claims concern the constrained bilateral design maximization, not the complete six-player game. The global one-dimensional optimum, including all design-boundary checks, is verified in Appendix~\ref{app:bilateral}.
+
+At this observed optimal regional standard, the national policy gains take the form
+\begin{equation}
+ (\Delta_1,\Delta_2,\Delta_3)
+ =\left(B(\eta),B(\eta),K_V(\eta)-K\right),
+ \label{eq:bilateral-votes}
+\end{equation}
+where
+\begin{align}
+ B(\eta)
+ &=W_I-\frac{\phi}{2}a_R^*(\eta)^2
+       -f(a_R^*,\eta)-C_R(a_R^*,\eta),
+       \label{eq:B}\\
+ K_V(\eta)
+ &=W_I-\pi_O(a_R^*,\eta)-C_R(a_R^*,\eta).
+       \label{eq:KV}
+\end{align}
+The two founders' governments strictly prefer the public mandate, \(B(\eta)>0\), while the excluded government's gain \(K_V(\eta)-K\) is strictly negative on (\ref{eq:baseline-box}). The underlying inequalities are certified uniformly over the entire privately optimal design enclosure, not inferred from a single numerical illustration. They deliver exactly two favorable governments. Whether that majority can translate its preferences into policy depends on the proposal entitlement set.

@@ -1,0 +1,118 @@
+\section{The model}\label{sec:model}
+
+We consider three countries, indexed by \(i\in\{1,2,3\}\), each hosting one firm and one national government. Firms sell in three identical national product markets. The countries differ in the technological choices made by their firms but not in consumer preferences or the underlying demand parameters. The symmetry of national markets keeps the distributional conflict in the model tied to technology rather than country size.
+
+\subsection{Technology choices and irreversible expenditure}\label{subsec:technology}
+
+At date 1, firms simultaneously choose either \(N\), which entails no private development, or an open design
+\begin{equation}
+ O(c_i,a_i),\qquad 0\leq a_i\leq c_i\leq 1.
+ \label{eq:action}
+\end{equation}
+The first attribute, \(c_i\), determines the potential compatibility-related demand benefit; \(a_i\) measures common design investment that changes the intensity of competition with compatible and noncompatible producers. They are real physical stocks rather than freely reversible announcements. An initial open developer spends
+\begin{equation}
+ I(c_i,a_i)=K+\frac{\phi}{2}(c_i^2+a_i^2),
+ \qquad K>0,\quad \phi>0.
+ \label{eq:initial-investment}
+\end{equation}
+A firm choosing \(N\) spends nothing. The investment is sunk before any regulatory vote. The feasible triangle \(a_i\leq c_i\) prevents a firm from choosing more commonality than compatibility capacity.
+
+The institution includes a legally available public interface, \(O(1,0)\). Neither its legal existence nor its design is chosen by the governments in this paper. A private investor and the public reference use the same open technological family. Therefore, after a mandate, a firm that initially developed \(O(c_i,a_i)\) need only complete its missing compatibility capacity. Its \emph{additional} compliance expense is
+\begin{equation}
+ R_i^{O}=\frac{\phi}{2}(1-c_i^2).
+ \label{eq:retrofit}
+\end{equation}
+There is no second \(K\), and the sunk cost of \(a_i\) is not reimbursed. A firm that initially chose \(N\) must instead pay \(K+\phi/2\) to become compliant. Consequently the \emph{total} expenses along the two paths to the public interface are
+\begin{equation}
+ C_i^M =
+ \begin{cases}
+  K+\phi/2, &\text{if the initial choice was }N,\\
+  K+\phi(1+a_i^2)/2, &\text{if the initial choice was }O(c_i,a_i).
+ \end{cases}
+ \label{eq:final-cost}
+\end{equation}
+The difference \(\phi a_i^2/2\) is the nonrecoverable cost of an attribute that is no longer used under the public reference. This equality will matter for both initial investment deviations and welfare comparisons.
+
+\subsection{Demand and Cournot competition}\label{subsec:demand}
+
+Conditional on the technologies active after the policy stage, write inverse demand in each national market as
+\begin{equation}
+ p_i=z_i-\sum_{j=1}^3 H_{ij}q_j,\qquad
+ H_{ii}=m\equiv1-v,\qquad H_{ij}=H_{ji}.
+ \label{eq:inverse-demand}
+\end{equation}
+Here \(q_i\) is firm \(i\)'s quantity in one market; symmetric quantities are produced in all three markets. The demand matrix \(H\) is positive definite throughout the parameter domain we use. An active firm maximizes \(3p_iq_i\) before investment expense, yielding the interior Cournot condition
+\begin{equation}
+ 2m q_i+\sum_{j\ne i}H_{ij}q_j=z_i.
+ \label{eq:cournot-foc}
+\end{equation}
+At an interior equilibrium the firm's \emph{gross} profit summed over the three markets is \(3m q_i^2\), while consumer surplus in each national market is
+\begin{equation}
+ CS(q,H)=\frac{1}{2}q^{\mathsf T}Hq.
+ \label{eq:cs}
+\end{equation}
+The three-market profit and one-market consumer-surplus terms reflect their distinct geographic incidences, not a planner weighting chosen after the fact.
+
+We specify the technologies' effect on \(z\) and \(H\) as follows. If no two firms have developed an open design, \(z_i=1\) and \(H_{ij}=\gamma_0\) for \(i\ne j\). If exactly two firms, say 1 and 2, initially develop open designs, their effective shared stocks are
+\[
+ c_{12}=\min\{c_1,c_2\},\qquad a_{12}=\min\{a_1,a_2\}.
+\]
+They then have intercepts \(z_1=z_2=1+\rho c_{12}\), \(z_3=1\), and demand cross-effects
+\begin{equation}
+ H_{12}=\gamma_0+\kappa a_{12}-vc_{12},
+ \qquad
+ H_{13}=H_{23}=\gamma_0-\eta a_{12}.
+ \label{eq:two-cross-effects}
+\end{equation}
+Thus increased commonality has two countervailing commercial implications: it raises the substitution between insiders through \(\kappa a_{12}\), but reduces the cross-effect with the outsider through \(\eta a_{12}\). These are reduced-form competition primitives. No claim is made that this matrix is the unique microfoundation of standards competition.
+
+If all three firms develop open designs, each pair has \(c_{ij}=\min\{c_i,c_j\}\) and \(a_{ij}=\min\{a_i,a_j\}\). In that case
+\begin{equation}
+ H_{ij}=\gamma_0+\kappa a_{ij}-vc_{ij}
+ \quad (i\ne j),\qquad
+ z_i=1+\rho\,\max_{j\ne i}c_{ij}.
+ \label{eq:three-cross-effects}
+\end{equation}
+There is no outsider-separation term \(-\eta a_{12}\) when all firms share the open family. This distinction is intentional: \(\eta\) measures the differentiation of a bilateral cohort \emph{relative to an outsider}. Formulas (\ref{eq:two-cross-effects})--(\ref{eq:three-cross-effects}) are part of the model, not consequences of an unmentioned global platform demand system.
+
+If a public mandate \(M\) is adopted and all firms comply, everyone uses \(O(1,0)\). The demand parameters then reduce to
+\[
+ z_i=1+\rho,\qquad H_{ii}=m,\qquad
+ H_{ij}=\gamma_0-v,\quad i\ne j.
+\]
+The resulting per-market output, firm gross profit, and consumer surplus are
+\begin{align}
+ q_I&=\frac{1+\rho}{2(m+\gamma_0-v)}, \label{eq:qi}\\
+ \pi_I^g&=3m q_I^2,\qquad
+ CS_I=\frac{3}{2}\{m+2(\gamma_0-v)\}q_I^2.
+ \label{eq:public-gross}
+\end{align}
+It will be convenient to define the national public return \emph{net of the new compatibility stock but before setup expenditure}
+\begin{equation}
+ W_I\equiv\pi_I^g+CS_I-\frac{\phi}{2}.
+ \label{eq:WI}
+\end{equation}
+A previously noninvesting country obtains \(W_I-K\) under full public compliance. A previously investing country instead obtains \(W_I-K-\phi a_i^2/2\). Both expressions include the same historical sunk investments as the continuation accounts that they are compared with.
+
+\subsection{Government decisions and equilibrium concept}\label{subsec:timing}
+
+At date 2, governments observe the entire vector of initial technology choices. A constitution consists of a nonempty \emph{agenda set} \(\calA\subseteq\{1,2,3\}\) and a \emph{YES quorum} \(r\in\{1,2,3\}\). Every government in \(\calA\) may independently introduce the legally available public mandate; a mandate passes if at least \(r\) governments vote YES. A government always proposes an implementable mandate if it weakly gains from doing so, and votes YES when its national welfare under the mandate weakly exceeds the status quo. These tie rules are maintained throughout. Since the possibility of enactment is common knowledge, this deterministic continuation may be represented by a sequence of individually available public motions and national votes; the legal proposal right does not confer bargaining power over the technical content.
+
+The policy alternatives are \(L\) (no government intervention, private designs remain in place) and \(M\) (all production must use \(O(1,0)\)). After \(M\), firms simultaneously choose compliance or exit; the Cournot stage follows. Under \(L\), firms compete with their installed technologies. Each government's objective is the net profit of its domestic firm across the three markets plus consumer surplus in its own national market:
+\begin{equation}
+ \mathcal W_i=3m q_i^2+CS(q,H)
+ -\bigl(\text{initial sunk and subsequent compliance costs paid by firm }i\bigr).
+ \label{eq:government-welfare}
+\end{equation}
+There are no fiscal transfers across governments, no product patents or licensing royalties, and no privately negotiated recognition agreement. The equilibrium concept is a \emph{pure-strategy subgame-perfect Nash equilibrium} (SPE) over firms' continuous date-1 choices and every subsequent policy and compliance history. A final public-IS \emph{outcome} is not the same object as a unique vector of initial investments.
+
+\subsection{The certified parameter region}\label{subsec:parameters}
+
+Our main institutional classification holds for
+\begin{equation}
+ (v,\gamma_0,\kappa,\rho,\phi)
+ =(.01,.14,.02,.32,.14),\qquad
+ \eta\in[.10,.14],\quad K\in[.54,.56].
+ \label{eq:baseline-box}
+\end{equation}
+The theorem is uniform in \(\eta,K\) on this rectangle and in all firms' admissible initial designs. It is \emph{not} a statement about every economically conceivable value of network effects or investment expense. Section~\ref{sec:robustness} describes a separately certified, narrow multi-parameter neighborhood.

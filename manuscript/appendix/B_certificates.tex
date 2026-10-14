@@ -1,0 +1,102 @@
+\section{Exact certificates and reproducibility}\label{app:certificates}
+
+The proofs in this paper combine conventional algebraic reductions with computer-assisted \emph{sign verification on continuous domains}. A passing script is not by itself a proof of the connection between demand primitives and economic conclusions. This appendix identifies the sign targets, coordinate domains, and the bridge from a certified polynomial inequality to the statements in the text.
+
+\subsection{From Cournot quantities to polynomial signs}
+
+For a candidate private investment history, the interior Cournot solution has rational quantities \(q_i=Q_i/D\), where \(D>0\) is the determinant of its positive-definite first-order matrix. The national policy gain for a developer with installed compatibility stock \(c_i\) is
+\[
+ \Delta_i=G_I-3m\frac{Q_i^2}{D^2}
+ -CS(q,H)-\frac{\phi}{2}(1-c_i^2).
+\]
+The developer's fixed \(K\) cancels from its own \(M-L\) comparison: it is sunk under either policy. Multiplying by \(2D^2>0\) yields
+\begin{equation}
+ \mathcal N_i
+ =\left(2G_I-\phi(1-c_i^2)\right)D^2
+  -6mQ_i^2-2D^2 CS(q,H).
+ \label{eq:certificate-object}
+\end{equation}
+This is the precise object certified in the aligned and crossed three-developer cases. A nonnegative \(\mathcal N_i\) implies \(\Delta_i\ge0\), not strict approval in all boundary histories. Our government YES-on-tie convention supplies the remaining implication.
+
+For two identical developers, (\ref{eq:app-xy}) gives \(D\), \(X\), and the outsider's numerator explicitly. The low-\(a\) political certificate is \(D^2\mathcal B>0\); the high-\(a\) private design certificate is \(D^3(-\partial_a f_c)>0\). The determinant is positive throughout their transformed feasible rectangles. Together these certificates implement the low/high-\(a\) dichotomy in Appendix~\ref{app:two-investors}.
+
+\subsection{Tensor Bernstein sign verification}\label{app:bernstein}
+
+Let \(P(t_1,\ldots,t_d)\) be a rational polynomial defined on the full unit cube \([0,1]^d\) and of coordinatewise degrees \((n_1,\ldots,n_d)\). Write it in the monomial and tensor-Bernstein bases:
+\[
+ P(t)=\sum_{\alpha}p_{\alpha}t^{\alpha}
+     =\sum_{\beta}b_{\beta}
+       \prod_{\ell=1}^d
+        \binom{n_\ell}{\beta_\ell}
+        t_\ell^{\beta_\ell}(1-t_\ell)^{n_\ell-\beta_\ell}.
+\]
+The exact change of basis is
+\begin{equation}
+ b_{\beta}
+ =\sum_{\alpha\le\beta}
+ p_{\alpha}\prod_{\ell=1}^d
+ \frac{\binom{\beta_\ell}{\alpha_\ell}}
+      {\binom{n_\ell}{\alpha_\ell}}.
+ \label{eq:bernstein-transform}
+\end{equation}
+Every tensor-Bernstein basis function is nonnegative on the unit cube, so \(b_\beta\ge0\) for all indices implies \(P(t)\ge0\) for every real point of that cube. Strictly positive coefficients yield strict positivity on the cube. The converse is not asserted: a nonnegative polynomial can have some negative Bernstein coefficients in a particular degree basis. Hence the method supplies sufficient \emph{sign certificates}, not an exact numerical boundary for every model regime.
+
+For the two-developer test, transform
+\[
+ \eta=.10+.04t,\quad
+ (a,c)=(.75u,w)\quad\text{for low }a,
+\]
+and
+\[
+ \eta=.10+.04t,\quad
+ (a,c)=(.75+.25u,\ .75+.25w)
+ \quad\text{for high }a.
+\]
+Each transformed cube contains the corresponding feasible triangle and the independent deviations needed by the proof. The exact baseline signs are provided by
+\path{code/stage18_agenda_control_majority_coalition_spe.py}
+and
+\path{code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py}.
+The three-developer aligned and crossed parametrizations in Appendix~\ref{app:global} map all residual tied-maximum cases to \([0,1]^4\).
+Their exact national policy numerators are those in
+(\ref{eq:aligned-numerator}) and (\ref{eq:crossed-numerators}),
+verified by \path{code/stage21_three_open_global_no_private_spe.py}.
+
+The subsequent joint-parameter certificate simultaneously transforms the parameter intervals for \(\rho\) and \(\kappa\), and checks two \(\phi\) endpoints. Each relevant numerator is affine in \(\phi\), so sign verification at both endpoints proves the whole intervening interval. The 5-dimensional private and 6-dimensional triple-developer coefficient checks total \(251{,}436\) exact rational entries over those two endpoints. These counts are a reproducibility property of the chosen certificate representation, not evidence that the economic content grows proportionally with the number of coefficients.
+
+\subsection{Identically zero coefficients and the local seven-parameter box}
+
+Extending the sign tests to variable \(v,\gamma_0\) requires care at the boundaries where the private interface already implements public \(O(1,0)\). For some three-developer expressions, Bernstein coefficients are exactly zero at these boundaries. It would be invalid to assume that any weak inequality must survive a generic coefficient perturbation. The local-perturbation audit instead first clears the positive public-welfare denominator \(H^2=(1+\gamma_0-2v)^2\). It checks algebraically, with symbolic \(v,\gamma_0\), that all previously zero coefficient faces correspond to \emph{identically zero} national policy gains at a public-identical technical profile.
+
+At the baseline \(v=.01,\gamma_0=.14\), every nonzero coefficient of the lifted sign polynomials exceeds the rational lower bound \(1/50\). The code then constructs coefficient one-norm upper bounds for the partial derivatives with respect to \(v,\gamma_0\), using the inequalities
+\[
+ \|P Q\|_1\le\|P\|_1\|Q\|_1,\qquad
+ \|\partial_v(PQ)\|_1
+ \le \|\partial_vP\|_1\|Q\|_1+\|P\|_1\|\partial_vQ\|_1.
+\]
+The sum of the derivative bounds for each sign polynomial is below \(13{,}000\) over a wider parameter rectangle. Since every monomial-to-Bernstein conversion coefficient belongs to \([0,1]\), the variation in any Bernstein coefficient when both \(v\) and \(\gamma_0\) move by at most \(10^{-6}\) is below \(0.013<1/50\). The positive coefficients remain positive and the structural zeros remain zero. This argument establishes the narrow additional \(v,\gamma_0\) intervals in (\ref{eq:robust-box}) without relying on a finite numerical grid.
+
+Separate exact inequalities verify that all governments prefer \(M\) at zero- and one-developer histories in this box, that every firm strictly complies after \(M\), and that the Cournot solution remains strictly interior. The full private-equilibrium \emph{necessity} construction under a single agenda holder is not transported to the seven-parameter box, as stated in the main text.
+
+\subsection{Welfare threshold roots and audit trail}
+
+The accompanying welfare-cutoff source defines \(K_V\), \(K_E\), and \(K_W\) using (\ref{eq:KV}), (\ref{eq:ke}), and (\ref{eq:kw}), and verifies symbolically the identities
+\[
+ K_E-K_V=2B,\qquad K_W-K_E=\phi a^2.
+\]
+The derivatives of each cutoff in \(\eta\) and \(a\) have exactly verified negative signs over the entire enclosure \(\eta\in[.10,.14]\), \(a\in[.25,.61]\), using both numerator and denominator Bernstein coefficients. The privately optimal root \(\aR(\eta)\) is bracketed between exact rationals with \(f_a\) positive at the lower bracket and negative at the upper bracket. Strict concavity guarantees exactly one root in each bracket; substituting the appropriate endpoints into the monotone cutoffs proves the two distinct \(\eta\) crossing intervals stated in Proposition~\ref{prop:thresholds}.
+
+The exact scripts for the principal chain are:
+\begin{quote}\small
+\noindent\path{code/stage11_eta_k_phase_certificates.py}\\
+\path{code/stage15_three_country_veto_minimal_continuous_spe.py}\\
+\path{code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py}\\
+\path{code/stage21_three_open_global_no_private_spe.py}\\
+\path{code/stage25_seven_parameter_norm_robustness.py}\\
+\path{code/stage26_nested_policy_welfare_cutoffs.py}\\
+\path{code/stage27_agenda_hitting_set_spe_classification.py}
+\end{quote}
+Their version-controlled source files fix the polynomial coordinates, rational parameter bounds, degree assignments, coefficient checks and assertion conditions. The source code is included to make the derivations reproducible; successful automated execution should not be confused with an independent economic validity or literature-novelty certification.
+
+\subsection{Proof boundaries}
+
+The tests do \emph{not} certify all real parameter values outside the stated boxes; a negative coefficient at an outside point would not by itself prove an economic equilibrium change. They do not rule out mixed SPEs, assume no unmodeled patents or licensing, and cannot establish the first occurrence of a similar theorem in the literature. In particular, if the model is extended to a government-endogenous public design or political transfers, the policy gains in (\ref{eq:policy-gain}) would no longer describe the same continuation game and a new equilibrium analysis would be required.
