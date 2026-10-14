@@ -105,6 +105,14 @@ def verify_all_continuous_profit_bounds():
     assert q3.subs(c,1)==qI.subs({c:1,a:0})
     assert q3.subs(c,0)>0
     assert x12.subs(c,0)>0
+    # Active KKT support for EVERY entrant c: q3 strictly increases
+    # (net profit derivative below also positive); q3(1)=full IS
+    # amount <1, t(c)<=g, and therefore incumbent quantities
+    # x12=(1+rho-t*q3)/A0 >= (1+rho-g)/A0 >0.
+    strict_sign(S.diff(q3,c),c,Q(0),Q(1),
+                'heterogeneous outsider entrant Cournot q3 increasing')
+    assert q3.subs(c,1)<Q(1)
+    assert (1+rho-g)/A0>0
     strict_sign(S.diff(3*m*q3*q3-phi*c*c/2,c),
                 c,Q(0),Q(1),
                 'outsider X adoption net profit increases in c up to 1')
