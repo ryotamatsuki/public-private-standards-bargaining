@@ -1,0 +1,24 @@
+name: stage4-ip-choice-independent-platforms
+on:
+  push:
+    paths:
+      - code/stage4_endogenous_ip_and_independent_platforms.py
+      - requirements.txt
+      - .github/workflows/stage4-ip-choice-independent-platforms.yml
+  pull_request:
+    paths:
+      - code/stage4_endogenous_ip_and_independent_platforms.py
+      - requirements.txt
+      - .github/workflows/stage4-ip-choice-independent-platforms.yml
+permissions:
+  contents: read
+jobs:
+  exact-ip-and-matching-equilibria:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python code/stage4_endogenous_ip_and_independent_platforms.py
