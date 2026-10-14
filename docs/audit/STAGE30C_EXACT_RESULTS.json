@@ -296,7 +296,7 @@
           "1"
         ],
         [
-          "3/10",
+          "0",
           "61/100"
         ],
         [
@@ -319,7 +319,7 @@
       "visited": 1,
       "leaf_count": 1,
       "maximum_depth": 0,
-      "minimum_leaf_lower": "973961442218981739/62500",
+      "minimum_leaf_lower": "13423350832251/5",
       "leaves": [
         {
           "box": [
@@ -328,7 +328,7 @@
               "1"
             ],
             [
-              "3/10",
+              "0",
               "61/100"
             ],
             [
@@ -337,7 +337,7 @@
             ]
           ],
           "minimum_faces": [],
-          "lower": "973961442218981739/62500"
+          "lower": "13423350832251/5"
         }
       ],
       "cover": {
@@ -548,7 +548,7 @@
     }
   ],
   "source_sha256": {
-    "stage30c_independent_exact.py": "f589b7db10472c241646c441b4ddc26d0453977fa6ae0fded26148cf63c63ec0",
+    "stage30c_independent_exact.py": "81300e659883d1421296d987c0bbac8b658750ca20542690422b3671ad93ed04",
     "stage30c_independent_symbols.py": "04c2b1942f8151102233bd15288466c5c7725dddf6b75cbee9b868f6510015eb"
   }
 }

@@ -198,7 +198,7 @@ def main():
         'founder_policy_positive':(f['B'],[(Q(0),Q(1)),(Q(0),Q(61,100)),(Q(1,10),Q(7,50))]),
         'world_T_a_positive':(f['T_a'],[(Q(0),Q(1)),(Q(0),Q(61,100)),(Q(1,10),Q(7,50))]),
         'F_ac_positive_above_030':(f['F_ac'],[(Q(0),Q(1)),(Q(3,10),Q(61,100)),(Q(1,10),Q(7,50))]),
-        'canonical_veto_below_K_min':(s.Rational(27,50)-f['V'],[(Q(1),Q(1)),(Q(3,10),Q(61,100)),(Q(1,10),Q(7,50))])}
+        'canonical_veto_below_K_min':(s.Rational(27,50)-f['V'],[(Q(1),Q(1)),(Q(0),Q(61,100)),(Q(1,10),Q(7,50))])}
     results={'domain':'baseline five constants, eta=[.10,.14], K=[.54,.56]',
              'proof_assistant':'NOT IMPLEMENTED; preliminary target map only',
              'scalar_bounds':scalar_bounds(),'certificates':{}}

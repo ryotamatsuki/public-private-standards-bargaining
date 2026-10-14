@@ -50,3 +50,18 @@ The final direct evaluator also records a three-developer private history
 Depending on the institution, withdrawal switches policy to M or leaves L;
 both are explicitly evaluated. These are profitable-deviation demonstrations,
 not alleged equilibrium counterexamples.
+
+## Post-checkpoint boundary and reconciliation work
+
+After construction-code comparison, the independent c1 outsider-rejection
+certificate was expanded from a∈[.30,.61] to a∈[0,.61] to cover the full
+canonical low-commonality family. The same primitive/Horner proof succeeds;
+the final exact results file is17,266 bytes. This expansion is recorded rather
+than misdated as part of the pre-comparison checkpoint.
+
+Six additional boundary profiles generated18 deviation searches, with1
+nonconvergence retained in `STAGE30C_BOUNDARY_RESULTS.json`. Thus the combined
+final batches have198 searches and9 numerically UNRESOLVED cases. No boundary
+candidate gain exceeded the attack threshold. The failed blanket F_ac sign,
+weak y_c boundary, and c1-optimum reuse at c<1 are independently reproduced.
+The scope counterexample's positive gain is now an exact rational number.
