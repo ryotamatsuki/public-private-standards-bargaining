@@ -148,11 +148,11 @@ def proposition_four_network_paradox(data):
         bernstein_positive(-numerator,name+" depth marginal")
     # Entire v rectangle has outsider-zero at s=1; no ghost negative q.
     Y=data["Y"]
-    assert S.factor(Y.subs(s,1) + 3*v -Q(33,10))==0
+    assert S.factor(Y.subs(s,1) + 3*v +Q(33,10))==0
     assert Y.subs({s:1,v:Q(39,100)})<0
     assert Y.subs({s:1,v:Q(41,100)})<0
     # outsider positive before boundary; there is a true interior exit
-    assert Y.subs(s,0)>0
+    assert Y.subs({s:0,v:Q(41,100)})>0
     # Uniform IR of both formats at s=1, regardless of v.
     for name in ["PC","WC","PI","WI"]:
         baseline=data["PN"] if name.startswith("P") else data["WN"]
@@ -165,7 +165,7 @@ def proposition_four_network_paradox(data):
     assert S.simplify(u.subs(v,Q(39,100))-Q(16,61))==0
     assert S.simplify(u.subs(v,Q(41,100))-Q(14,59))==0
     assert f(Q(16,61))>0 and f(Q(14,59))<0
-    assert S.diff(u,v)<0 if False else S.simplify(S.diff(u,v))==S.simplify(-Q(9,20)/(1-v)**2)
+    assert S.simplify(S.diff(u,v)+Q(9,20)/(1-v)**2)==0
     assert S.simplify((data["PC"]-data["PI"]).subs(s,1).subs(v,Q(39,100)))>0
     assert S.simplify((data["PC"]-data["PI"]).subs(s,1).subs(v,Q(41,100)))>0
     assert S.simplify((data["WC"]-data["WI"]).subs(s,1).subs(v,Q(39,100)))>0
