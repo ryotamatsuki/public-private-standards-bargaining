@@ -1,0 +1,57 @@
+[
+  {
+    "script": "code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py",
+    "state": "PASS",
+    "seconds": 3.822,
+    "last_lines": [
+      "PASS actual full 2x2 institutional policy comparison majority all three entitled RS retained pair count 0 by pair {(0, 1): True, (0, 2): True, (1, 2): True}",
+      "PASS public IS NNN -> M genuine SPE survives 4 constitutional variants; Cournot firm unilateral deviation bounds independent of proposal rights",
+      "MAIN THEOREM EXACT GLOBAL TWO-O ONE-N EXCLUSION: 3-country SIMPLE MAJORITY + UNIVERSAL PROPOSAL RIGHTS yields NO private bilateral OPEN RS SPE for ANY real pair O(c1,a1), O(c2,a2) 0<=ai<=ci<=1, full eta [.10,.14],K [.54,.56], under NO TREATY transfers.",
+      "LIMIT: IS=N,N,N public-M SPE PROVED, not exclusive; all-3-O partial technologies, novel asymmetric standards or mixed initial equilibrium outcomes not classified."
+    ]
+  },
+  {
+    "script": "code/stage21_three_open_global_no_private_spe.py",
+    "state": "PASS",
+    "seconds": 5.268,
+    "last_lines": [
+      "ST21 THEOREM: No triple-O private nonintervention L pure SPE",
+      "ST21 COROLLARY (with ST19/ST20 and NNN->M existence):",
+      "Every pure SPE final outcome of reduced game is public mandated IS;",
+      "not unique initial choices and not necessarily M at every offpath history."
+    ]
+  },
+  {
+    "script": "code/stage27_agenda_hitting_set_spe_classification.py",
+    "state": "PASS",
+    "seconds": 6.265,
+    "last_lines": [
+      "PASS unique M adoption Nash=all 3 conform across all initial N/O histories in rectangle",
+      "THEOREM ST27.1 all-real private O/N pure-SPE public-IS TERMINAL UNIQUENESS if q<=2 and |A|>=2; at least one NNN\u2192M SPE exists for all q,A.",
+      "PASS incentive-welfare non-equivalence: agenda >=2 uniquely enforces public IS even when alternative feasible private RS SPE would yield HIGHER ex-ante total welfare in the sole-agenda/unanimity regime.",
+      "ST27 MAIN: under baseline eta,K certified rectangle q=1 or2: public IS only pure-SPE terminal outcome iff |agenda|>=2; q=3: three canonical RS pair SPE coexist with public IS. Sharp constitutional minimum agenda size=2, not a private technology phase-transition cutoff."
+    ]
+  },
+  {
+    "script": "code/stage25_seven_parameter_norm_robustness.py",
+    "state": "PASS",
+    "seconds": 48.296,
+    "last_lines": [
+      "PASS exact 7D perturbation derivative norm 3O-cross1 dv 9068661423186331421101590891/1000000000000000000000000 dg 747244556280721514969892291/250000000000000000000000 coefficient change < 2411527929661843496196232011/200000000000000000000000000000",
+      "PASS exact 7D perturbation derivative norm 3O-cross2 dv 9068661423186331421101590891/1000000000000000000000000 dg 747244556280721514969892291/250000000000000000000000 coefficient change < 2411527929661843496196232011/200000000000000000000000000000",
+      "PASS exact 7D uniform national policy margin > 4879717257586623/356007624297600800 and conformity margin > 47029/990100",
+      "THEOREM ST25.1: unique final pure-SPE outcome public IS on 7D product rectangle [eta .10,.14; K .54,.56; phi .13,.30; rho .319,.321; kappa .019,.021; v .009999,.010001; gamma .139999,.140001]. No claim these certificate limits are economic cutoffs."
+    ]
+  },
+  {
+    "script": "code/stage26_nested_policy_welfare_cutoffs.py",
+    "state": "PASS",
+    "seconds": 7.176,
+    "last_lines": [
+      "PASS OBSERVED RS policy (not on-path SPE assertion), founders (0, 2) unanimity G1/all False False majority G1/all True True",
+      "PASS OBSERVED RS policy (not on-path SPE assertion), founders (1, 2) unanimity G1/all False False majority G1/all False True",
+      "ECONOMIC CONSTITUTIONAL WARNING: compare actual unanimity-RS vs majority-all public IS using EX-ANTE K_W, never retrofit K_E; in the latter constitution RS cannot be an initial pure SPE.",
+      "ST26 SUCCESS: three nested cutoffs KV<KE<KW; distinct ex-post/ex-ante eta-crossings; exact sunk-cost preference reversal; agenda/quorum matrix. Conditional on previously certified reduced game."
+    ]
+  }
+]
