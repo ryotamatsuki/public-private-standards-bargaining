@@ -58,8 +58,8 @@ def government_policy(gains,agenda,quorum):
     """
     assert agenda and all(i in N for i in agenda)
     assert quorum in QUORUMS and len(gains)==3
-    count=sum(x>=0 for x in gains)
-    proposers=sum(gains[i]>=0 for i in agenda)
+    count=sum(bool(x>=0) for x in gains)
+    proposers=sum(bool(gains[i]>=0) for i in agenda)
     return proposers>0 and count>=quorum
 
 def hitting_set_lemma():
@@ -68,7 +68,7 @@ def hitting_set_lemma():
         hit=all(set(pair)&agenda for pair in PAIRS)
         assert hit==(len(agenda)>=2),(agenda,hit)
         if len(agenda)==1:
-            complement=tuple(set(N)-agenda)
+            complement=tuple(sorted(set(N)-agenda))
             assert len(complement)==2
             assert not (set(complement)&agenda)
     print("PASS combinatorial MINIMUM hitting set size is TWO",
@@ -93,7 +93,7 @@ def exact_policy_regimes():
             expected=3 if q==3 else (1 if len(agenda)==1 else 0)
             assert len(retained)==expected,(q,agenda,retained)
             if q<=2 and len(agenda)==1:
-                assert tuple(set(N)-agenda) in retained
+                assert tuple(sorted(set(N)-agenda)) in retained
             print("PASS q",q,"proposal rights",sorted(agenda),
                   "canonical surviving RS founder pairs",retained,
                   "count",len(retained),flush=True)
