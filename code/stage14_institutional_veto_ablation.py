@@ -65,6 +65,20 @@ def theorem():
        "proprietary X incumbent VETO after fresh open implementation")
     bernstein_positive(gov_O_approval,
        "open O incumbent APPROVE (within-O downgrade adds no fee)")
+    bernstein_positive(S.diff(po+cs,eta),
+       "outsider government W rises DIRECTLY with eta")
+    bernstein_positive(S.diff(po+cs,a),
+       "outsider government W rises with endogenous design a")
+    # For optimally privately chosen a*(eta), a*'(eta)>0 by
+    # previous exact concavity/cross-derivative certificate.
+    # Consequently outsider's willingness to APPROVE public IS:
+    # K < K_veto(eta):=WI0 - (PO+CS_R)(a*(eta),eta)
+    # has a STRICTLY DECREASING K_veto curve across eta interval.
+    # Thus outside govt always VETOES inside Stage11 coexistence box,
+    # even though the separate social W ranking reverses within box.
+    print("THEOREM outsider public-vote cutoff",
+          "K_veto(eta)=WI0-(PO+CSR)(a*(eta),eta)",
+          "strictly DECREASES with eta across [.10,.14]",flush=True)
     a0=R(119,200)   # inside proved Stage11 root isolating bracket
     E0=R(7,50); K=R(11,20)
     winc=S.N((f+cs).subs({a:a0,eta:E0})-K,15)
