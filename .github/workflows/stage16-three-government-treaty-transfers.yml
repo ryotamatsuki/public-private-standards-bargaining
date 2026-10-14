@@ -1,0 +1,32 @@
+name: stage16-three-government-treaty-transfers
+on:
+  push:
+    paths:
+      - code/stage16_three_country_treaty_sidepayments_spe.py
+      - code/stage15_three_country_veto_minimal_continuous_spe.py
+      - code/stage14_institutional_veto_ablation.py
+      - code/stage11_eta_k_phase_certificates.py
+      - .github/workflows/stage16-three-government-treaty-transfers.yml
+  pull_request:
+    paths:
+      - code/stage16_three_country_treaty_sidepayments_spe.py
+      - code/stage15_three_country_veto_minimal_continuous_spe.py
+      - code/stage14_institutional_veto_ablation.py
+      - code/stage11_eta_k_phase_certificates.py
+      - .github/workflows/stage16-three-government-treaty-transfers.yml
+permissions:
+  contents: read
+jobs:
+  exact-rational-conditional-coordination-and-treaty-pledges:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install sympy
+      - run: python code/stage11_eta_k_phase_certificates.py
+      - run: python code/stage14_institutional_veto_ablation.py
+      - run: python code/stage15_three_country_veto_minimal_continuous_spe.py
+      - run: python code/stage16_three_country_treaty_sidepayments_spe.py
