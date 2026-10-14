@@ -1,0 +1,59 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,graphicx}
+\usepackage{microtype}
+\usepackage[round,authoryear]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\usepackage{xcolor}
+\setlength{\parindent}{1.35em}
+\setlength{\parskip}{0.15em}
+\setlength{\emergencystretch}{2em}
+\allowdisplaybreaks[1]
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{remark}[proposition]{Remark}
+\theoremstyle{definition}\newtheorem{assumption}{Assumption}
+\numberwithin{equation}{section}
+\DeclareMathOperator{\SPE}{SPE}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\1}{\mathbf{1}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\WI}{W_I}
+\newcommand{\KV}{K_V}
+\newcommand{\KE}{K_E}
+\newcommand{\KW}{K_W}
+\newcommand{\aR}{a_R^*}
+\newcommand{\ProofSource}[1]{\textit{Proof source:} #1.}
+\title{\textbf{Agenda Rights, Sunk Compatibility Investment,\\ and Public Standardization}}
+\author{Anonymous manuscript}
+\date{October 2026\\\small Working paper --- full draft, not a submission-ready proof audit}
+\begin{document}
+\maketitle
+\begin{abstract}
+International standardization can be decided after firms have sunk resources into partially compatible technologies. We study how proposal rights and voting requirements interact with such investments in a three-country Cournot oligopoly. Each firm either remains undeveloped or chooses an open technological design with two continuous attributes. Governments then decide whether to mandate an already available public interface. On a certified parameter region, we characterize the terminal outcomes of pure-strategy subgame-perfect equilibria for all admissible private investment profiles, including heterogeneous designs. When one or two affirmative votes suffice, public standardization is the only pure-equilibrium terminal outcome if and only if at least two governments can independently introduce the proposal. Unanimity instead sustains regional-standard equilibria. The institutional change need not raise world welfare. Three distinct cutoffs govern a nonmember government's veto, the efficiency of retrofitting after private investment, and the ex-ante welfare ranking of alternative investment paths. Their separation reflects irreversible design expenditure. The results are conditional on an open-technology game with a legally available public standard and do not cover proprietary standards, transfers, or mixed-strategy equilibria.
+\end{abstract}
+\noindent\textbf{Keywords:} compatibility standards; agenda setting; sunk investment; international coordination; oligopoly.\\
+\noindent\textbf{JEL:} L15; L13; F13; D72.
+\bigskip
+
+\input{sections/01_introduction}
+\input{sections/02_model}
+\input{sections/03_policy}
+\input{sections/04_equilibrium}
+\input{sections/05_welfare}
+\input{sections/06_robustness}
+\input{sections/07_conclusion}
+\clearpage
+\bibliographystyle{apalike}
+\bibliography{references}
+\clearpage
+\appendix
+\input{appendix/A_proofs}
+\input{appendix/B_certificates}
+\end{document}
