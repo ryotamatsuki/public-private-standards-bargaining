@@ -41,6 +41,7 @@ from functools import lru_cache
 from collections import Counter
 import sympy as S
 import stage5_integrated_independent_standards_and_government as mod
+ORIGINAL_CONTINUATION=mod.continuation
 
 Q=S.Rational
 m,g,v,k,eta,rho,phi=(Q(99,100),Q(7,50),Q(1,100),Q(1,50),
@@ -121,7 +122,7 @@ def theorem_global_deviation_bounds():
 def capital_retrofit(pre,policy,ref,flags,K,eta_F):
     # mod.original uses original repeated setup fee when post[i]!=ref.
     # Only OLD->NEW SAME O family cost is replaced.
-    initial=mod.continuation(pre,policy,ref,flags,K,eta_F)
+    initial=ORIGINAL_CONTINUATION(pre,policy,ref,flags,K,eta_F)
     p,w,q,cs,post=initial
     pp=list(p);ww=list(w)
     if policy in ('C','M'):
