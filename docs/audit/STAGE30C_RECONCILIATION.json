@@ -1,0 +1,55 @@
+{
+  "phase": "post primitives-first checkpoint db6f75d66d7f66f37fa8d8c21611519781880da3",
+  "no_production_solver_called": true,
+  "symbolic_object_equivalence": [
+    "x",
+    "y",
+    "C",
+    "F",
+    "B",
+    "V",
+    "T"
+  ],
+  "exact_witnesses_reconciled": [
+    {
+      "c": "1",
+      "a": "0",
+      "eta": ".14",
+      "K": ".55"
+    },
+    {
+      "c": "1",
+      "a": ".5",
+      "eta": ".14",
+      "K": ".55"
+    },
+    {
+      "c": ".929",
+      "a": "0",
+      "eta": ".14",
+      "K": ".54"
+    },
+    {
+      "c": ".929",
+      "a": "0",
+      "eta": ".14",
+      "K": ".55"
+    }
+  ],
+  "material_claim_discrepancy": "none on certified scope",
+  "entrant_bounds": {
+    "construction": "73552349/145544850",
+    "independent": "148887907/291089700",
+    "outside": "5622566697/10705006225",
+    "explanation": "different valid sufficient upper bounds"
+  },
+  "production_read_after_checkpoint": {
+    "code/stage30b_within_model_exact.py": "90a8e6ce20e7e8e9d6108097cd2dfba8ceb201e05a64a0193399bda199ada541",
+    "code/stage30b_within_model_numeric.py": "f6b2ed67b5f5c807c5576f5acc58daf48f88e65d3c2f5e88bc9e05c7b9906548",
+    "docs/audit/STAGE30B_RESULTS_AND_PROOFS.md": "3ecc1f72a162cbcd7a715a3ffbe3d48dd9f3af9c5abfb7d8dec54789cfb09930"
+  },
+  "source_sha256": {
+    "stage30c_reconcile.py": "18da9b4a0b3edba493d270549ab58755d507b6ff26315baab043274b8cc799ba"
+  },
+  "uncertified": "novelty, portability, seven-parameter extension, proof assistant, author verification"
+}

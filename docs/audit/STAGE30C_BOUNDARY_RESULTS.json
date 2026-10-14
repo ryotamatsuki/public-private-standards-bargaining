@@ -1,0 +1,479 @@
+{
+  "proof_status": "exact rational regressions plus boundary attacks; not a new theorem",
+  "exact_checks": {
+    "unanimity_scope_counterexample": {
+      "eta": "7/50",
+      "K": "11/20",
+      "profile": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "old_delta": [
+        "0",
+        "0",
+        "0"
+      ],
+      "old_policy": "M",
+      "deviation": "firm0 -> N",
+      "new_delta": [
+        "-5580996671231/268567196172800",
+        "681773932073/10742687846912",
+        "681773932073/10742687846912"
+      ],
+      "new_policy": "L",
+      "gain": "15291216325919/134283598086400",
+      "gain_float": 0.11387255438359949
+    },
+    "rejected_blanket_F_ac_positive": "-13843846307339136/4583886331091550025",
+    "weak_y_c_boundary": "0",
+    "N_vs_O00": {
+      "profile_N": [
+        [
+          1.0,
+          0.5
+        ],
+        [
+          1.0,
+          0.5
+        ],
+        null
+      ],
+      "profile_O00": [
+        [
+          1.0,
+          0.5
+        ],
+        [
+          1.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "private_quantities_N": [
+        0.6073833516404795,
+        0.6073833516404796,
+        0.46210420745976405
+      ],
+      "private_quantities_O00": [
+        0.5948441708349366,
+        0.5948441708349366,
+        0.42093112735667565
+      ]
+    },
+    "rejected_reuse_c1_optimum": {
+      "c": 0.95,
+      "eta": 0.14,
+      "old_a": 0.5949515085121896,
+      "actual_c_root": 0.5888878339892465,
+      "old_F_a": -0.0006030710876834267,
+      "deviation": [
+        0.95,
+        0.5888878339892465
+      ],
+      "gain": 1.828543807591565e-06,
+      "policy_before": "L",
+      "policy_after": "L"
+    }
+  },
+  "boundary_searches": [
+    {
+      "kind": "weak F=P participation",
+      "profile": [
+        [
+          0.9283200527218833,
+          0.0
+        ],
+        [
+          0.9283200527218833,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.55,
+      "agenda": [
+        2
+      ],
+      "quorum": 2,
+      "policy": "L",
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 2.220446049250313e-16,
+          "action": [
+            0.7864970813174699,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 352,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 2.220446049250313e-16,
+          "action": [
+            0.4402118650940804,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 208,
+          "solver_failure_resolution": null
+        }
+      ],
+      "precision": "floating representative of the independently isolated algebraic root"
+    },
+    {
+      "kind": "indifferent withdrawal action",
+      "profile": [
+        null,
+        [
+          0.9283200527218833,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.55,
+      "agenda": [
+        2
+      ],
+      "quorum": 2,
+      "policy": "M",
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 240,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.9283200527218833,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 288,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.9283200527218833,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        }
+      ],
+      "precision": "floating representative of the independently isolated algebraic root"
+    },
+    {
+      "kind": "weak F=P participation",
+      "profile": [
+        [
+          0.9283200527218833,
+          0.0
+        ],
+        [
+          0.9283200527218833,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.55,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "policy": "L",
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 2.220446049250313e-16,
+          "action": [
+            0.8362271174188922,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 432,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 1.6653345369377348e-16,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 640,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        }
+      ],
+      "precision": "floating representative of the independently isolated algebraic root"
+    },
+    {
+      "kind": "indifferent withdrawal action",
+      "profile": [
+        null,
+        [
+          0.9283200527218833,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.55,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "policy": "M",
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 368,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.9283200527218833,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 256,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 352,
+          "solver_failure_resolution": null
+        }
+      ],
+      "precision": "floating representative of the independently isolated algebraic root"
+    },
+    {
+      "kind": "canonical F_a=0 root",
+      "profile": [
+        [
+          1.0,
+          0.30534434408111927
+        ],
+        [
+          1.0,
+          0.30534434408111927
+        ],
+        null
+      ],
+      "eta": 0.1,
+      "K": 0.55,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "policy": "L",
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.30534434408111927
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 976,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.30534434408111927
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 768,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        }
+      ],
+      "precision": "floating representative of the independently isolated algebraic root"
+    },
+    {
+      "kind": "canonical F_a=0 root",
+      "profile": [
+        [
+          1.0,
+          0.5949515085121896
+        ],
+        [
+          1.0,
+          0.5949515085121896
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.55,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "policy": "L",
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.5949515085121896
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 944,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.5949515085121896
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 912,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1424,
+          "solver_failure_resolution": null
+        }
+      ],
+      "precision": "floating representative of the independently isolated algebraic root"
+    }
+  ],
+  "summary": {
+    "boundary_profiles": 6,
+    "boundary_deviation_searches": 18,
+    "maximum_observed_gain": 2.220446049250313e-16,
+    "nonconvergence_count": 1,
+    "nonconvergence_state": "UNRESOLVED searches; analytic boundary proof is separate"
+  },
+  "source_sha256": {
+    "stage30c_independent_boundary.py": "a905a2ecd15abbe50dd14487223d7db1b5488e6e1895f68c70732db8cf90e7a0",
+    "stage30c_independent_numeric.py": "5ce85637dfb04cf26e04333c585ca2a56ada40cc619fcb948168a90446a31ade",
+    "stage30c_independent_symbols.py": "04c2b1942f8151102233bd15288466c5c7725dddf6b75cbee9b868f6510015eb"
+  }
+}

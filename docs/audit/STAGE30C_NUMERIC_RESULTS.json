@@ -1,0 +1,4083 @@
+{
+  "method": "direct NumPy matrix + separate Fraction Gaussian tie handling",
+  "counterexample_threshold": 1e-07,
+  "searches": [
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.929,
+          0.15256914272865513
+        ],
+        [
+          0.929,
+          0.15256914272865513
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "953280157286484401916901829584745378280555289373213469565063059520684474544271817733871111492210907619847513/211395330667334549546157318606747399927820898815327018775301048763321585489000000000000000000000000000000000000",
+        "827565308483112981105589518101076051356375012520511041431691920658679926453359515231205535935797501266156465881697139130275119/44804225024508508678187957227946190555658154477621164891149557813955295465543505904828782006108078876204370955000000000000000000",
+        "23349405792005216768341940437479626574261065148263413139425194930969815554219/541172046508376446838162735633273343815221500967237168064770684834103258851840"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 240,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.15256914272865513
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 672,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.15256914272865513
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 672,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        null,
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "3978543839391/134283598086400",
+        "2640357818208/44303738762785",
+        "8266668632959/268567196172800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1136,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 240,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 944,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.0
+        ],
+        [
+          0.95,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.115,
+      "K": 0.54,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "1452972691083/162236263840000",
+        "19061908265664/419744759643391",
+        "199002323867/64894505536000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 560,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 928,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 256,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          1.0,
+          0.29747575425623096
+        ],
+        [
+          1.0,
+          0.29747575425623096
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "21780193924355899513859433590382245642704510201257607027589527590579150165969399408689267682640416973708313/507921830706604556628515334836193652599155300743551356320417266218824035765625000000000000000000000000000000",
+        "9986087208069687316557474542884634956978197220960723048767397058794883609210623566706344177069696755807324994228542777500369/337715642798495944581196668865465818394666356823907163210699976766438036832682516446417241788070572944081099375000000000000000",
+        "31833112499977141633566531475416009873405601920569118470431211487574506013111/416089563714850452790079762297809840209228022369117271097685824486460650099200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1376,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.29747575425623096
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 816,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.29747575425623096
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 880,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.1526721720406799
+        ],
+        null,
+        [
+          1.0,
+          0.1526721720406799
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "88248747748374086667073242789379180331046639266099811408231089116674750898908834087331848817350770297/2608064397296039860539134451532384087170348990899701998072877713929290000000000000000000000000000000000",
+        "112803388309608259400634399915035887154139073030706869998950638209000218375977208204210939480123057998998616265655217/6139787639852562356655426811694453769998430657819768495141688564951900846762819516499580247621857915500000000000000000",
+        "1035475819624334573120893391215846681547937130323950779160187566180802239/30044901856850379193410828881653064684202420375164567017799551264465420800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.1526721720406799
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 912,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.1526721720406799
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 880,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.0
+        ],
+        [
+          0.929,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        1,
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "1504089173633507751/5356140007510512500000",
+        "528394976220016857600/8869780278682226124389",
+        "1945759580324303557/97940845851620800000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1376,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 240,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          1.0,
+          0.1526721720406799
+        ],
+        [
+          1.0,
+          0.1526721720406799
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "88248747748374086667073242789379180331046639266099811408231089116674750898908834087331848817350770297/2608064397296039860539134451532384087170348990899701998072877713929290000000000000000000000000000000000",
+        "112803388309608259400634399915035887154139073030706869998950638209000218375977208204210939480123057998998616265655217/6139787639852562356655426811694453769998430657819768495141688564951900846762819516499580247621857915500000000000000000",
+        "327274771352268431397821993769781595046397107565448423903235718294022131/6008980371370075838682165776330612936840484075032913403559910252893084160"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.1526721720406799
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.1526721720406799
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 896,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.296184013758919
+        ],
+        null,
+        [
+          1.0,
+          0.296184013758919
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "7487923744747104951231755484936220665314311081919418853642989289852408519085833848275253496809017/212519904011896174383562111549912739512780583542035770278680636532900000000000000000000000000000000",
+        "497507911834922561192478179105698381908247126140837212321382859692652802187822229780241572799402383710407686273/451622219655589183526791117745560421695861139647441406975821365015781464919303350923139249780875950000000000000000",
+        "419968707840350465457030655654347767381512944413050515762919119242859/5440509542704542064219190055677766131527182938676115719134224295242240"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.296184013758919
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 688,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 880,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.296184013758919
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1072,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.2944439169944103
+        ],
+        [
+          0.95,
+          0.2944439169944103
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "17395391991130337313415560436999514238160362455728502036339223967618478855633493228518737639381258239537/788127392617173409805496946754547655736843990696016781049522963212914010000000000000000000000000000000000",
+        "953636270069702333928415818363030274082391973508428268530358208404711678261317999551447695427465555620778885286732723053/32253029799422705799707587838111025779586810048831267273164744511795907952004319639578593476040556363953500000000000000000",
+        "67936813417083146350683004931122965801539852899891275295827404730197151199/1008803062549981964551036091845820999343160308090901479743389392912529932800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.2944439169944103
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 576,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.2944439169944103
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 656,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 368,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.929,
+          0.19795671002899926
+        ],
+        [
+          0.929,
+          0.19795671002899926
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "3721006788014037382514989984536624582717458141630890653631599283653402707317354180352916558062692018787892507633/529871080036744071380490452925869068149800681172515295576395954823437380182912250000000000000000000000000000000000",
+        "510100614291762856614836030482717229246977291971366691051555956893171081320028164371020731456869545734976066336984487401610544066341/22490090377170950676012383258937055094692543654986918130457429651516452030797431038922315357987738338760486845018497500000000000000000",
+        "297084996786394991534447526087815835368792396032111051992537973979344786193611579/5425879859576259290936222237960899257853958975206556626702294577391998773073021440"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 320,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.19795671002899926
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 640,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.19795671002899926
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 640,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.1983114179329356
+        ],
+        null,
+        [
+          0.95,
+          0.1983114179329356
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "130003193132084237679697804482291115008122279315703645186404795696699067355191507433847204309918236653057/8277712519500906746302415574255738407357815024440213825092043268252033980625000000000000000000000000000000",
+        "398145342103941415965493181716748960808816547396676996000552864010235816489092635359108143163117278761943969125324507496717/17565534774375220734045945964687237134140316724064613762122261615103858365810403330209933703892108872882458875000000000000000",
+        "1972959328095471356302960581008960920681546392542151771426277736558309284699/33905510479875714032854694192151504516537610340107115827577009226760331184640"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.1983114179329356
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 640,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 256,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.1983114179329356
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 592,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.0
+        ],
+        [
+          0.95,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        0,
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "1452972691083/162236263840000",
+        "25010064845568/419744759643391",
+        "1496892434587/64894505536000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 800,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 896,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 384,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.929,
+          0.0
+        ],
+        [
+          0.929,
+          0.0
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "1504089173633507751/5356140007510512500000",
+        "1371863251251694080/37112051375239439851",
+        "1945759580324303557/97940845851620800000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 240,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1248,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1600,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.5687529596105941
+        ],
+        null,
+        [
+          0.929,
+          0.5687529596105941
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "242476795689875477493207235409029634025066651350838372102351994751579339247581026870373419859033239337/13743372705453383462786495845810567393152881425907901619892022364280890000000000000000000000000000000000",
+        "130601050078223166333798697332274019005641531527469430584862756375615004021952969217683533089894597318432073148882817/74270418428615307899583229446511996838049552269619609538583382029183832047404564898865944025872318354500000000000000000",
+        "221189657141894289955422468625290430346032423973634856804901252694272527789/1741560189235052752404304753581115100060333134291049293272717074001674380800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.5687529596105941
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 864,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 256,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.5687529596105941
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 800,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "3978543839391/134283598086400",
+        "8144791874208/221518693813925",
+        "2895324709503/268567196172800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 736,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1152,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 192,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          1.0,
+          0.5771029632570881
+        ],
+        [
+          1.0,
+          0.5771029632570881
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "6362107459239592428570060269392915282582254148399260919860273181590102091892983593396235773208061138801417/134647703949782074044117276364649024369912345057030777216476536366610277290000000000000000000000000000000000",
+        "126634957255716814037580215403044909857327537213764636308008237011077667443572195894620622334446163639858241378431364261623/72023514966446052687653733535695745146314075589941513620753268849348185037561885344436107578443432938485815500000000000000000",
+        "5587506209725943079307691870187372447083490623036444147168782025191315473259/34469812211144210955294022749350150238697560334599878967417993309852230986240"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.5771029632570881
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1168,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.5771029632570881
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 912,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.38403601745625854
+        ],
+        null,
+        [
+          0.929,
+          0.38403601745625854
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "1245762430234113129856914349454053084532695248483678978690953469433624581900282960075535960324376731248845897/134562874426842101612327512459717964160947026133055760281239247077251926900250000000000000000000000000000000000",
+        "42401849967985369290336939294711305997023159979408370339881625946101095935889187349157615282943231194006762155664507911611326161/31218920305883055836067034125617845248642941395466891954654416292758571402134872495408028572994745844874231725377500000000000000000",
+        "366217491635067664795409491249283605169600049292705716704404468640193475600513/4133771502392589361530701182762535859024292642807472955839669670213179194375680"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.38403601745625854
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 896,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 176,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.38403601745625854
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 656,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.19911941914099862
+        ],
+        [
+          1.0,
+          0.19911941914099862
+        ],
+        null
+      ],
+      "eta": 0.115,
+      "K": 0.56,
+      "agenda": [
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "4855415314910248275060123057280594456158246703772337774306035611979334368869361400771164611046664525976440113/133419165606480533394010450297990792537740025998624568587382060761977296320250000000000000000000000000000000000",
+        "697327175829749733880879651071157323008872527931378487752650763880545825622866028722066564449170798005979698409871536734273634957/30821752312993983198976972044941661426184647274573354262252046939969448860435062871580637120795701806914346699197500000000000000000",
+        "4835592706824231186108659270917429092545087784314634617457544067280259998811/72756865694042875488710077511614387220580596426232190775225625561087737448960"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.19911941914099862
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 800,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.19911941914099862
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 944,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.929,
+          0.0
+        ],
+        [
+          0.929,
+          0.0
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "1504089173633507751/5356140007510512500000",
+        "403070189238228124800/8869780278682226124389",
+        "1945759580324303557/97940845851620800000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 272,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1296,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1184,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.19795671002899926
+        ],
+        null,
+        [
+          0.929,
+          0.19795671002899926
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "3721006788014037382514989984536624582717458141630890653631599283653402707317354180352916558062692018787892507633/529871080036744071380490452925869068149800681172515295576395954823437380182912250000000000000000000000000000000000",
+        "510100614291762856614836030482717229246977291971366691051555956893171081320028164371020731456869545734976066336984487401610544066341/22490090377170950676012383258937055094692543654986918130457429651516452030797431038922315357987738338760486845018497500000000000000000",
+        "942836997974349028578615406642989251058566082639899597292460412157524053660755751/27129399297881296454681111189804496289269794876032783133511472886959993865365107200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.19795671002899926
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 592,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 320,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.19795671002899926
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 688,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.2931716286652547
+        ],
+        [
+          0.929,
+          0.2931716286652547
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "1776761876627709858934521341075927592303814368639826937119715003764384405554697180797136427598406527144353/133212369419445674807394418187132401883529421042266413207918535231665599690000000000000000000000000000000000",
+        "2095302333663802797107981822785995146655015858574554738179267184851493159431817514669817152862211655131035216852898575882909/70874941575876661561356878211737230267624090855118266903670412454381264866315986053777186157328457609081739500000000000000000",
+        "2848932113193792859476059272401307679858155591799243488831188743225052782299/34102366571378092750692971055905894882183531786820201781227145019306393520640"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.2931716286652547
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 592,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.2931716286652547
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 496,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 224,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.95,
+          0.571221198969156
+        ],
+        [
+          0.95,
+          0.571221198969156
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "7173198351415123665296150989215545707373270333317915263374999187347233482597214060700829092337/271750130705425520893707740032257142022987236105039815095349854556250000000000000000000000000000",
+        "581029559420986000998386408881556816746811948860177199729828071415642079026216211809343276357657580010478237/330407965984188260255375555424471398459110078251720971412582618185400509663373390776899485242262500000000000000",
+        "804644948518166306981509964747859274350168361245528063919047093905381/6121986944531826134693447967446688895493856454974336954468041523443200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 224,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.571221198969156
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 816,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.571221198969156
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 688,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        null,
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "3978543839391/134283598086400",
+        "2640357818208/44303738762785",
+        "2895324709503/268567196172800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1152,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 192,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1248,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.19911941914099862
+        ],
+        [
+          1.0,
+          0.19911941914099862
+        ],
+        null
+      ],
+      "eta": 0.115,
+      "K": 0.54,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "4855415314910248275060123057280594456158246703772337774306035611979334368869361400771164611046664525976440113/133419165606480533394010450297990792537740025998624568587382060761977296320250000000000000000000000000000000000",
+        "697327175829749733880879651071157323008872527931378487752650763880545825622866028722066564449170798005979698409871536734273634957/30821752312993983198976972044941661426184647274573354262252046939969448860435062871580637120795701806914346699197500000000000000000",
+        "16902276964716868381672288603425706740667379278949954009765157780292526249159/363784328470214377443550387558071936102902982131160953876128127805438687244800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.19911941914099862
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 800,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.19911941914099862
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 976,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.929,
+          0.5687529596105941
+        ],
+        [
+          0.929,
+          0.5687529596105941
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "242476795689875477493207235409029634025066651350838372102351994751579339247581026870373419859033239337/13743372705453383462786495845810567393152881425907901619892022364280890000000000000000000000000000000000",
+        "130601050078223166333798697332274019005641531527469430584862756375615004021952969217683533089894597318432073148882817/74270418428615307899583229446511996838049552269619609538583382029183832047404564898865944025872318354500000000000000000",
+        "51204172185319069000701712739382546469447817331891168534071118834861203081/348312037847010550480860950716223020012066626858209858654543414800334876160"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.5687529596105941
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 752,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.5687529596105941
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 720,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        null,
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "3978543839391/134283598086400",
+        "8144791874208/221518693813925",
+        "8266668632959/268567196172800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 992,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 288,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1456,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.2931716286652547
+        ],
+        [
+          0.929,
+          0.2931716286652547
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.54,
+      "agenda": [
+        1,
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "1776761876627709858934521341075927592303814368639826937119715003764384405554697180797136427598406527144353/133212369419445674807394418187132401883529421042266413207918535231665599690000000000000000000000000000000000",
+        "2095302333663802797107981822785995146655015858574554738179267184851493159431817514669817152862211655131035216852898575882909/70874941575876661561356878211737230267624090855118266903670412454381264866315986053777186157328457609081739500000000000000000",
+        "10834423908831155022310999256415948911072424780314197266033229214194624559431/170511832856890463753464855279529474410917658934101008906135725096531967603200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.2931716286652547
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 640,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.2931716286652547
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 720,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          1.0,
+          0.5771029632570881
+        ],
+        [
+          1.0,
+          0.5771029632570881
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "6362107459239592428570060269392915282582254148399260919860273181590102091892983593396235773208061138801417/134647703949782074044117276364649024369912345057030777216476536366610277290000000000000000000000000000000000",
+        "126634957255716814037580215403044909857327537213764636308008237011077667443572195894620622334446163639858241378431364261623/72023514966446052687653733535695745146314075589941513620753268849348185037561885344436107578443432938485815500000000000000000",
+        "24490549827515294301009057076001847211547697081722232839102110794971354267671/172349061055721054776470113746750751193487801672999394837089966549261154931200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.5771029632570881
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 928,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.5771029632570881
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 976,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.29598413689359093
+        ],
+        null,
+        [
+          0.929,
+          0.29598413689359093
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "25662999201914969792534536834798266451820061533551876934040209344049946902312155262503865442475804206661857/4340034207516969588847952257250597855168033572147861348404688253637457201000000000000000000000000000000000000",
+        "50065651394590777681769806638980918644971797161282169561887302612619066920290471242716855024427706224949288588817056700784299/45207421119921048063161773758420507577181851853837450000641162627840966880028955351509711980157482717290472755000000000000000000",
+        "2526685178697547755534600954937320065637780076012912137642839568959552065399/55552437856217210737253788892807652546150829723492625259580009646559452172800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.29598413689359093
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 832,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 368,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.29598413689359093
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 400,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.29598413689359093
+        ],
+        [
+          0.929,
+          0.29598413689359093
+        ],
+        null
+      ],
+      "eta": 0.1,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "25662999201914969792534536834798266451820061533551876934040209344049946902312155262503865442475804206661857/4340034207516969588847952257250597855168033572147861348404688253637457201000000000000000000000000000000000000",
+        "50065651394590777681769806638980918644971797161282169561887302612619066920290471242716855024427706224949288588817056700784299/45207421119921048063161773758420507577181851853837450000641162627840966880028955351509711980157482717290472755000000000000000000",
+        "727546787164378394055935346558694623312159334096552928566887952378148221771/11110487571243442147450757778561530509230165944698525051916001929311890434560"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.29598413689359093
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 848,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.29598413689359093
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 864,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 256,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.929,
+          0.15256914272865513
+        ],
+        [
+          0.929,
+          0.15256914272865513
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "953280157286484401916901829584745378280555289373213469565063059520684474544271817733871111492210907619847513/211395330667334549546157318606747399927820898815327018775301048763321585489000000000000000000000000000000000000",
+        "827565308483112981105589518101076051356375012520511041431691920658679926453359515231205535935797501266156465881697139130275119/44804225024508508678187957227946190555658154477621164891149557813955295465543505904828782006108078876204370955000000000000000000",
+        "62629824309188439157893428624070798489783175644593348890648906171438751885911/2705860232541882234190813678166366719076107504836185840323853424170516294259200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 224,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.15256914272865513
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 624,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.15256914272865513
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 656,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.0
+        ],
+        null,
+        [
+          0.95,
+          0.0
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "1452972691083/162236263840000",
+        "77465071588608/2098723798216955",
+        "199002323867/64894505536000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 816,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 208,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 784,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.929,
+          0.38403601745625854
+        ],
+        [
+          0.929,
+          0.38403601745625854
+        ],
+        null
+      ],
+      "eta": 0.115,
+      "K": 0.54,
+      "agenda": [
+        0,
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "1245762430234113129856914349454053084532695248483678978690953469433624581900282960075535960324376731248845897/134562874426842101612327512459717964160947026133055760281239247077251926900250000000000000000000000000000000000",
+        "42401849967985369290336939294711305997023159979408370339881625946101095935889187349157615282943231194006762155664507911611326161/31218920305883055836067034125617845248642941395466891954654416292758571402134872495408028572994745844874231725377500000000000000000",
+        "1417710307936079387823977337970164439945570982182781287938055376179649458564997/20668857511962946807653505913812679295121463214037364779198348351065895971878400"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.38403601745625854
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 672,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.929,
+            0.38403601745625854
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 752,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 160,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.95,
+          0.0
+        ],
+        [
+          0.95,
+          0.0
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "1452972691083/162236263840000",
+        "25010064845568/419744759643391",
+        "199002323867/64894505536000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 272,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 704,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 848,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        null,
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "3978543839391/134283598086400",
+        "2008233166104/44303738762785",
+        "8266668632959/268567196172800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1120,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 224,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 864,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.1526118756134692
+        ],
+        [
+          0.95,
+          0.1526118756134692
+        ],
+        null
+      ],
+      "eta": 0.1,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "680060341566731646804439601334572307236096978958844000091285038954248579106884430533969315297144473/51599952023252429819342349978943320201259957936029733931549051768130625000000000000000000000000000000",
+        "5042097575598684586485231792948019757238775470150602302746724753937038070374782268287703104598380482249474293003279/273381935356324985611435736231002196556805312262266304549002271315217683708852093709293738817528113875000000000000000",
+        "9821074166069089393747563846026640839980218811183591702953882008804139/211353403487241952540026265513751839544360787705977790183624916042263040"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.1526118756134692
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 704,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.1526118756134692
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 528,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 192,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          0.95,
+          0.29606703869013024
+        ],
+        [
+          0.95,
+          0.29606703869013024
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "49810751960600940919453496061494040555352302706890142639235908954732771995839676997734996963879/3416042779163199198049913651863158904450406666327919099873782467773437500000000000000000000000000",
+        "8606689858432698226419480705641164268976644272339756758355248197841534928378102245869478542423010843686307502479/7782969425865768376101982611922882028367020994369117279685116678414118576206439908193005468275606093750000000000000",
+        "15333391546890248334689630331908149676050456203067677496905157022671/313423291405335191700758797523905574746886591798253108581059490931200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 272,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.29606703869013024
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 544,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.29606703869013024
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 720,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        null,
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "3978543839391/134283598086400",
+        "2008233166104/44303738762785",
+        "2895324709503/268567196172800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 944,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 288,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1120,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.2944439169944103
+        ],
+        [
+          0.95,
+          0.2944439169944103
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "17395391991130337313415560436999514238160362455728502036339223967618478855633493228518737639381258239537/788127392617173409805496946754547655736843990696016781049522963212914010000000000000000000000000000000000",
+        "953636270069702333928415818363030274082391973508428268530358208404711678261317999551447695427465555620778885286732723053/32253029799422705799707587838111025779586810048831267273164744511795907952004319639578593476040556363953500000000000000000",
+        "17622574933616557128340745353607877157680611812341860978139038517689549971/201760612509996392910207218369164199868632061618180295948677878582505986560"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.2944439169944103
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 560,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.2944439169944103
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 720,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 240,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          1.0,
+          0.296184013758919
+        ],
+        [
+          1.0,
+          0.296184013758919
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "7487923744747104951231755484936220665314311081919418853642989289852408519085833848275253496809017/212519904011896174383562111549912739512780583542035770278680636532900000000000000000000000000000000",
+        "497507911834922561192478179105698381908247126140837212321382859692652802187822229780241572799402383710407686273/451622219655589183526791117745560421695861139647441406975821365015781464919303350923139249780875950000000000000000",
+        "1555792584931298120863234272703962223754846428197641006901173166690071/27202547713522710321095950278388830657635914693380578595671121476211200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 752,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.296184013758919
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 896,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.296184013758919
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1040,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.1983114179329356
+        ],
+        null,
+        [
+          0.95,
+          0.1983114179329356
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.54,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "130003193132084237679697804482291115008122279315703645186404795696699067355191507433847204309918236653057/8277712519500906746302415574255738407357815024440213825092043268252033980625000000000000000000000000000000",
+        "398145342103941415965493181716748960808816547396676996000552864010235816489092635359108143163117278761943969125324507496717/17565534774375220734045945964687237134140316724064613762122261615103858365810403330209933703892108872882458875000000000000000",
+        "6474245592489785378229333485829654151753970928700047274373687760115513305031/169527552399378570164273470960757522582688051700535579137885046133801655923200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.1983114179329356
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 656,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 320,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.1983114179329356
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 688,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.0
+        ],
+        [
+          0.95,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.115,
+      "K": 0.56,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "1452972691083/162236263840000",
+        "19061908265664/419744759643391",
+        "1496892434587/64894505536000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 880,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 640,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 256,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          1.0,
+          0.3862916731335373
+        ],
+        [
+          1.0,
+          0.3862916731335373
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.56,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "1319820717870840242797131781708364120349880532322679904411404412891511704485735527551421436377281648734316993/34161200806639599411939789516713689877513532032685596464377395138472620479690000000000000000000000000000000000",
+        "394328052137196251193747149259865166383734059530938710914547532640207714868399322164694568778471062590580532722049138301069331/291055343325719428851737384069753549491431738090858906597722394339169781922592508209664441724009886285977337739500000000000000000",
+        "884023627113880378994178671931401993605140269854322050642098245762665656430299/8745267406499737449456586116278704608643464200367512694880613155448990842800640"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1456,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.3862916731335373
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1088,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.3862916731335373
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 384,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.0
+        ],
+        null,
+        [
+          0.95,
+          0.0
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "1452972691083/162236263840000",
+        "77465071588608/2098723798216955",
+        "1496892434587/64894505536000"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 864,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 352,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.0
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 960,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.1526118756134692
+        ],
+        [
+          0.95,
+          0.1526118756134692
+        ],
+        null
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "680060341566731646804439601334572307236096978958844000091285038954248579106884430533969315297144473/51599952023252429819342349978943320201259957936029733931549051768130625000000000000000000000000000000",
+        "5042097575598684586485231792948019757238775470150602302746724753937038070374782268287703104598380482249474293003279/273381935356324985611435736231002196556805312262266304549002271315217683708852093709293738817528113875000000000000000",
+        "27970030481621251714735192678758020245465015285320179496406918439794391/1056767017436209762700131327568759197721803938529888950918124580211315200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.1526118756134692
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 688,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.1526118756134692
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 672,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        null,
+        [
+          1.0,
+          0.3862916731335373
+        ],
+        [
+          1.0,
+          0.3862916731335373
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.54,
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "exact_condition_signs": [
+        "1319820717870840242797131781708364120349880532322679904411404412891511704485735527551421436377281648734316993/34161200806639599411939789516713689877513532032685596464377395138472620479690000000000000000000000000000000000",
+        "394328052137196251193747149259865166383734059530938710914547532640207714868399322164694568778471062590580532722049138301069331/291055343325719428851737384069753549491431738090858906597722394339169781922592508209664441724009886285977337739500000000000000000",
+        "3545591394919428150025234748029139507161354929234858983722429913268429197871431/43726337032498687247282930581393523043217321001837563474403065777244954214003200"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": false,
+          "DE_message": "Maximum number of iterations has been exceeded.",
+          "evaluations": 1616,
+          "solver_failure_resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.3862916731335373
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.3862916731335373
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 992,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          1.0,
+          0.29747575425623096
+        ],
+        null,
+        [
+          1.0,
+          0.29747575425623096
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "exact_condition_signs": [
+        "21780193924355899513859433590382245642704510201257607027589527590579150165969399408689267682640416973708313/507921830706604556628515334836193652599155300743551356320417266218824035765625000000000000000000000000000000",
+        "9986087208069687316557474542884634956978197220960723048767397058794883609210623566706344177069696755807324994228542777500369/337715642798495944581196668865465818394666356823907163210699976766438036832682516446417241788070572944081099375000000000000000",
+        "8030980754854830137873625344274441335518032473590292778476985595460743803019/83217912742970090558015952459561968041845604473823454219537164897292130019840"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.29747575425623096
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 960,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 1216,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            1.0,
+            0.29747575425623096
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 960,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "private",
+      "profile": [
+        [
+          0.95,
+          0.3847241507898951
+        ],
+        [
+          0.95,
+          0.3847241507898951
+        ],
+        null
+      ],
+      "eta": 0.115,
+      "K": 0.54,
+      "agenda": [
+        1,
+        2
+      ],
+      "quorum": 3,
+      "exact_condition_signs": [
+        "1787786392108276567501552021126252130404141328876170935454636262429372198886544003061777806361548187530959/99636324085188653293391745021911232009345198230228430743592394590806446630000000000000000000000000000000000",
+        "395299380017086349791605305895957345612521467539567436181971080158285772662576519319666186613219706059709553620684749272794673/291235028761112414073292303324166116578991456924138564202752090927100710395959589523337291976182629495601938655500000000000000000",
+        "64511232081466367233667620219749071300553933609968242483078048155551921153959/892741463803290333508790035396324638803732976142846739462587855533625761804800"
+      ],
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.3847241507898951
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 784,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.95,
+            0.3847241507898951
+          ],
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 736,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": null,
+          "policy_after": "L",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 192,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        null,
+        null,
+        null
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 1,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.3930284080186862,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.7573469511203408,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 288,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        [
+          0.10764489976117741,
+          0.0
+        ],
+        null,
+        null
+      ],
+      "eta": 0.115,
+      "K": 0.55,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 2,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.3251953465276302,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 368,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 368,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 320,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        null,
+        [
+          0.618258051137358,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 1,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.06241610542090337,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 256,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 272,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.05857448918190078,
+            7.1140316315783455e-09
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        [
+          0.14427289442338176,
+          0.0
+        ],
+        [
+          0.5966010440382629,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 2,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.5966010440382629,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 224,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.5966010440382629,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 416,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.5966010440382629,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 432,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        null,
+        null,
+        [
+          0.005132392626629789,
+          0.0
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.55,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 1,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.005132392626629789,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 352,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.005132392626629789,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 464,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.005132392626629789,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 224,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        [
+          0.6296023096006856,
+          0.0
+        ],
+        null,
+        [
+          0.36373951102930424,
+          0.0
+        ]
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 2,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.13690419856813651,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 464,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.02440791057341729,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        null,
+        [
+          0.8174178600235439,
+          0.0
+        ],
+        [
+          0.0005455568224600471,
+          0.0
+        ]
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 1,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.8174178600235439,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 400,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.8174178600235439,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 384,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.8174178600235439,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 208,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        [
+          0.24447624542375812,
+          0.0
+        ],
+        [
+          0.384547129377557,
+          0.0
+        ],
+        [
+          0.6836163147999355,
+          0.0
+        ]
+      ],
+      "eta": 0.115,
+      "K": 0.55,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 2,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.6836163147999355,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 288,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.6836163147999355,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 352,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.6836163147999355,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        null,
+        null,
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 1,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 368,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.136508411794371,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.2257893317959318,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 384,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        [
+          0.23297342329987014,
+          0.0
+        ],
+        null,
+        null
+      ],
+      "eta": 0.1,
+      "K": 0.54,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 2,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.23297342329987014,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 256,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.23297342329987014,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 320,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.23297342329987014,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 352,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        null,
+        [
+          0.5018661809356842,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.115,
+      "K": 0.55,
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 1,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 512,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.1385838965065176,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 288,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 5.551115123125783e-17,
+          "action": [
+            0.0,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        }
+      ]
+    },
+    {
+      "kind": "public-broad",
+      "profile": [
+        [
+          0.5695341677833458,
+          0.0
+        ],
+        [
+          0.13400952628078233,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.56,
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 2,
+      "attacks": [
+        {
+          "firm": 0,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.5695341677833458,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 304,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 1,
+          "maximum_observed_gain": 0.0,
+          "action": [
+            0.5695341677833458,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 208,
+          "solver_failure_resolution": null
+        },
+        {
+          "firm": 2,
+          "maximum_observed_gain": 1.1102230246251565e-16,
+          "action": [
+            0.5695341677833458,
+            0.0
+          ],
+          "policy_after": "M",
+          "DE_converged": true,
+          "DE_message": "Optimization terminated successfully.",
+          "evaluations": 336,
+          "solver_failure_resolution": null
+        }
+      ]
+    }
+  ],
+  "scope_checks": [
+    {
+      "kind": "three-developer L witness",
+      "agenda": [
+        0
+      ],
+      "quorum": 2,
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "delta_before": [
+        -0.0017358657748288708,
+        0.020261817190505238,
+        0.020261817190505682
+      ],
+      "withdrawals": [
+        {
+          "firm": 0,
+          "gain": 0.3436550914268741,
+          "policy_after": "L"
+        },
+        {
+          "firm": 1,
+          "gain": 0.08943224640828717,
+          "policy_after": "M"
+        },
+        {
+          "firm": 2,
+          "gain": 0.08943224640828762,
+          "policy_after": "M"
+        }
+      ]
+    },
+    {
+      "kind": "three-developer L witness",
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "delta_before": [
+        -0.0017358657748288708,
+        0.020261817190505238,
+        0.020261817190505682
+      ],
+      "withdrawals": [
+        {
+          "firm": 0,
+          "gain": 0.3436550914268741,
+          "policy_after": "L"
+        },
+        {
+          "firm": 1,
+          "gain": 0.20330480079188662,
+          "policy_after": "L"
+        },
+        {
+          "firm": 2,
+          "gain": 0.20330480079188706,
+          "policy_after": "L"
+        }
+      ]
+    },
+    {
+      "kind": "overextended-public-initial-correspondence counterexample",
+      "profile": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "agenda": [
+        0,
+        1,
+        2
+      ],
+      "quorum": 3,
+      "old_policy": "M",
+      "deviation": "firm0 -> N",
+      "new_policy": "L",
+      "gain": 0.11387255438359944
+    }
+  ],
+  "unresolved_searches": [
+    {
+      "profile": [
+        [
+          1.0,
+          0.1526721720406799
+        ],
+        null,
+        [
+          1.0,
+          0.1526721720406799
+        ]
+      ],
+      "agenda": [
+        1
+      ],
+      "quorum": 2,
+      "firm": 1,
+      "message": "Maximum number of iterations has been exceeded.",
+      "resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+    },
+    {
+      "profile": [
+        [
+          0.929,
+          0.0
+        ],
+        [
+          0.929,
+          0.0
+        ],
+        null
+      ],
+      "agenda": [
+        1,
+        2
+      ],
+      "quorum": 3,
+      "firm": 0,
+      "message": "Maximum number of iterations has been exceeded.",
+      "resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+    },
+    {
+      "profile": [
+        null,
+        [
+          1.0,
+          0.1526721720406799
+        ],
+        [
+          1.0,
+          0.1526721720406799
+        ]
+      ],
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "firm": 0,
+      "message": "Maximum number of iterations has been exceeded.",
+      "resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+    },
+    {
+      "profile": [
+        null,
+        [
+          1.0,
+          0.5771029632570881
+        ],
+        [
+          1.0,
+          0.5771029632570881
+        ]
+      ],
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "firm": 0,
+      "message": "Maximum number of iterations has been exceeded.",
+      "resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+    },
+    {
+      "profile": [
+        [
+          1.0,
+          0.19911941914099862
+        ],
+        [
+          1.0,
+          0.19911941914099862
+        ],
+        null
+      ],
+      "agenda": [
+        2
+      ],
+      "quorum": 3,
+      "firm": 2,
+      "message": "Maximum number of iterations has been exceeded.",
+      "resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+    },
+    {
+      "profile": [
+        [
+          1.0,
+          0.19911941914099862
+        ],
+        [
+          1.0,
+          0.19911941914099862
+        ],
+        null
+      ],
+      "agenda": [
+        0,
+        1
+      ],
+      "quorum": 3,
+      "firm": 2,
+      "message": "Maximum number of iterations has been exceeded.",
+      "resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+    },
+    {
+      "profile": [
+        null,
+        [
+          1.0,
+          0.5771029632570881
+        ],
+        [
+          1.0,
+          0.5771029632570881
+        ]
+      ],
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "firm": 0,
+      "message": "Maximum number of iterations has been exceeded.",
+      "resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+    },
+    {
+      "profile": [
+        null,
+        [
+          1.0,
+          0.3862916731335373
+        ],
+        [
+          1.0,
+          0.3862916731335373
+        ]
+      ],
+      "agenda": [
+        0
+      ],
+      "quorum": 1,
+      "firm": 0,
+      "message": "Maximum number of iterations has been exceeded.",
+      "resolution": "search UNRESOLVED; global theorem uses exact finite-deviation inequalities"
+    }
+  ],
+  "proof_status": "numerics are attacks, not global proofs",
+  "primitive_checks": {
+    "profiles": 1000,
+    "minimum_quantity": 0.42339241398918603,
+    "maximum_bilateral_formula_error": 2.220446049250313e-16
+  },
+  "compliance_checks": {
+    "states": 36,
+    "minimum_margin": 0.12757575757575745
+  },
+  "broad_and_sparse_policy_checks": 348,
+  "voting_boundary": {
+    "K_exact": "52901114096583344443/97940845851620800000",
+    "K_float": 0.5401333186026175,
+    "exact_delta": [
+      "9224764444569052232359/85698240120168200000000",
+      "9224764444569052232359/85698240120168200000000",
+      "0"
+    ],
+    "all_21_constitutions": "M under YES-on-tie",
+    "K_minus_1e8_policy": "M",
+    "K_plus_1e8_policy": "L"
+  },
+  "three_developer_total_checks": {
+    "profiles": 300,
+    "maximum_S_minus_3P": -0.2086437365645213
+  },
+  "summary": {
+    "private_profiles": 48,
+    "public_profiles": 12,
+    "finite_deviation_searches": 180,
+    "maximum_observed_candidate_gain": 1.1102230246251565e-16,
+    "nonconvergence_count": 8
+  }
+}
