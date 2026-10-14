@@ -1,0 +1,30 @@
+name: stage21-global-public-spe-closure
+on:
+  push:
+    paths:
+      - code/stage21_three_open_global_no_private_spe.py
+      - code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py
+      - code/stage20_singleton_triple_open_regulatory_classification.py
+      - .github/workflows/stage21-global-public-spe-closure.yml
+  pull_request:
+    paths:
+      - code/stage21_three_open_global_no_private_spe.py
+      - code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py
+      - code/stage20_singleton_triple_open_regulatory_classification.py
+      - .github/workflows/stage21-global-public-spe-closure.yml
+permissions:
+  contents: read
+jobs:
+  full-pure-spe-outcome-certificate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install sympy
+      - run: python code/stage11_eta_k_phase_certificates.py
+      - run: python code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py
+      - run: python code/stage20_singleton_triple_open_regulatory_classification.py
+      - run: python code/stage21_three_open_global_no_private_spe.py
