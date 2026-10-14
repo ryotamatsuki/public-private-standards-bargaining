@@ -1,0 +1,50 @@
+name: stage29-full-manuscript-latex
+on:
+  push:
+    paths:
+      - manuscript/**
+      - code/stage29_manuscript_static_gate.py
+      - docs/manuscript/STAGE29_*
+      - .github/workflows/stage29-full-manuscript-latex.yml
+  pull_request:
+    paths:
+      - manuscript/**
+      - code/stage29_manuscript_static_gate.py
+      - docs/manuscript/STAGE29_*
+      - .github/workflows/stage29-full-manuscript-latex.yml
+permissions:
+  contents: read
+jobs:
+  manuscript-static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python code/stage29_manuscript_static_gate.py
+  latex-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile full modular manuscript and BibTeX references
+        uses: xu-cheng/latex-action@v4
+        with:
+          working_directory: manuscript
+          root_file: main.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - name: Fail on undefined or duplicate citations and references
+        shell: bash
+        run: |
+          test -s manuscript/main.pdf
+          if grep -E "Citation .* undefined|Reference .* undefined|There were undefined references|multiply defined" manuscript/main.log; then
+            echo "Blocking unresolved cross-reference or citation"
+            exit 1
+          fi
+          pdfinfo manuscript/main.pdf | grep Pages
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage29-full-manuscript-pdf
+          path: manuscript/main.pdf
+          retention-days: 30
