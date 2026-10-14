@@ -1,0 +1,24 @@
+name: applied-standards-network-differentiation
+on:
+  push:
+    paths:
+      - code/applied_standards_network_differentiation_propositions.py
+      - requirements.txt
+      - .github/workflows/applied-standards-network-differentiation.yml
+  pull_request:
+    paths:
+      - code/applied_standards_network_differentiation_propositions.py
+      - requirements.txt
+      - .github/workflows/applied-standards-network-differentiation.yml
+permissions:
+  contents: read
+jobs:
+  verify-applied-comparative-statics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python code/applied_standards_network_differentiation_propositions.py
