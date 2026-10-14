@@ -122,7 +122,6 @@ def baseline_private_incentives():
                           "Stage27 strictly favorable RS member vote")
     st14.bernstein_positive(st14.gov_outside_veto,
                           "Stage27 strictly opposed outsider at Kmin")
-    assert st15.PIstar-st15.lo < st11.PN or True
     assert st11.PIP-st15.hi<st11.PN
     # If a founder previously paid for a>0 but M is enacted,
     # initially switching to N yields SAME public gross output
