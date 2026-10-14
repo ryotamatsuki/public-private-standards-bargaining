@@ -41,6 +41,15 @@ Thus any strictly interior optimum solves
 The government adds domestic CS to that private profit and can favor another a.
 For IS, all 3 firms directly substitute through `b(c,a)`, so when c is fixed, rising a reduces each Cournot quantity and private profit; keeping interface compatibility while preserving product attributes is potentially attractive.
 
+### General comparative-static theorem: two opposite outsider channels
+
+For ANY admissible original-six-primitive economy with `v,rho,kappa,eta>0`, `d>=0`, positive demand SPD and c,a within their physically feasible triangle, the OUTSIDER SUPPORT numerator is `Y(c,a)=2m+b(c,a)-2d(a)z(c)`. Hence exact identities
+`partial Y/partial c= -v-2rho*d<0`,
+`partial Y/partial a= kappa+2eta*z>0`.
+At a fixed common design, more technical interoperability pushes the outsider toward zero-output KKT exclusion; at fixed interoperability, increasing design convergence both intensifies *insider-insider* substitution b and reduces *insider-outsider* substitution d, thus pushes the outsider toward positive production. Positive Y does not mean full outsider quantity is monotone, since the Cournot D denominator also changes.
+
+Moreover, in the genuine outsider-zero KKT region, insider x=z/(2m+b); if `kappa>0` and `C=phi(c²+a²)/2`, then `partial P_R^corner/partial a=-6m*kappa*z²/(2m+b)^3-phi*a<0`. Thus an unconstrained private designer cannot gain locally by **additional common-design convergence AFTER outsider exclusion**; this is a direct testable prediction of the separated-actions variant, not the old a=c restriction. Both general formulae are independently symbolically verified in source Python CI.
+
 ## 4. EXACT full-response nested-regulation theorem for rational admissible witness
 
 Fix the ORIGINAL six economic primitives to
