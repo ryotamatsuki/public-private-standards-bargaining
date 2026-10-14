@@ -71,6 +71,20 @@ def compare_target():
     print('PASS selected government discontinuity a->0+ removed locally',
           flush=True)
 
+def full_finite_pilot_under_smooth_retrofit():
+    # Re-solve the ORIGINAL 1000 initial finite profiles from scratch
+    # after replacing the within-open-specification refit cost, so
+    # comparisons are actual Nash equilibria of the NEW fee model.
+    for K in (F(0),F(1,2)):
+        x=s.firm_nash(K,F(3,100))
+        kinds=Counter(s.final_type(h,pol) for h,pol in x)
+        govt=Counter(pol[0] for h,pol in x)
+        print('SMOOTH REFIT FULL FINITE SPE K',K,
+              'count',len(x),'types',dict(kinds),'policy',dict(govt),
+              flush=True)
+        assert x  # verified nonempty; do not hardcode assumed counts
+
+
 def collapse_passive_adopter_flags():
     K,eta=F(0),F(3,100)
     examples=((s.N,s.N,('O',F(1),F(0))),
@@ -90,5 +104,6 @@ def collapse_passive_adopter_flags():
 if __name__=="__main__":
     collapse_passive_adopter_flags()
     compare_target()
+    full_finite_pilot_under_smooth_retrofit()
     print('NOT PROVED: full symmetric continuous refit game SPE;')
     print('new retrofit accounting is an alternate economic model.')
