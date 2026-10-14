@@ -210,6 +210,45 @@ def both_spe_and_majority_firm_counterexample():
           'no proprietary X/Y/C strategies in this minimal game',
           flush=True)
 
+def ex_post_veto_efficiency_reversal():
+    # This is DIFFERENT from Stage11's EX-ANTE terminal-equilibrium
+    # welfare cutoff: a retrofit after OPEN RS has been installed
+    # cannot refund earlier wasted a-design capital.
+    #
+    # Actual sum-of-three-country welfare gain from switching after
+    # RS(O(1,a*),O(1,a*),N) to universal M(1,0):
+    # E = 2*(WI0-phi*a*^2/2 - (f+CS))
+    #     + (WI0-K-(Pout+CS))
+    #   = K_world(eta)-K-phi*a*^2.
+    # K_world decreases with eta by Stage11, a*(eta) increases by
+    # its certified strict rational global concavity/cross derivative.
+    # Thus K_expost(eta)=K_world(eta)-phi*a*(eta)^2 strictly DECREASES.
+    # Endpoint signs bracket a* at eta=.10 and .14 by Stage11.
+    real_welfare=S.cancel(3*WI0-2*private-pout-3*CS)
+    post_gain=S.cancel(real_welfare-phi*a*a)
+    # derivative post gain wrt a <0 on eta x a rectangle:
+    # previous Stage11 full Bernstein world-W_a >0, plus -2phi*a.
+    T,U=S.symbols("T U")
+    s11.tensor_positive(-S.diff(post_gain,a),
+        {e:R(1,10)+R(1,25)*T,a:R(1,4)+R(9,25)*U},
+        (T,U),"public switch net social gain decreases with RS private a")
+    # direct eta derivative of post_gain = -W_RS,eta; Stage11
+    # exact Bernstein cert proves >0 for W_RS,eta on same rectangle.
+    s11.tensor_positive(-S.diff(post_gain,e),
+        {e:R(1,10)+R(1,25)*T,a:R(1,4)+R(9,25)*U},
+        (T,U),"public switch net social gain decreases with eta")
+    # For each K=.54...56, positive on low eta end and
+    # negative on high eta end after using rational root brackets.
+    assert post_gain.subs({e:R(1,10),a:R(3054,10000)})-hi>0
+    assert post_gain.subs({e:R(7,50),a:R(5949,10000)})-lo<0
+    print("THEOREM exact unique EX-POST social-welfare crossover",
+          "within eta∈[.10,.14] for EVERY K in [.54,.56],",
+          "different from Stage11 terminal-allocation crossover",
+          flush=True)
+    print("FORMULA ex-post public mandate national sum gain",
+          "=K_world(eta)-K-phi*(a_R*(eta))^2",flush=True)
+
+
 def numeric_witnesses():
     import mpmath as mp
     fprime=S.lambdify((e,a),S.diff(private,a),'mpmath')
@@ -242,4 +281,5 @@ def numeric_witnesses():
 
 if __name__=='__main__':
     both_spe_and_majority_firm_counterexample()
+    ex_post_veto_efficiency_reversal()
     numeric_witnesses()
