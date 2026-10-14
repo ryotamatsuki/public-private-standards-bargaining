@@ -168,6 +168,33 @@ def contribution_game_proposition():
           'the initial 3-firm investments and any ex-ante treaty',
           'commitment are NOT re-solved.',flush=True)
 
+def anticipated_financing_destabilizes_original_rs():
+    # The financed transfer equilibrium is a credible GOVERNMENT
+    # continuation at the already developed h_RS, but its anticipation
+    # makes EXACTLY THAT private initial profile NOT a full SPE.
+    #
+    # A founder initially O(1,a*) earns under financed public M:
+    #   P_I^net (costs phi/2 for final c=1) - K - phi*a*²/2.
+    # Deviating to N BEFORE development leaves h=(N,O(1,a*),N)
+    # where ALL governments strictly authorize M WITHOUT transfers:
+    # N governments: WI0-K>WN; sole old O govt:
+    # WI0-WN+phi/2>0.
+    # Then the deviator earns P_I^net-K, strictly MORE by
+    # phi*a*²/2 >0. This is independent of donor transfer division
+    # because private firm owner is not explicitly taxed as donor;
+    # governmental transfer is borne nondistortionarily elsewhere.
+    assert WI0-s11.WN-KHI>0
+    assert WI0-s11.WN+phi/2>0
+    assert (phi/2)*ALO**2>0
+    print("THEOREM: financed-M conditional treaty equilibrium",
+          "cannot be ONPATH at original initial open RS founders:",
+          "a founder deviates to N and saves phi*a_R*(eta)^2/2 >0.",
+          flush=True)
+    print("SCOPE: does not exclude other PRIVATE starting profiles",
+          "or other treaty-game SPE; unfinanced veto-continuation",
+          "still supports original Stage15 RS outcome.",flush=True)
+
+
 def diagnostics():
     import mpmath as mp
     mp.mp.dps=45
@@ -213,4 +240,5 @@ if __name__ == '__main__':
     prove_global_no_unilateral_compensation()
     prove_ex_post_transfer_frontier()
     contribution_game_proposition()
+    anticipated_financing_destabilizes_original_rs()
     diagnostics()
