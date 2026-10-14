@@ -106,6 +106,15 @@ def targeted_policy_discontinuity():
                   (z[0],z[1],sum(z[3][1]),z[3][1][0])
                   for z in options),
               flush=True)
+    # STRONGEST simple analytical witness: c unchanged, only private
+    # common-design excess reduced. Pair min(a2,a3) stays exactly ZERO,
+    # so all Cournot payoffs and public L remain unchanged; the firm
+    # saves exactly phi/2*(.6^2-.01^2)=25193/1000000.
+    easy=government_policy((N,a1,('O',F(1),F(1,100))),K,eta)[0]
+    assert easy[0]=='L'
+    assert easy[3][0][2]-initialpolicy[3][0][2]==F(25193,1000000)
+    print("PASS EXACT SIMPLE OFFMENU DEVIATION with no output change",
+          F(25193,1000000),flush=True)
     assert government_policy(
         (N,a1,('O',F(99,100),F(0))),K,eta)[0][0]=='L'
     assert government_policy(
