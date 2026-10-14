@@ -1,0 +1,29 @@
+name: stage15-three-government-veto-minimal-spe
+on:
+  push:
+    paths:
+      - code/stage15_three_country_veto_minimal_continuous_spe.py
+      - code/stage14_institutional_veto_ablation.py
+      - code/stage11_eta_k_phase_certificates.py
+      - .github/workflows/stage15-three-government-veto-minimal-spe.yml
+  pull_request:
+    paths:
+      - code/stage15_three_country_veto_minimal_continuous_spe.py
+      - code/stage14_institutional_veto_ablation.py
+      - code/stage11_eta_k_phase_certificates.py
+      - .github/workflows/stage15-three-government-veto-minimal-spe.yml
+permissions:
+  contents: read
+jobs:
+  full-continuous-unanimity-veto-vs-majority:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install sympy
+      - run: python code/stage11_eta_k_phase_certificates.py
+      - run: python code/stage14_institutional_veto_ablation.py
+      - run: python code/stage15_three_country_veto_minimal_continuous_spe.py
