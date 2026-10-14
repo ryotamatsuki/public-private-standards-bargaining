@@ -1,0 +1,6535 @@
+{
+  "method": "finite deviation search and numerical illustrations; not proof",
+  "seed": 300015,
+  "examples": [
+    {
+      "c": 1,
+      "a": 0,
+      "eta": 0.14,
+      "K": 0.55,
+      "qualifies_private_SPE": true,
+      "continuation": {
+        "policy": "L",
+        "pay": [
+          0.44098315061932625,
+          0.44098315061932625,
+          0.525227783975436
+        ],
+        "gains": [
+          0.06346399912094403,
+          0.06346399912094403,
+          -0.02078063423516574
+        ],
+        "q": [
+          0.5976900401101822,
+          0.5976900401101822,
+          0.42052868119653986
+        ],
+        "cs": 0.5580161793413624,
+        "H": [
+          [
+            0.99,
+            0.13,
+            0.14
+          ],
+          [
+            0.13,
+            0.99,
+            0.14
+          ],
+          [
+            0.14,
+            0.14,
+            0.99
+          ]
+        ]
+      },
+      "bilateral": {
+        "F": 0.9909831506193263,
+        "Fa": 0.05959672686644432,
+        "KV": 0.529219365764834,
+        "B": 0.06346399912094369,
+        "world_noK": 4.181242623238176,
+        "x": 0.5976900401101822,
+        "y": 0.4205286811965399,
+        "cs": 0.5580161793413624
+      },
+      "world_RS_minus_public": -0.10614736400672142
+    },
+    {
+      "c": 1,
+      "a": 0.5,
+      "eta": 0.14,
+      "K": 0.55,
+      "qualifies_private_SPE": true,
+      "continuation": {
+        "policy": "L",
+        "pay": [
+          0.45817617147456635,
+          0.4581761714745668,
+          0.6342146866994894
+        ],
+        "gains": [
+          0.02491686798652193,
+          0.024916867986521485,
+          -0.13362164723840153
+        ],
+        "q": [
+          0.6073833516404795,
+          0.6073833516404796,
+          0.46210420745976405
+        ],
+        "cs": 0.5618702896205446,
+        "H": [
+          [
+            0.99,
+            0.14,
+            0.07
+          ],
+          [
+            0.14,
+            0.99,
+            0.07
+          ],
+          [
+            0.07,
+            0.07,
+            0.99
+          ]
+        ]
+      },
+      "bilateral": {
+        "F": 1.0081761714745665,
+        "Fa": 0.00937853541234801,
+        "KV": 0.4163783527615986,
+        "B": 0.024916867986521485,
+        "world_noK": 4.336177898510256,
+        "x": 0.6073833516404795,
+        "y": 0.46210420745976405,
+        "cs": 0.5618702896205445
+      },
+      "world_RS_minus_public": 0.04878791126535842
+    },
+    {
+      "c": 0.95,
+      "a": 0,
+      "eta": 0.14,
+      "K": 0.55,
+      "qualifies_private_SPE": true,
+      "continuation": {
+        "policy": "L",
+        "pay": [
+          0.42031113535971065,
+          0.4203111353597111,
+          0.5279852393523907
+        ],
+        "gains": [
+          0.09460755279203004,
+          0.09460755279202959,
+          -0.013066551200650034
+        ],
+        "q": [
+          0.5898941682630405,
+          0.5898941682630406,
+          0.42163112772037814
+        ],
+        "cs": 0.547544640929892,
+        "H": [
+          [
+            0.99,
+            0.1305,
+            0.14
+          ],
+          [
+            0.1305,
+            0.99,
+            0.14
+          ],
+          [
+            0.14,
+            0.14,
+            0.99
+          ]
+        ]
+      },
+      "bilateral": {
+        "F": 0.9703111353597107,
+        "Fa": 0.059583983530410674,
+        "KV": 0.5369334487993502,
+        "B": 0.0946075527920299,
+        "world_noK": 4.111241432861488,
+        "x": 0.5898941682630405,
+        "y": 0.4216311277203781,
+        "cs": 0.5475446409298919
+      },
+      "world_RS_minus_public": -0.1761485543834096
+    },
+    {
+      "c": 0.929,
+      "a": 0,
+      "eta": 0.14,
+      "K": 0.54,
+      "qualifies_private_SPE": false,
+      "continuation": {
+        "policy": "M",
+        "pay": [
+          0.4213552295918366,
+          0.4213552295918366,
+          0.4213552295918366
+        ],
+        "gains": [
+          0.10764240236011657,
+          0.10764240236011702,
+          0.00013331860261756034
+        ],
+        "q": [
+          0.5866210139125893,
+          0.5866210139125891,
+          0.4220939980325631
+        ],
+        "cs": 0.5431848812489283,
+        "H": [
+          [
+            0.99,
+            0.13071000000000002,
+            0.14
+          ],
+          [
+            0.13071000000000002,
+            0.99,
+            0.14
+          ],
+          [
+            0.14,
+            0.14,
+            0.99
+          ]
+        ]
+      },
+      "bilateral": {
+        "F": 0.9616360454725872,
+        "Fa": 0.05957249893663879,
+        "KV": 0.5401333186026175,
+        "B": 0.10764240236011702,
+        "world_noK": 4.081971863922046,
+        "x": 0.5866210139125891,
+        "y": 0.4220939980325632,
+        "cs": 0.5431848812489283
+      },
+      "world_RS_minus_public": -0.21541812332285115
+    },
+    {
+      "c": 0.929,
+      "a": 0,
+      "eta": 0.14,
+      "K": 0.55,
+      "qualifies_private_SPE": true,
+      "continuation": {
+        "policy": "L",
+        "pay": [
+          0.4116360454725876,
+          0.41163604547258714,
+          0.5291451292300866
+        ],
+        "gains": [
+          0.10764240236011657,
+          0.10764240236011702,
+          -0.009866681397382449
+        ],
+        "q": [
+          0.5866210139125893,
+          0.5866210139125891,
+          0.4220939980325631
+        ],
+        "cs": 0.5431848812489283,
+        "H": [
+          [
+            0.99,
+            0.13071000000000002,
+            0.14
+          ],
+          [
+            0.13071000000000002,
+            0.99,
+            0.14
+          ],
+          [
+            0.14,
+            0.14,
+            0.99
+          ]
+        ]
+      },
+      "bilateral": {
+        "F": 0.9616360454725872,
+        "Fa": 0.05957249893663879,
+        "KV": 0.5401333186026175,
+        "B": 0.10764240236011702,
+        "world_noK": 4.081971863922046,
+        "x": 0.5866210139125891,
+        "y": 0.4220939980325632,
+        "cs": 0.5431848812489283
+      },
+      "world_RS_minus_public": -0.20541812332285114
+    },
+    {
+      "c": 0.9,
+      "a": 0,
+      "eta": 0.14,
+      "K": 0.55,
+      "qualifies_private_SPE": false,
+      "continuation": {
+        "policy": "L",
+        "pay": [
+          0.39966301726862663,
+          0.39966301726862663,
+          0.5307485903602083
+        ],
+        "gains": [
+          0.1255988183973462,
+          0.1255988183973462,
+          -0.0054867546942354295
+        ],
+        "q": [
+          0.5821020243540761,
+          0.5821020243540761,
+          0.4227330470610397
+        ],
+        "cs": 0.5372014934156597,
+        "H": [
+          [
+            0.99,
+            0.131,
+            0.14
+          ],
+          [
+            0.131,
+            0.99,
+            0.14
+          ],
+          [
+            0.14,
+            0.14,
+            0.99
+          ]
+        ]
+      },
+      "bilateral": {
+        "F": 0.9496630172686267,
+        "Fa": 0.05955068405330986,
+        "KV": 0.5445132453057646,
+        "B": 0.12559881839734607,
+        "world_noK": 4.041679105144441,
+        "x": 0.5821020243540761,
+        "y": 0.42273304706103976,
+        "cs": 0.5372014934156597
+      },
+      "world_RS_minus_public": -0.24571088210045633
+    }
+  ],
+  "deviation_search": [
+    {
+      "eta": 0.1,
+      "K": 0.54,
+      "profile": [
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4213583240261394,
+          "best": 0.4213583240261394,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4213583240261394,
+          "best": 0.4213583240261394,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5744487676402507,
+          "best": 0.5744487676402507,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.54,
+      "profile": [
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4213583240261394,
+          "best": 0.4213583240261394,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4213583240261394,
+          "best": 0.4213583240261394,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5744487676402507,
+          "best": 0.5744487676402507,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.54,
+      "profile": [
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.43453470582972464,
+          "best": 0.43453470582972464,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.43453470582972464,
+          "best": 0.43453470582972464,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5504675263473136,
+          "best": 0.5504675263473136,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.54,
+      "profile": [
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.43453470582972464,
+          "best": 0.43453470582972464,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.43453470582972464,
+          "best": 0.43453470582972464,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5504675263473136,
+          "best": 0.5504675263473136,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.54,
+      "profile": [
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4551921041106799,
+          "best": 0.4551921041106799,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4551921041106801,
+          "best": 0.4551921041106801,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5479759686671888,
+          "best": 0.5479759686671888,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.54,
+      "profile": [
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4551921041106799,
+          "best": 0.4551921041106799,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4551921041106801,
+          "best": 0.4551921041106801,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5479759686671888,
+          "best": 0.5479759686671888,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.41135832402613937,
+          "best": 0.41135832402613937,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41135832402613937,
+          "best": 0.41135832402613937,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5744487676402507,
+          "best": 0.5744487676402507,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.41135832402613937,
+          "best": 0.41135832402613937,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41135832402613937,
+          "best": 0.41135832402613937,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5744487676402507,
+          "best": 0.5744487676402507,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.42453470582972463,
+          "best": 0.42453470582972463,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.42453470582972463,
+          "best": 0.42453470582972463,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5504675263473136,
+          "best": 0.5504675263473136,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.42453470582972463,
+          "best": 0.42453470582972463,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.42453470582972463,
+          "best": 0.42453470582972463,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5504675263473136,
+          "best": 0.5504675263473136,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4451921041106799,
+          "best": 0.4451921041106799,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4451921041106801,
+          "best": 0.4451921041106801,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5479759686671888,
+          "best": 0.5479759686671888,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4451921041106799,
+          "best": 0.4451921041106799,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4451921041106801,
+          "best": 0.4451921041106801,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5479759686671888,
+          "best": 0.5479759686671888,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.56,
+      "profile": [
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.40135832402613936,
+          "best": 0.40135832402613936,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.40135832402613936,
+          "best": 0.40135832402613936,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5744487676402507,
+          "best": 0.5744487676402507,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.56,
+      "profile": [
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        [
+          0.9146679385993212,
+          0.30094123148120555
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.40135832402613936,
+          "best": 0.40135832402613936,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.40135832402613936,
+          "best": 0.40135832402613936,
+          "gain": 0.0,
+          "deviation": [
+            0.9146679385993212,
+            0.30094123148120555
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5744487676402507,
+          "best": 0.5744487676402507,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.56,
+      "profile": [
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4145347058297246,
+          "best": 0.4145347058297246,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4145347058297246,
+          "best": 0.4145347058297246,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5504675263473136,
+          "best": 0.5504675263473136,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.56,
+      "profile": [
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        [
+          0.95,
+          0.1526118756133462
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4145347058297246,
+          "best": 0.4145347058297246,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4145347058297246,
+          "best": 0.4145347058297246,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.1526118756133462
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5504675263473136,
+          "best": 0.5504675263473136,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.56,
+      "profile": [
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4351921041106799,
+          "best": 0.4351921041106799,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4351921041106801,
+          "best": 0.4351921041106801,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5479759686671888,
+          "best": 0.5479759686671888,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.56,
+      "profile": [
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        [
+          1.0,
+          0.15267217204055958
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4351921041106799,
+          "best": 0.4351921041106799,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4351921041106801,
+          "best": 0.4351921041106801,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.15267217204055958
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5479759686671888,
+          "best": 0.5479759686671888,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.54,
+      "profile": [
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4213583297720047,
+          "best": 0.4213583297720047,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.42135832977200427,
+          "best": 0.42135832977200427,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5974836237418222,
+          "best": 0.5974836237418222,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.54,
+      "profile": [
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4213583297720047,
+          "best": 0.4213583297720047,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.42135832977200427,
+          "best": 0.42135832977200427,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5974836237418222,
+          "best": 0.5974836237418222,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.54,
+      "profile": [
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4370604371387061,
+          "best": 0.4370604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4370604371387061,
+          "best": 0.4370604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5617392307895654,
+          "best": 0.5617392307895654,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.54,
+      "profile": [
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4370604371387061,
+          "best": 0.4370604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4370604371387061,
+          "best": 0.4370604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5617392307895654,
+          "best": 0.5617392307895654,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.54,
+      "profile": [
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4577474172722129,
+          "best": 0.4577474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4577474172722129,
+          "best": 0.4577474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5595105210807315,
+          "best": 0.5595105210807315,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.54,
+      "profile": [
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4577474172722129,
+          "best": 0.4577474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4577474172722129,
+          "best": 0.4577474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5595105210807315,
+          "best": 0.5595105210807315,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.55,
+      "profile": [
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4113583297720047,
+          "best": 0.4113583297720047,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41135832977200426,
+          "best": 0.41135832977200426,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5974836237418222,
+          "best": 0.5974836237418222,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.55,
+      "profile": [
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4113583297720047,
+          "best": 0.4113583297720047,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41135832977200426,
+          "best": 0.41135832977200426,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5974836237418222,
+          "best": 0.5974836237418222,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.55,
+      "profile": [
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4270604371387061,
+          "best": 0.4270604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4270604371387061,
+          "best": 0.4270604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5617392307895654,
+          "best": 0.5617392307895654,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.55,
+      "profile": [
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4270604371387061,
+          "best": 0.4270604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4270604371387061,
+          "best": 0.4270604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5617392307895654,
+          "best": 0.5617392307895654,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.55,
+      "profile": [
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4477474172722129,
+          "best": 0.4477474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4477474172722129,
+          "best": 0.4477474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5595105210807315,
+          "best": 0.5595105210807315,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.55,
+      "profile": [
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4477474172722129,
+          "best": 0.4477474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4477474172722129,
+          "best": 0.4477474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5595105210807315,
+          "best": 0.5595105210807315,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.56,
+      "profile": [
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4013583297720047,
+          "best": 0.4013583297720047,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.40135832977200425,
+          "best": 0.40135832977200425,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5974836237418222,
+          "best": 0.5974836237418222,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.56,
+      "profile": [
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        [
+          0.9065977932796888,
+          0.390890844521124
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4013583297720047,
+          "best": 0.4013583297720047,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.40135832977200425,
+          "best": 0.40135832977200425,
+          "gain": 0.0,
+          "deviation": [
+            0.9065977932796888,
+            0.390890844521124
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5974836237418222,
+          "best": 0.5974836237418222,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.56,
+      "profile": [
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4170604371387061,
+          "best": 0.4170604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4170604371387061,
+          "best": 0.4170604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5617392307895654,
+          "best": 0.5617392307895654,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.56,
+      "profile": [
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        [
+          0.95,
+          0.19831141793293566
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4170604371387061,
+          "best": 0.4170604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4170604371387061,
+          "best": 0.4170604371387061,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.19831141793293566
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5617392307895654,
+          "best": 0.5617392307895654,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.56,
+      "profile": [
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4377474172722129,
+          "best": 0.4377474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4377474172722129,
+          "best": 0.4377474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5595105210807315,
+          "best": 0.5595105210807315,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.115,
+      "K": 0.56,
+      "profile": [
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        [
+          1.0,
+          0.19911941914099873
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4377474172722129,
+          "best": 0.4377474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4377474172722129,
+          "best": 0.4377474172722129,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.19911941914099873
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5595105210807315,
+          "best": 0.5595105210807315,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.54,
+      "profile": [
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.421358353003889,
+          "best": 0.421358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.421358353003889,
+          "best": 0.421358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6550428003190459,
+          "best": 0.6550428003190459,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.54,
+      "profile": [
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.421358353003889,
+          "best": 0.421358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.421358353003889,
+          "best": 0.421358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6550428003190459,
+          "best": 0.6550428003190459,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.54,
+      "profile": [
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.443427031884317,
+          "best": 0.443427031884317,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.443427031884317,
+          "best": 0.443427031884317,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5898528115797257,
+          "best": 0.5898528115797257,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.54,
+      "profile": [
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.443427031884317,
+          "best": 0.443427031884317,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.443427031884317,
+          "best": 0.443427031884317,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5898528115797257,
+          "best": 0.5898528115797257,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.54,
+      "profile": [
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4642362254609337,
+          "best": 0.4642362254609337,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.46423622546093324,
+          "best": 0.46423622546093324,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5884783242364233,
+          "best": 0.5884783242364233,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.54,
+      "profile": [
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4642362254609337,
+          "best": 0.4642362254609337,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.46423622546093324,
+          "best": 0.46423622546093324,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5884783242364233,
+          "best": 0.5884783242364233,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.411358353003889,
+          "best": 0.411358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.411358353003889,
+          "best": 0.411358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6550428003190459,
+          "best": 0.6550428003190459,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.411358353003889,
+          "best": 0.411358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.411358353003889,
+          "best": 0.411358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6550428003190459,
+          "best": 0.6550428003190459,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.43342703188431697,
+          "best": 0.43342703188431697,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.43342703188431697,
+          "best": 0.43342703188431697,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5898528115797257,
+          "best": 0.5898528115797257,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.43342703188431697,
+          "best": 0.43342703188431697,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.43342703188431697,
+          "best": 0.43342703188431697,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5898528115797257,
+          "best": 0.5898528115797257,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4542362254609337,
+          "best": 0.4542362254609337,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": true,
+            "message": "Optimization terminated successfully."
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.45423622546093323,
+          "best": 0.45423622546093323,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": true,
+            "message": "Optimization terminated successfully."
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5884783242364233,
+          "best": 0.5884783242364233,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": true,
+            "message": "Optimization terminated successfully."
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4542362254609337,
+          "best": 0.4542362254609337,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": true,
+            "message": "Optimization terminated successfully."
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.45423622546093323,
+          "best": 0.45423622546093323,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": true,
+            "message": "Optimization terminated successfully."
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5884783242364233,
+          "best": 0.5884783242364233,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": true,
+            "message": "Optimization terminated successfully."
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.56,
+      "profile": [
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.401358353003889,
+          "best": 0.401358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.401358353003889,
+          "best": 0.401358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6550428003190459,
+          "best": 0.6550428003190459,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.56,
+      "profile": [
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        [
+          0.8866215724685067,
+          0.5766657392597424
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.401358353003889,
+          "best": 0.401358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.401358353003889,
+          "best": 0.401358353003889,
+          "gain": 0.0,
+          "deviation": [
+            0.8866215724685067,
+            0.5766657392597424
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6550428003190459,
+          "best": 0.6550428003190459,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.56,
+      "profile": [
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.42342703188431696,
+          "best": 0.42342703188431696,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.42342703188431696,
+          "best": 0.42342703188431696,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5898528115797257,
+          "best": 0.5898528115797257,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.56,
+      "profile": [
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        [
+          0.95,
+          0.29444391699457306
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.42342703188431696,
+          "best": 0.42342703188431696,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.42342703188431696,
+          "best": 0.42342703188431696,
+          "gain": 0.0,
+          "deviation": [
+            0.95,
+            0.29444391699457306
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5898528115797257,
+          "best": 0.5898528115797257,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.56,
+      "profile": [
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.44423622546093366,
+          "best": 0.44423622546093366,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4442362254609332,
+          "best": 0.4442362254609332,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5884783242364233,
+          "best": 0.5884783242364233,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.56,
+      "profile": [
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        [
+          1.0,
+          0.2974757542560983
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.44423622546093366,
+          "best": 0.44423622546093366,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4442362254609332,
+          "best": 0.4442362254609332,
+          "gain": 0.0,
+          "deviation": [
+            1.0,
+            0.2974757542560983
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5884783242364233,
+          "best": 0.5884783242364233,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 1,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.525227783975436,
+          "best": 0.525227783975436,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.525227783975436,
+          "best": 0.525227783975436,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.525227783975436,
+          "best": 0.525227783975436,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0.25
+        ],
+        [
+          1,
+          0.25
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 1,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4464100628377424,
+          "best": 0.4464100628377424,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.25
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.446410062837742,
+          "best": 0.446410062837742,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.25
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5627785806109071,
+          "best": 0.5627785806109071,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0.25
+        ],
+        [
+          1,
+          0.25
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4464100628377424,
+          "best": 0.4464100628377424,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.25
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.446410062837742,
+          "best": 0.446410062837742,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.25
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5627785806109071,
+          "best": 0.5627785806109071,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0.25
+        ],
+        [
+          1,
+          0.25
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4464100628377424,
+          "best": 0.4464100628377424,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.25
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.446410062837742,
+          "best": 0.446410062837742,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.25
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5627785806109071,
+          "best": 0.5627785806109071,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          0.929,
+          0
+        ],
+        [
+          0.929,
+          0
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 1,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4116360454725876,
+          "best": 0.4116360454725876,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41163604547258714,
+          "best": 0.41163604547258714,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5291451292300866,
+          "best": 0.5291451292300866,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          0.929,
+          0
+        ],
+        [
+          0.929,
+          0
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4116360454725876,
+          "best": 0.4116360454725876,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41163604547258714,
+          "best": 0.41163604547258714,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5291451292300866,
+          "best": 0.5291451292300866,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "profile": [
+        [
+          0.929,
+          0
+        ],
+        [
+          0.929,
+          0
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4116360454725876,
+          "best": 0.4116360454725876,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41163604547258714,
+          "best": 0.41163604547258714,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5291451292300866,
+          "best": 0.5291451292300866,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 1,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.525227783975436,
+          "best": 0.525227783975436,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.525227783975436,
+          "best": 0.525227783975436,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.44098315061932625,
+          "best": 0.44098315061932625,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.525227783975436,
+          "best": 0.525227783975436,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0.5
+        ],
+        [
+          1,
+          0.5
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 1,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.45817617147456635,
+          "best": 0.45817617147456635,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.5
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4581761714745668,
+          "best": 0.4581761714745668,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.5
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6342146866994894,
+          "best": 0.6342146866994894,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0.5
+        ],
+        [
+          1,
+          0.5
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.45817617147456635,
+          "best": 0.45817617147456635,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.5
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4581761714745668,
+          "best": 0.4581761714745668,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.5
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6342146866994894,
+          "best": 0.6342146866994894,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          1,
+          0.5
+        ],
+        [
+          1,
+          0.5
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.45817617147456635,
+          "best": 0.45817617147456635,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.5
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4581761714745668,
+          "best": 0.4581761714745668,
+          "gain": 0.0,
+          "deviation": [
+            1,
+            0.5
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.6342146866994894,
+          "best": 0.6342146866994894,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          0.929,
+          0
+        ],
+        [
+          0.929,
+          0
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 1,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4116360454725876,
+          "best": 0.4116360454725876,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41163604547258714,
+          "best": 0.41163604547258714,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5291451292300866,
+          "best": 0.5291451292300866,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          0.929,
+          0
+        ],
+        [
+          0.929,
+          0
+        ],
+        null
+      ],
+      "A": [
+        2
+      ],
+      "r": 2,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4116360454725876,
+          "best": 0.4116360454725876,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41163604547258714,
+          "best": 0.41163604547258714,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5291451292300866,
+          "best": 0.5291451292300866,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "profile": [
+        [
+          0.929,
+          0
+        ],
+        [
+          0.929,
+          0
+        ],
+        null
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 3,
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4116360454725876,
+          "best": 0.4116360454725876,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41163604547258714,
+          "best": 0.41163604547258714,
+          "gain": 0.0,
+          "deviation": [
+            0.929,
+            0
+          ],
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.5291451292300866,
+          "best": 0.5291451292300866,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "L",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    }
+  ],
+  "frontiers": [
+    {
+      "eta": 0.1,
+      "participation_c_floor": 0.9146579385993212,
+      "a_at_floor": 0.30506817661018,
+      "a_at_c1": 0.30534434408111916
+    },
+    {
+      "eta": 0.115,
+      "participation_c_floor": 0.9065877932796889,
+      "a_at_floor": 0.3951364612573635,
+      "a_at_c1": 0.39823883828199746
+    },
+    {
+      "eta": 0.14,
+      "participation_c_floor": 0.8866115724685067,
+      "a_at_floor": 0.5812098653701602,
+      "a_at_c1": 0.5949515085121966
+    }
+  ],
+  "public_zero_a_checks": [
+    {
+      "profile": [
+        null,
+        null,
+        null
+      ],
+      "eta": 0.11895194730650974,
+      "K": 0.5487738296363733,
+      "A": [
+        0,
+        1
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4125813999554633,
+          "best": 0.4125813999554633,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4125813999554633,
+          "best": 0.4125813999554633,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4125813999554633,
+          "best": 0.4125813999554633,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.46311968215962107,
+          0.0
+        ],
+        null,
+        null
+      ],
+      "eta": 0.12680133339816754,
+      "K": 0.5445380362364562,
+      "A": [
+        0,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.41681719335538037,
+          "best": 0.41681719335538037,
+          "gain": 0.0,
+          "deviation": [
+            0.46311968215962107,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41681719335538037,
+          "best": 0.41681719335538037,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.41681719335538037,
+          "best": 0.41681719335538037,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        [
+          0.15053507372841313,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.10632749093318451,
+      "K": 0.5576821629294877,
+      "A": [
+        1,
+        2
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4036730666623489,
+          "best": 0.4036730666623489,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4036730666623489,
+          "best": 0.4036730666623489,
+          "gain": 0.0,
+          "deviation": [
+            0.15053507372841313,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4036730666623489,
+          "best": 0.4036730666623489,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.5519475619200019,
+          0.0
+        ],
+        [
+          0.8161368099778092,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.10377816930521591,
+      "K": 0.5517445845580593,
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4096106450337773,
+          "best": 0.4096106450337773,
+          "gain": 0.0,
+          "deviation": [
+            0.5519475619200019,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4096106450337773,
+          "best": 0.4096106450337773,
+          "gain": 0.0,
+          "deviation": [
+            0.8161368099778092,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4096106450337773,
+          "best": 0.4096106450337773,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        null,
+        [
+          0.8323196745999775,
+          0.0
+        ]
+      ],
+      "eta": 0.10324421506704268,
+      "K": 0.5517234704724522,
+      "A": [
+        0,
+        1
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.40963175911938454,
+          "best": 0.40963175911938454,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.40963175911938454,
+          "best": 0.40963175911938454,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.40963175911938454,
+          "best": 0.40963175911938454,
+          "gain": 0.0,
+          "deviation": [
+            0.8323196745999775,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.7579432931793226,
+          0.0
+        ],
+        null,
+        [
+          0.5507672744239347,
+          0.0
+        ]
+      ],
+      "eta": 0.12377651130653555,
+      "K": 0.5488796072258898,
+      "A": [
+        0,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4124756223659469,
+          "best": 0.4124756223659469,
+          "gain": 0.0,
+          "deviation": [
+            0.7579432931793226,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4124756223659469,
+          "best": 0.4124756223659469,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4124756223659469,
+          "best": 0.4124756223659469,
+          "gain": 0.0,
+          "deviation": [
+            0.5507672744239347,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        [
+          0.9064548840221744,
+          0.0
+        ],
+        [
+          0.5743191919687451,
+          0.0
+        ]
+      ],
+      "eta": 0.13836516144732616,
+      "K": 0.5588717786020431,
+      "A": [
+        1,
+        2
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.40248345098979366,
+          "best": 0.40248345098979366,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.40248345098979366,
+          "best": 0.40248345098979366,
+          "gain": 0.0,
+          "deviation": [
+            0.9064548840221744,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.40248345098979366,
+          "best": 0.40248345098979366,
+          "gain": 0.0,
+          "deviation": [
+            0.5743191919687451,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.7298737825793444,
+          0.0
+        ],
+        [
+          0.34762075956626337,
+          0.0
+        ],
+        [
+          0.8067844951211545,
+          0.0
+        ]
+      ],
+      "eta": 0.11390420603629574,
+      "K": 0.5583539183438315,
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4030013112480051,
+          "best": 0.4030013112480051,
+          "gain": 0.0,
+          "deviation": [
+            0.7298737825793444,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4030013112480051,
+          "best": 0.4030013112480051,
+          "gain": 0.0,
+          "deviation": [
+            0.34762075956626337,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4030013112480051,
+          "best": 0.4030013112480051,
+          "gain": 0.0,
+          "deviation": [
+            0.8067844951211545,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        null,
+        null
+      ],
+      "eta": 0.1281870339110912,
+      "K": 0.555233147769282,
+      "A": [
+        0,
+        1
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4061220818225546,
+          "best": 0.4061220818225546,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4061220818225546,
+          "best": 0.4061220818225546,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4061220818225546,
+          "best": 0.4061220818225546,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.991007235968671,
+          0.0
+        ],
+        null,
+        null
+      ],
+      "eta": 0.11382783694310226,
+      "K": 0.5501052176591057,
+      "A": [
+        0,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4112500119327309,
+          "best": 0.4112500119327309,
+          "gain": 0.0,
+          "deviation": [
+            0.991007235968671,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4112500119327309,
+          "best": 0.4112500119327309,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4112500119327309,
+          "best": 0.4112500119327309,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        [
+          0.7225100621551566,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.12837979906286093,
+      "K": 0.5472001688262652,
+      "A": [
+        1,
+        2
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4141550607655715,
+          "best": 0.4141550607655715,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4141550607655715,
+          "best": 0.4141550607655715,
+          "gain": 0.0,
+          "deviation": [
+            0.7225100621551566,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4141550607655715,
+          "best": 0.4141550607655715,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.43472495718045945,
+          0.0
+        ],
+        [
+          0.23973542979107632,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.1391025078104243,
+      "K": 0.559393688845462,
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4019615407463746,
+          "best": 0.4019615407463746,
+          "gain": 0.0,
+          "deviation": [
+            0.43472495718045945,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4019615407463746,
+          "best": 0.4019615407463746,
+          "gain": 0.0,
+          "deviation": [
+            0.23973542979107632,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4019615407463746,
+          "best": 0.4019615407463746,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        null,
+        [
+          0.07623346671660203,
+          0.0
+        ]
+      ],
+      "eta": 0.13542872547801965,
+      "K": 0.5422786095839319,
+      "A": [
+        0,
+        1
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4190766200079048,
+          "best": 0.4190766200079048,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4190766200079048,
+          "best": 0.4190766200079048,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4190766200079048,
+          "best": 0.4190766200079048,
+          "gain": 0.0,
+          "deviation": [
+            0.07623346671660203,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.18921081200569334,
+          0.0
+        ],
+        null,
+        [
+          0.8605680213680253,
+          0.0
+        ]
+      ],
+      "eta": 0.10169713689353745,
+      "K": 0.5482922001056456,
+      "A": [
+        0,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.413063029486191,
+          "best": 0.413063029486191,
+          "gain": 0.0,
+          "deviation": [
+            0.18921081200569334,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.413063029486191,
+          "best": 0.413063029486191,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.413063029486191,
+          "best": 0.413063029486191,
+          "gain": 0.0,
+          "deviation": [
+            0.8605680213680253,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        [
+          0.8518426098642862,
+          0.0
+        ],
+        [
+          0.9975396822488491,
+          0.0
+        ]
+      ],
+      "eta": 0.11260946041800819,
+      "K": 0.5502248864095751,
+      "A": [
+        1,
+        2
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4111303431822615,
+          "best": 0.4111303431822615,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4111303431822615,
+          "best": 0.4111303431822615,
+          "gain": 0.0,
+          "deviation": [
+            0.8518426098642862,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4111303431822615,
+          "best": 0.4111303431822615,
+          "gain": 0.0,
+          "deviation": [
+            0.9975396822488491,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.03565272865813651,
+          0.0
+        ],
+        [
+          0.9606086154144406,
+          0.0
+        ],
+        [
+          0.9449070156855206,
+          0.0
+        ]
+      ],
+      "eta": 0.10057712292387283,
+      "K": 0.5423165456109245,
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.41903868398091215,
+          "best": 0.41903868398091215,
+          "gain": 0.0,
+          "deviation": [
+            0.03565272865813651,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41903868398091215,
+          "best": 0.41903868398091215,
+          "gain": 0.0,
+          "deviation": [
+            0.9606086154144406,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.41903868398091215,
+          "best": 0.41903868398091215,
+          "gain": 0.0,
+          "deviation": [
+            0.9449070156855206,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        null,
+        null
+      ],
+      "eta": 0.12821064278016625,
+      "K": 0.555108003281344,
+      "A": [
+        0,
+        1
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4062472263104926,
+          "best": 0.4062472263104926,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4062472263104926,
+          "best": 0.4062472263104926,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4062472263104926,
+          "best": 0.4062472263104926,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.021282982177879384,
+          0.0
+        ],
+        null,
+        null
+      ],
+      "eta": 0.11156593163529625,
+      "K": 0.5509144903492714,
+      "A": [
+        0,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4104407392425653,
+          "best": 0.4104407392425653,
+          "gain": 0.0,
+          "deviation": [
+            0.021282982177879384,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4104407392425653,
+          "best": 0.4104407392425653,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4104407392425653,
+          "best": 0.4104407392425653,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        [
+          0.3785296396831137,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.10303228983773702,
+      "K": 0.5401505190039354,
+      "A": [
+        1,
+        2
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4212047105879013,
+          "best": 0.4212047105879013,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4212047105879013,
+          "best": 0.4212047105879013,
+          "gain": 0.0,
+          "deviation": [
+            0.3785296396831137,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4212047105879013,
+          "best": 0.4212047105879013,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.6783655931578593,
+          0.0
+        ],
+        [
+          0.5705919883644751,
+          0.0
+        ],
+        null
+      ],
+      "eta": 0.11059293826721384,
+      "K": 0.5568039911606768,
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4045512384311598,
+          "best": 0.4045512384311598,
+          "gain": 0.0,
+          "deviation": [
+            0.6783655931578593,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4045512384311598,
+          "best": 0.4045512384311598,
+          "gain": 0.0,
+          "deviation": [
+            0.5705919883644751,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4045512384311598,
+          "best": 0.4045512384311598,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        null,
+        [
+          0.6383162278501273,
+          0.0
+        ]
+      ],
+      "eta": 0.12754504997584148,
+      "K": 0.5488490531285846,
+      "A": [
+        0,
+        1
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.41250617646325205,
+          "best": 0.41250617646325205,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.41250617646325205,
+          "best": 0.41250617646325205,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.41250617646325205,
+          "best": 0.41250617646325205,
+          "gain": 0.0,
+          "deviation": [
+            0.6383162278501273,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.8113346227588925,
+          0.0
+        ],
+        null,
+        [
+          0.6027137041565105,
+          0.0
+        ]
+      ],
+      "eta": 0.11875095982441325,
+      "K": 0.5598055241689683,
+      "A": [
+        0,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4015497054228683,
+          "best": 0.4015497054228683,
+          "gain": 0.0,
+          "deviation": [
+            0.8113346227588925,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4015497054228683,
+          "best": 0.4015497054228683,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4015497054228683,
+          "best": 0.4015497054228683,
+          "gain": 0.0,
+          "deviation": [
+            0.6027137041565105,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        null,
+        [
+          0.517806924803936,
+          0.0
+        ],
+        [
+          0.11664035521740301,
+          0.0
+        ]
+      ],
+      "eta": 0.10946858413731789,
+      "K": 0.5436150316351764,
+      "A": [
+        1,
+        2
+      ],
+      "r": 1,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4177401979566602,
+          "best": 0.4177401979566602,
+          "gain": 0.0,
+          "deviation": null,
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4177401979566602,
+          "best": 0.4177401979566602,
+          "gain": 0.0,
+          "deviation": [
+            0.517806924803936,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4177401979566602,
+          "best": 0.4177401979566602,
+          "gain": 0.0,
+          "deviation": [
+            0.11664035521740301,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    },
+    {
+      "profile": [
+        [
+          0.45939905304353557,
+          0.0
+        ],
+        [
+          0.5267657702399192,
+          0.0
+        ],
+        [
+          0.8586590927844486,
+          0.0
+        ]
+      ],
+      "eta": 0.1374670400194513,
+      "K": 0.5482467684444362,
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "r": 2,
+      "policy": "M",
+      "checks": [
+        {
+          "firm": 0,
+          "base": 0.4131084611474005,
+          "best": 0.4131084611474005,
+          "gain": 0.0,
+          "deviation": [
+            0.45939905304353557,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 1,
+          "base": 0.4131084611474005,
+          "best": 0.4131084611474005,
+          "gain": 0.0,
+          "deviation": [
+            0.5267657702399192,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        },
+        {
+          "firm": 2,
+          "base": 0.4131084611474005,
+          "best": 0.4131084611474005,
+          "gain": 0.0,
+          "deviation": [
+            0.8586590927844486,
+            0.0
+          ],
+          "policy": "M",
+          "optimizer": {
+            "success": null,
+            "message": "grid and targeted finite deviations only"
+          }
+        }
+      ]
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "claim": "reuse c=1 optimal a at c<1",
+      "profile": [
+        [
+          0.95,
+          0.5949515085121966
+        ],
+        [
+          0.95,
+          0.5949515085121966
+        ],
+        null
+      ],
+      "eta": 0.14,
+      "K": 0.55,
+      "deviation": {
+        "firm": 0,
+        "base": 0.4377652328220436,
+        "best": 0.4377662906087637,
+        "gain": 1.057786720104481e-06,
+        "deviation": [
+          0.95,
+          0.5849515085121966
+        ],
+        "policy": "L",
+        "optimizer": {
+          "success": null,
+          "message": "grid and targeted finite deviations only"
+        }
+      }
+    }
+  ],
+  "formula_matrix_maximum_error": 1.3322676295501878e-15,
+  "optimizer_nonconvergence_count": 0,
+  "sampled_welfare_envelope": [
+    {
+      "eta": 0.1,
+      "K": 0.55,
+      "sampled_designs": 14836,
+      "sampled_min_RS_minus_public": [
+        -0.20588209592798168,
+        0.9286666666666666,
+        0.0
+      ],
+      "sampled_max_RS_minus_public": [
+        -0.04371305490054822,
+        1.0,
+        0.3037448559670782
+      ],
+      "scope": "grid illustration of characterized branch, no certified extrema"
+    },
+    {
+      "eta": 0.115,
+      "K": 0.55,
+      "sampled_designs": 20568,
+      "sampled_min_RS_minus_public": [
+        -0.20588209592798168,
+        0.9286666666666666,
+        0.0
+      ],
+      "sampled_max_RS_minus_public": [
+        -0.010600324200930045,
+        1.0,
+        0.39662551440329213
+      ],
+      "scope": "grid illustration of characterized branch, no certified extrema"
+    },
+    {
+      "eta": 0.14,
+      "K": 0.55,
+      "sampled_designs": 35204,
+      "sampled_min_RS_minus_public": [
+        -0.205937393766068,
+        0.928,
+        0.002510288065843621
+      ],
+      "sampled_max_RS_minus_public": [
+        0.0735838756531344,
+        1.0,
+        0.5949382716049382
+      ],
+      "scope": "grid illustration of characterized branch, no certified extrema"
+    }
+  ]
+}
