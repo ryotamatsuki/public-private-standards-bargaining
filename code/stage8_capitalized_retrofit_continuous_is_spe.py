@@ -5,7 +5,7 @@ the unified three-independent-firm / three-national-government game.
 
 Keep six original parameters (v,gamma0,kappa,eta,rho,phi)
 =(.01,.14,.02,.03,.32,.14); the already explicit real technology
-setup K varies in the WHOLE CLOSED INTERVAL [1/2,3/5].
+setup K varies in the exact open interval K in (K_L,K_U) with K_L~.479496738, K_U~.658003309. The smaller closed interval [.5,.6] is a certified subset.
 
 OPEN->OPEN investment is CAPITAL STOCK, NOT fresh setup:
 C_up(O(c,a)->O(c',a')) =
@@ -19,7 +19,7 @@ Theorem: all firms initially choose N. Government unanimously mandates
 pre-existing PUBLIC-DOMAIN O(1,0), all firms strictly comply (unique
 adoption NE); final international standard IS with compatible, non-
 homogeneous products (c,a)=(1,0). This is a real SPE in the full
-CONTINUOUS initial c_i,a_i strategy space, for any K in [.5,.6].
+CONTINUOUS initial c_i,a_i strategy space, for every K in (K_L,K_U).
 Every unilateral private technology development deviation is blocked
 against ANY government equilibrium continuation: after an O proposal
 no other N would voluntarily migrate under C (STRICT DOMINANCE); M
@@ -147,6 +147,10 @@ def freeze_retrofit():
     mod.adoption_pure_nash.cache_clear()
     mod.government_policy.cache_clear()
 
+def rgrossmax_minus_pn():
+    return S.cancel(grossR.subs({c:1,a:0})-PN)
+
+
 def theorem_public_mandate_and_private_incentives():
     _,pi,outs=theorem_global_deviation_bounds()
     Klow,Khigh=Q(1,2),Q(3,5)
@@ -169,6 +173,13 @@ def theorem_public_mandate_and_private_incentives():
     CS_I=S.cancel(Q(3,2)*(m+2*bpub)*(zpub/(2*(m+bpub)))**2)
     WI_0=S.cancel(pi+CS_I)
     assert WI_0-Khigh>WN
+    K_lower=S.Max(rgrossmax_minus_pn(),pi-outs)
+    K_upper=S.Min(gross[0]-phi/2,WI_0-WN)
+    assert K_lower==Q(65543475780783,136692224487025)
+    assert K_upper==Q(5269762153,8008716800)
+    assert K_lower<Klow<Khigh<K_upper
+    print("PASS GENERAL exact K interval of full-continuous IS SPE:",
+          "K_low",K_lower,"K_high",K_upper,flush=True)
     print("PASS all 3 government mandates after h=NNN:",
           "W_I0-K(max)",WI_0-Khigh,"W_N",WN,flush=True)
     # Under h=NNN: only L,M are feasible, unique adoption 111 after M,
@@ -247,4 +258,4 @@ if __name__=="__main__":
     sampled_exact_fraction_crosscheck()
     finite_pilot_new_cost()
     print("PASS Stage8 genuine full-continuous public-mandate IS SPE",
-          "for all K ∈ [1/2,3/5]; no full 7D phase partition claim.")
+          "for all K in (0.479496738...,0.658003309...); no full 7D phase partition claim.")
