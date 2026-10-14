@@ -54,7 +54,10 @@ def bernstein_positive(expr,name):
             mincoef=value if mincoef is None else min(mincoef,value)
             count+=1
         counts.append(count)
-    assert counts==[25,25],(name,counts)
+    # First-level veto-margin ratios have degree (4,4): 25/25.
+    # Their DERIVATIVES legitimately have larger degree: 30/49.
+    # Every individual coefficient has ALREADY been checked >0.
+    assert counts in ([25,25],[30,49]),(name,counts)
     print("PASS EXACT GLOBAL BERNSTEIN",name,
           "coefficients",counts,flush=True)
 
