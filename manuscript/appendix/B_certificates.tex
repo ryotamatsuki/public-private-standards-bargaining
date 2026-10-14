@@ -61,11 +61,11 @@ Their exact national policy numerators are those in
 (\ref{eq:aligned-numerator}) and (\ref{eq:crossed-numerators}),
 verified by \path{code/stage21_three_open_global_no_private_spe.py}.
 
-The follow-up Stage24 certificate simultaneously transforms the parameter intervals for \(\rho\) and \(\kappa\), and checks two \(\phi\) endpoints. Each relevant numerator is affine in \(\phi\), so sign verification at both endpoints proves the whole intervening interval. The 5-dimensional private and 6-dimensional triple-developer coefficient checks total \(251{,}436\) exact rational entries over those two endpoints. These counts are a reproducibility property of the chosen certificate representation, not evidence that the economic content grows proportionally with the number of coefficients.
+The subsequent joint-parameter certificate simultaneously transforms the parameter intervals for \(\rho\) and \(\kappa\), and checks two \(\phi\) endpoints. Each relevant numerator is affine in \(\phi\), so sign verification at both endpoints proves the whole intervening interval. The 5-dimensional private and 6-dimensional triple-developer coefficient checks total \(251{,}436\) exact rational entries over those two endpoints. These counts are a reproducibility property of the chosen certificate representation, not evidence that the economic content grows proportionally with the number of coefficients.
 
 \subsection{Identically zero coefficients and the local seven-parameter box}
 
-Extending the sign tests to variable \(v,\gamma_0\) requires care at the boundaries where the private interface already implements public \(O(1,0)\). For some three-developer expressions, Bernstein coefficients are exactly zero at these boundaries. It would be invalid to assume that any weak inequality must survive a generic coefficient perturbation. The Stage25 audit instead first clears the positive public-welfare denominator \(H^2=(1+\gamma_0-2v)^2\). It checks algebraically, with symbolic \(v,\gamma_0\), that all previously zero coefficient faces correspond to \emph{identically zero} national policy gains at a public-identical technical profile.
+Extending the sign tests to variable \(v,\gamma_0\) requires care at the boundaries where the private interface already implements public \(O(1,0)\). For some three-developer expressions, Bernstein coefficients are exactly zero at these boundaries. It would be invalid to assume that any weak inequality must survive a generic coefficient perturbation. The local-perturbation audit instead first clears the positive public-welfare denominator \(H^2=(1+\gamma_0-2v)^2\). It checks algebraically, with symbolic \(v,\gamma_0\), that all previously zero coefficient faces correspond to \emph{identically zero} national policy gains at a public-identical technical profile.
 
 At the baseline \(v=.01,\gamma_0=.14\), every nonzero coefficient of the lifted sign polynomials exceeds the rational lower bound \(1/50\). The code then constructs coefficient one-norm upper bounds for the partial derivatives with respect to \(v,\gamma_0\), using the inequalities
 \[
@@ -79,7 +79,7 @@ Separate exact inequalities verify that all governments prefer \(M\) at zero- an
 
 \subsection{Welfare threshold roots and audit trail}
 
-The Stage26 source defines \(K_V\), \(K_E\), and \(K_W\) using (\ref{eq:KV}), (\ref{eq:ke}), and (\ref{eq:kw}), and verifies symbolically the identities
+The accompanying welfare-cutoff source defines \(K_V\), \(K_E\), and \(K_W\) using (\ref{eq:KV}), (\ref{eq:ke}), and (\ref{eq:kw}), and verifies symbolically the identities
 \[
  K_E-K_V=2B,\qquad K_W-K_E=\phi a^2.
 \]
