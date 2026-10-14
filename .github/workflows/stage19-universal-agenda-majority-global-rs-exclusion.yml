@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py
+      - docs/institutions/STAGE19_UNIVERSAL_AGENDA_MAJORITY_GLOBAL_BILATERAL_RS_EXCLUSION_20261014.md
       - code/stage18_agenda_control_majority_coalition_spe.py
       - code/stage17_full_history_treaty_spe_majority.py
       - code/stage14_institutional_veto_ablation.py
@@ -11,6 +12,7 @@ on:
   pull_request:
     paths:
       - code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py
+      - docs/institutions/STAGE19_UNIVERSAL_AGENDA_MAJORITY_GLOBAL_BILATERAL_RS_EXCLUSION_20261014.md
       - code/stage18_agenda_control_majority_coalition_spe.py
       - code/stage17_full_history_treaty_spe_majority.py
       - code/stage14_institutional_veto_ablation.py
