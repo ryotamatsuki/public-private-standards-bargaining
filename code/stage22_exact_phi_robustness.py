@@ -1,6 +1,6 @@
 """Stage 22. Exact rational coefficient-robustness of Stage21's 3-O exclusion.
 
-Only the 3-O no-L-SPE part is extended in phi; DO NOT infer that
+Only the 3-O no-L-SPE part (including strict public-M conformity by all 3 prior OPEN investors) is extended in phi; DO NOT infer that
 Stage19's 2-O exclusions or public M conformity survive on this full
 interval without additional independent certification.
 
@@ -82,6 +82,19 @@ if __name__=="__main__":
     lo=max(x[0] for x in results);hi=min(x[1] for x in results)
     assert lo==0 and hi==R(452295327,649779200),(lo,hi)
     assert sum(x[2] for x in results)==5985
+    # In an ALL-OPEN history, fixed family setup K is SUNK.
+    # Post-M individual mandatory conformity incurs at most phi/2.
+    # Against 0/1/2 other complying firms, minimum operating gross
+    # profit is isolated one-firm G1=3/(4m)=25/33, not net of sunk K.
+    # The other two gross profit cases are strictly higher.
+    gross_one=3/(4*m)
+    gross_two=3*m*((1+rho)/(2*m+(g-v)))**2
+    gross_three=3*m*((1+rho)/(2*(m+g-v)))**2
+    assert gross_one<gross_three<gross_two
+    assert hi/2<gross_one
+    print("PASS public M all three OLD-O investors strictly comply",
+          "for EVERY phi <= certified upper bound; minimum net",
+          "incremental profit margin",gross_one-hi/2,flush=True)
     print("THEOREM Stage21 3-O L pure-SPE exclusion certified",
           "for 0 < phi <=",hi,"=",float(hi),flush=True)
     print("LIMIT: no global-policy/all-investment-count extension",
