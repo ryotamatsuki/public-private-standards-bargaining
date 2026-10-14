@@ -5,10 +5,10 @@ We consider three countries, indexed by \(i\in\{1,2,3\}\), each hosting one firm
 \subsection{Technology choices and irreversible expenditure}\label{subsec:technology}
 
 At date 1, firms simultaneously choose either \(N\), which entails no private development, or an open design
-\[
+\begin{equation}
  O(c_i,a_i),\qquad 0\leq a_i\leq c_i\leq 1.
- \tag{1}\label{eq:action}
-\]
+ \label{eq:action}
+\end{equation}
 The first attribute, \(c_i\), determines the potential compatibility-related demand benefit; \(a_i\) measures common design investment that changes the intensity of competition with compatible and noncompatible producers. They are real physical stocks rather than freely reversible announcements. An initial open developer spends
 \begin{equation}
  I(c_i,a_i)=K+\frac{\phi}{2}(c_i^2+a_i^2),
@@ -37,38 +37,38 @@ The difference \(\phi a_i^2/2\) is the nonrecoverable cost of an attribute that 
 
 Conditional on the technologies active after the policy stage, write inverse demand in each national market as
 \begin{equation}
- p_i=z_i-\sum_{j=1}^3 M_{ij}q_j,\qquad
- M_{ii}=m\equiv1-v,\qquad M_{ij}=M_{ji}.
+ p_i=z_i-\sum_{j=1}^3 H_{ij}q_j,\qquad
+ H_{ii}=m\equiv1-v,\qquad H_{ij}=H_{ji}.
  \label{eq:inverse-demand}
 \end{equation}
-Here \(q_i\) is firm \(i\)'s quantity in one market; symmetric quantities are produced in all three markets. The demand matrix \(M\) is positive definite throughout the parameter domain we use. An active firm maximizes \(3p_iq_i\) before investment expense, yielding the interior Cournot condition
+Here \(q_i\) is firm \(i\)'s quantity in one market; symmetric quantities are produced in all three markets. The demand matrix \(H\) is positive definite throughout the parameter domain we use. An active firm maximizes \(3p_iq_i\) before investment expense, yielding the interior Cournot condition
 \begin{equation}
- 2m q_i+\sum_{j\ne i}M_{ij}q_j=z_i.
+ 2m q_i+\sum_{j\ne i}H_{ij}q_j=z_i.
  \label{eq:cournot-foc}
 \end{equation}
 At an interior equilibrium the firm's \emph{gross} profit summed over the three markets is \(3m q_i^2\), while consumer surplus in each national market is
 \begin{equation}
- CS(q,M)=\frac{1}{2}q^{\mathsf T}Mq.
+ CS(q,H)=\frac{1}{2}q^{\mathsf T}Hq.
  \label{eq:cs}
 \end{equation}
 The three-market profit and one-market consumer-surplus terms reflect their distinct geographic incidences, not a planner weighting chosen after the fact.
 
-We specify the technologies' effect on \(z\) and \(M\) as follows. If no two firms have developed an open design, \(z_i=1\) and \(M_{ij}=\gamma_0\) for \(i\ne j\). If exactly two firms, say 1 and 2, initially develop open designs, their effective shared stocks are
+We specify the technologies' effect on \(z\) and \(H\) as follows. If no two firms have developed an open design, \(z_i=1\) and \(H_{ij}=\gamma_0\) for \(i\ne j\). If exactly two firms, say 1 and 2, initially develop open designs, their effective shared stocks are
 \[
  c_{12}=\min\{c_1,c_2\},\qquad a_{12}=\min\{a_1,a_2\}.
 \]
 They then have intercepts \(z_1=z_2=1+\rho c_{12}\), \(z_3=1\), and demand cross-effects
 \begin{equation}
- M_{12}=\gamma_0+\kappa a_{12}-vc_{12},
+ H_{12}=\gamma_0+\kappa a_{12}-vc_{12},
  \qquad
- M_{13}=M_{23}=\gamma_0-\eta a_{12}.
+ H_{13}=H_{23}=\gamma_0-\eta a_{12}.
  \label{eq:two-cross-effects}
 \end{equation}
 Thus increased commonality has two countervailing commercial implications: it raises the substitution between insiders through \(\kappa a_{12}\), but reduces the cross-effect with the outsider through \(\eta a_{12}\). These are reduced-form competition primitives. No claim is made that this matrix is the unique microfoundation of standards competition.
 
 If all three firms develop open designs, each pair has \(c_{ij}=\min\{c_i,c_j\}\) and \(a_{ij}=\min\{a_i,a_j\}\). In that case
 \begin{equation}
- M_{ij}=\gamma_0+\kappa a_{ij}-vc_{ij}
+ H_{ij}=\gamma_0+\kappa a_{ij}-vc_{ij}
  \quad (i\ne j),\qquad
  z_i=1+\rho\,\max_{j\ne i}c_{ij}.
  \label{eq:three-cross-effects}
@@ -77,8 +77,8 @@ There is no outsider-separation term \(-\eta a_{12}\) when all firms share the o
 
 If a public mandate \(M\) is adopted and all firms comply, everyone uses \(O(1,0)\). The demand parameters then reduce to
 \[
- z_i=1+\rho,\qquad M_{ii}=m,\qquad
- M_{ij}=\gamma_0-v,\quad i\ne j.
+ z_i=1+\rho,\qquad H_{ii}=m,\qquad
+ H_{ij}=\gamma_0-v,\quad i\ne j.
 \]
 The resulting per-market output, firm gross profit, and consumer surplus are
 \begin{align}
@@ -100,7 +100,7 @@ At date 2, governments observe the entire vector of initial technology choices. 
 
 The policy alternatives are \(L\) (no government intervention, private designs remain in place) and \(M\) (all production must use \(O(1,0)\)). After \(M\), firms simultaneously choose compliance or exit; the Cournot stage follows. Under \(L\), firms compete with their installed technologies. Each government's objective is the net profit of its domestic firm across the three markets plus consumer surplus in its own national market:
 \begin{equation}
- \mathcal W_i=3m q_i^2+CS(q,M)
+ \mathcal W_i=3m q_i^2+CS(q,H)
  -\bigl(\text{initial sunk and subsequent compliance costs paid by firm }i\bigr).
  \label{eq:government-welfare}
 \end{equation}
