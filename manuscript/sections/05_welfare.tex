@@ -1,0 +1,141 @@
+\section{National vetoes, sunk costs, and world welfare}\label{sec:welfare}
+
+Proposition~\ref{prop:agenda} compares the \emph{existence} of equilibria under different constitutional rules. It is not a normative ranking of those rules. World-welfare accounting requires us to distinguish a decision made before private investment from a decision made after a regional standard has been installed. These two comparisons differ precisely because a public mandate cannot undo a sunk technological design.
+
+\subsection{Three cutoffs with different meanings}\label{subsec:three-cutoffs}
+
+Continue to evaluate the privately optimal bilateral design
+\[
+ h_R=(O(1,\aR),O(1,\aR),N),
+ \qquad \aR=\aR(\eta)>0.
+\]
+We study three cutoffs in the fixed initial setup cost \(K\), holding the other primitives at (\ref{eq:baseline-box}). The first is the \emph{nonmember's veto cutoff} \(K_V\) defined in (\ref{eq:KV}). The nonmember approves a public mandate at this already installed standard if and only if \(K\le K_V(\eta)\). In our rectangle \(K>K_V\), so it votes NO even though the two participating countries vote YES.
+
+To define the two welfare cutoffs, note first that the observed regional design has aggregate private-firm returns
+\(2[f(\aR,\eta)-K]+\pi_O(\aR,\eta)\), while all three national markets receive consumer surplus \(C_R(\aR,\eta)\). The world return \emph{from the start}, given the regional investment path, is
+\begin{equation}
+ W_{R}^{\mathrm{ante}}
+ =2f(\aR,\eta)+\pi_O(\aR,\eta)
+ +3C_R(\aR,\eta)-2K.
+ \label{eq:wr-ante}
+\end{equation}
+The alternative initial path with no private investment and immediate public adoption incurs three public setup costs:
+\begin{equation}
+ W_{I}^{\mathrm{ante}}=3(W_I-K).
+ \label{eq:wi-ante}
+\end{equation}
+The second world-welfare cutoff, the \emph{ex-ante allocation cutoff}, is thus
+\begin{equation}
+ K_W(\eta)=
+ 3W_I-\bigl[2f(\aR,\eta)+\pi_O(\aR,\eta)+3C_R(\aR,\eta)\bigr],
+ \qquad
+ W_I^{\mathrm{ante}}-W_R^{\mathrm{ante}}=K_W(\eta)-K.
+ \label{eq:kw}
+\end{equation}
+This comparison ranks two feasible equilibrium \emph{investment paths}, not a public retrofit after one of those paths has already been followed.
+
+Now consider the distinct policy question faced by governments when private firms 1 and 2 \emph{have already built} \(O(1,\aR)\). Their initial fixed and physical costs are sunk. Switching to the public interface gives each member country's continuing welfare
+\(W_I-K-\phi(\aR)^2/2\); country 3, which built nothing, obtains \(W_I-K\). Relative to the already installed regional profile, the summed three-country gain from an ex-post mandate is
+\begin{equation}
+ \Delta W^{\mathrm{post}}
+ =2B(\eta)+\bigl[K_V(\eta)-K\bigr]
+ \equiv K_E(\eta)-K,
+ \quad
+ K_E(\eta):=K_V(\eta)+2B(\eta).
+ \label{eq:ke}
+\end{equation}
+The middle cutoff \(K_E\) therefore concerns the social desirability of \emph{replacing an existing regional standard}, conditional on its sunk investments. An ex-post mandate improves global welfare if \(K<K_E\), even though the excluded government's personal vote can remain negative whenever \(K>K_V\).
+
+\begin{proposition}[Nested political and efficiency thresholds]
+\label{prop:thresholds}
+For every \(\eta\in[.10,.14]\), along the unique privately
+optimal bilateral design \(\aR(\eta)\), the veto,
+ex-post efficiency, and ex-ante allocation cutoffs satisfy
+\begin{equation}
+ K_V(\eta)<K_E(\eta)<K_W(\eta),\qquad
+ K_W(\eta)-K_E(\eta)=\phi\,\aR(\eta)^2>0.
+ \label{eq:threshold-chain}
+\end{equation}
+All three cutoffs decrease strictly with \(\eta\).
+For every \(K\in[.54,.56]\), each efficiency cutoff crosses \(K\)
+exactly once on \(\eta\in[.10,.14]\); writing the crossings
+\(\eta_E(K)\) and \(\eta_W(K)\), we have
+\begin{equation}
+ \eta_E(K)<\eta_W(K).
+ \label{eq:eta-order}
+\end{equation}
+At \(K=.55\), the exact isolating intervals are
+\[
+ .111<\eta_E(.55)<.112,\qquad
+ .118<\eta_W(.55)<.119.
+\]
+\end{proposition}
+
+\begin{proof}
+At the regional design the members' gain from \(M\) is
+\(B(\eta)>0\), giving \(K_E-K_V=2B>0\).
+Subtracting (\ref{eq:ke}) from (\ref{eq:kw}) and
+using the initial and retrofit cost identities
+(\ref{eq:initial-investment})--(\ref{eq:final-cost}) gives
+\(K_W-K_E=\phi(\aR)^2>0\).
+This establishes (\ref{eq:threshold-chain}) without
+a numerical approximation.
+
+The function \(\aR(\eta)\) increases strictly in \(\eta\)
+by (\ref{eq:a-star}). Exact rational Bernstein-sign
+tests show that the partial derivative of each cutoff
+with respect to both \(\eta\) and \(a\) is negative on
+\(\eta\in[.10,.14],\,a\in[.25,.61]\); hence
+the total derivative along \(\aR(\eta)\) is negative.
+The cutoffs have opposing strict signs relative to
+every \(K\in[.54,.56]\) at \(\eta=.10\) and \(\eta=.14\),
+so each admits exactly one root in the intervening
+continuous interval. Their pointwise strict ordering
+implies (\ref{eq:eta-order}). Rational brackets for
+\(\aR\), validated by opposite signs of \(f_a\),
+and the monotonicity of \(K_E,K_W\) in \(a\),
+give the displayed two root isolations.
+Appendix~\ref{app:thresholds} records the required
+certificate targets and reproducible verification.
+\end{proof}
+
+\subsection{The irreversibility wedge}\label{subsec:wedge}
+
+The distinction is economically transparent. A privately developed regional standard uses the commonality stock \(a_R^*>0\) to separate a compatible insider pair from a third producer. If the public standard is chosen at the outset, none of that commonality capital needs to be built. If the government instead imposes it after the region has developed the alternative design, the same expenditure has already been made and cannot be recovered. The public outcome then requires firms to abandon the attribute that generated the regional differentiation advantage. The opportunity cost of that abandoned design is
+\(\phi(\aR)^2\) across the two regional founders. The two world-welfare comparisons differ by exactly that amount.
+
+This yields three regions at any fixed \(K\) in our certified rectangle:
+\[
+\begin{array}{lll}
+ \eta<\eta_E(K):
+ & \text{public IS is preferred before investment}
+ & \text{and an ex-post retrofit is beneficial};\\[1mm]
+ \eta_E(K)<\eta<\eta_W(K):
+ & \text{public IS is preferred before investment}
+ & \text{but a retrofit is harmful};\\[1mm]
+ \eta>\eta_W(K):
+ & \text{private RS is preferred before investment}
+ & \text{and a retrofit is harmful}.
+\end{array}
+\]
+At either crossing the corresponding world-welfare difference is zero. These comparisons rank precisely the two alternatives defined above; they should not be read as a solution to an unconstrained world planner's technology-design problem.
+
+For a concrete example, take \(\eta=.115\) and \(K=.55\).
+The root of the private firm's design first-order condition
+lies in the certified interval
+\(.39823<\aR(.115)<.39825\).
+Exact rational substitution gives
+\(K_E(.115)<.55<K_W(.115)\).
+Thus moving directly to the public interface would have
+delivered higher world welfare than investing in and
+retaining the regional standard. Yet, after firms have
+made the regional investments, compelling a public
+retrofit lowers realized welfare. No behavioral
+assumption about equilibrium selection is needed
+to establish this accounting distinction.
+
+\subsection{Implications for institutional choice}\label{subsec:welfare-constitution}
+
+The outsider government's opposition, the ex-post total welfare effect, and the ex-ante return from competing constitutional equilibria therefore cannot be represented by one threshold. In particular, granting a second government proposal rights when \(r\le2\) makes public IS the only pure-SPE terminal type by Proposition~\ref{prop:agenda}; it does not establish that the resulting outcome maximizes world welfare. For \(\eta=.14\) and \(K=.55\), the regional equilibrium available under narrow agenda control or unanimity has higher ex-ante world welfare than the public equilibrium. For \(\eta=.10\) and the same \(K\), the ex-ante ranking is reversed.
+
+The narrower institution may nevertheless select the public equilibrium even when regional RS is also available. Without a separate model of equilibrium selection, the analysis cannot attach an unconditional welfare gain or loss to delegating more proposal rights. What can be said is that a broader agenda \emph{removes} a possible welfare-superior private equilibrium over part of the certified parameter rectangle. The model accordingly cautions against judging the merits of a constitutional rule solely by whether it achieves universal standardization.
