@@ -8,7 +8,7 @@ Maintain ALL other structural and technology coefficients exactly as in Stage21:
 \[
 m=.99,\quad \gamma_0=.14,\quad\kappa=.02,\quad v=.01,\quad\rho=.32;
 \]
-three countries/firms; open designs O(c_i,a_i), 0<=a_i<=c_i<=1; O(1,0) mandate; universal independent governmental agenda authority; majority 2/3; votes on ties YES; same sunk-stock and positive-part O-family retrofit. K,eta remain in the old Stage15 adoption-validity region [.54,.56] and [.10,.14].
+three countries/firms; open designs O(c_i,a_i), 0<=a_i<=c_i<=1; O(1,0) mandate; universal independent governmental agenda authority; majority 2/3; votes on ties YES; same sunk-stock and positive-part O-family retrofit. K,eta remain in the benchmark rectangle [.54,.56] and [.10,.14]; the Stage15 adoption dominance for initially N companies is *not* automatically extended in phi.
 
 **ST22.1 (one-dimensional capital-curvature robustness):** The Stage21 theorem that **no initial profile with all three firms investing O can be a pure-strategy SPE with final L** remains true for EVERY EXACT REAL
 
@@ -16,7 +16,7 @@ three countries/firms; open designs O(c_i,a_i), 0<=a_i<=c_i<=1; O(1,0) mandate; 
 0<\phi\leq\Phi_*:=\frac{452295327}{649779200}=0.6960754160798006\ldots
 \]
 
-(provided public mandatory conformity continues to follow as specified). This is a genuine **continuum certificate**, not pointwise sensitivity experiments.
+(with public mandatory conformity by all three already-OPEN investors independently verified for the same full interval). This is a genuine **continuum certificate**, not pointwise sensitivity experiments.
 
 Reason: ST21.1's unique-largest-a redundancy provides a strictly profitable capital saving proportional to phi; ST21.2's unique-largest-c reduction provides another strictly positive saving under L. Both reductions preserve pairwise-min technology and the relevant government voting outcome for every phi>0. Any candidate L-SPE therefore must have tied a maxima and tied c maxima. For the two exhaustive remaining order types, the Stage21 policy-gain polynomial has an EXACT AFFINE representation in phi:
 
@@ -34,7 +34,7 @@ with strictly positive D from Cournot diagonal dominance. Each tensor-Bernstein 
 
 Every coefficient is nonnegative for 0<=phi<=Phi*. There are 11 coefficients that are identically zero in phi in these polynomial expressions. The resulting bound is **the exact upper limit of the CURRENT tensor-Bernstein sufficient certificate**, **NOT** proof that the economic theorem fails above Phi*. At phi=0, the strict firm cost-deviation lemmas collapse; thus phi=0 is correctly **excluded** from ST22.1 even though the government welfare polynomials remain nonnegative.
 
-The baseline phi=.14 lies strictly within the interval. In particular a nontrivial neighborhood [0.13,0.15] is rigorously covered for this *three-firm no-L-SPE* result. The interval changes ONLY phi; it does not establish robustness to m,gamma0,kappa,v,rho.
+Moreover, at any triple-OPEN history, M conformity pays no new K and costs each previous O investor at most phi/2. Its minimum gross operating profit under any other firms' compliance actions is exactly 3/(4m)=25/33, while Phi*/2=452295327/1299558400 is strictly below 25/33. Against zero, one or two other conforming rivals, conformity is a **strictly dominant action** throughout the certified interval. Thus ST22.1 does not assume away adoption selection for the three-OPEN case. This dominance does NOT apply to initially N firms, which would also need to pay fresh K.\n\nThe baseline phi=.14 lies strictly within the interval. In particular a nontrivial neighborhood [0.13,0.15] is rigorously covered for this *three-firm no-L-SPE* result. The interval changes ONLY phi; it does not establish robustness to m,gamma0,kappa,v,rho.
 
 ### Crucial scope separation
 
@@ -78,6 +78,6 @@ This is a **screening-level theorem comparison** based on published abstracts an
 
 ## Reproducibility
 
-File code/stage22_exact_phi_robustness.py independently reconstructs both four-dimensional technology order cases with SymPy rational arithmetic, computes 5,985 coefficientwise affine-in-phi inequalities, and ASSERTS the exact common threshold. Stage22 CI runs Stage11, Stage19, Stage20, Stage21 and this additional coefficient-bound script. Exact denominators are positive throughout the relevant market region by the previously verified strict Cournot diagonal dominance (m>.99? actual m=.99 and abs offdiag <=.16; the three-firm FOC has diagonal 2m and offdiagonals b_ij).
+File code/stage22_exact_phi_robustness.py independently reconstructs both four-dimensional technology order cases with SymPy rational arithmetic, computes 5,985 coefficientwise affine-in-phi inequalities, and ASSERTS the exact common threshold. Stage22 CI runs Stage11, Stage19, Stage20, Stage21 and this additional coefficient-bound script. Exact denominators are positive by Cournot matrix strict diagonal dominance (m=.99, diagonal 2m=1.98 and each offdiagonal at most .16 in magnitude).
 
 No source claims priority on uninspected full texts.
