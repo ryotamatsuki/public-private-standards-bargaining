@@ -1,6 +1,8 @@
 """Stage23 -- full reduced-game pure-SPE terminal-IS robustness in phi.
 
-CERTIFIED all η∈[1/10,7/50], K∈[27/50,14/25], phi∈[3/25,33/100].
+CERTIFIED all eta∈[1/10,7/50], K∈[27/50,14/25],
+and open phi∈(1300995704448/10862756385725,
+1345490921/4004358400). Includes closed [.12,.33].
 Other coefficients (v,gamma,kappa,rho)=(.01,.14,.02,.32) fixed.
 Government universal proposal rights, 2-of-3 majority and YES on ties.
 Only N and independently chosen open O(c_i,a_i), 0<=a_i<=c_i<=1.
@@ -108,7 +110,9 @@ def two_founder_policy_vs_investment():
     assert policy_upper[1]==R(866739877263279,1109042981916800)
     assert design_lower[1]<phi_min<phi_max<policy_upper[1]
     assert all(bp<=0 for _,bp in Bp_b)
-    assert all(hp>=0 for _,hp in Hp_b)
+    assert all(hp>0 for _,hp in Hp_b)
+    assert all(base>0 for (_,base),(_,slope) in zip(B0_b,Bp_b)
+               if slope==0)
     # D>0 for eta∈[.1,.14], 0<=c,a<=1 (indeed even
     # rectangular supersets). Bounds b∈[.13,.16],
     # d∈[0,.14] yield 2m*(2m+b)-2d² > 0.
@@ -120,6 +124,11 @@ def two_founder_policy_vs_investment():
           "high-a coefficient lower",design_lower,flush=True)
     print("THEOREM two-OPEN/one-N lasting L cannot be pure SPE",
           "throughout eta,K,phi box",flush=True)
+    # All H coefficients are increasing in phi, and all B
+    # coefficients are nonincreasing in phi. Hence for EVERY
+    # phi in the exact OPEN interval (design_lower,policy_upper)
+    # these two-firm signs remain STRICT everywhere.
+    return design_lower[1],policy_upper[1]
 
 def public_votes_conformity_nnn():
     # Once all M, each public firm earns the same Cournot gross.
@@ -182,9 +191,22 @@ def main():
     # called at the endpoints of its previously proven interval.
     previous_upper=R(452295327,649779200)
     assert 0<phi_min<=phi_max<previous_upper
-    two_founder_policy_vs_investment()
+    lower,upper=two_founder_policy_vs_investment()
     vote,comp=public_votes_conformity_nnn()
     assert phi_max<min(vote,comp)
+    # Sharpest OPEN phi interval justified by THIS joint
+    # suite of sufficient certificates. Two-firm signs are
+    # strictly positive for phi>lower and phi<upper; public
+    # votes for phi<vote, conformity for phi<comp; the
+    # three-OPEN exclusion from Stage22 is valid through
+    # previous_upper. NNN->M remains pure Nash there.
+    assert 0<lower<phi_min
+    assert phi_max<vote<comp<previous_upper<upper
+    assert vote==R(1345490921,4004358400)
+    print("STRONGER ST23 SUFFICIENT OPEN INTERVAL:",
+          lower,"< phi <",vote,
+          "for every eta in [.10,.14], K in [.54,.56].",
+          flush=True)
     print("GLOBAL ST23 PURE-SPE TERMINAL RESULT: for every",
           "eta in [.10,.14], K in [.54,.56],",
           "phi in [.12,.33], all pure-strategy SPE end at mandatory",
