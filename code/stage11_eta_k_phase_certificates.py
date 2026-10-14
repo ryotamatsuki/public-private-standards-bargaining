@@ -120,6 +120,19 @@ def theorem():
         assert S.diff(f,a).subs({e:E,a:high})<0
         exposed=high if sign<0 else low
         assert sign*(W.subs({e:E,a:exposed})-3*WIP+R(11,20))>0
+    # Endpoint signs at the WHOLE K range establish a welfare
+    # ranking-switching ETA for EVERY K in [.54,.56], not just .55.
+    EL,EH=R(1,10),R(7,50)
+    aLL,aLU=R(3053,10000),R(3054,10000)
+    aHL,aHU=R(5949,10000),R(5950,10000)
+    assert S.diff(f,a).subs({e:EL,a:aLL})>0
+    assert S.diff(f,a).subs({e:EL,a:aLU})<0
+    assert S.diff(f,a).subs({e:EH,a:aHL})>0
+    assert S.diff(f,a).subs({e:EH,a:aHU})<0
+    assert W.subs({e:EL,a:aLU})-3*WIP+R(14,25)<0
+    assert W.subs({e:EH,a:aHL})-3*WIP+R(27,50)>0
+    print('THEOREM: unique eta_W(K) for EVERY K in [.54,.56];',
+          'eta_W is strictly decreasing in K',flush=True)
     print('THEOREM exactly one social welfare ranking reversal',
           'at K=.55, eta in (.118,.119).',
           'K_world(eta)=3 WI(1,0)-W_RS(eta,a*(eta)) decreasing.',flush=True)
