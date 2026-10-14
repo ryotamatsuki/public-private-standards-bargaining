@@ -27,7 +27,7 @@ Let \(P(t_1,\ldots,t_d)\) be a rational polynomial defined on the full unit cube
  P(t)=\sum_{\alpha}p_{\alpha}t^{\alpha}
      =\sum_{\beta}b_{\beta}
        \prod_{\ell=1}^d
-        {n_\ell\choose\beta_\ell}
+        \binom{n_\ell}{\beta_\ell}
         t_\ell^{\beta_\ell}(1-t_\ell)^{n_\ell-\beta_\ell}.
 \]
 The exact change of basis is
@@ -35,8 +35,8 @@ The exact change of basis is
  b_{\beta}
  =\sum_{\alpha\le\beta}
  p_{\alpha}\prod_{\ell=1}^d
- \frac{{\beta_\ell\choose\alpha_\ell}}
-      {{n_\ell\choose\alpha_\ell}}.
+ \frac{\binom{\beta_\ell}{\alpha_\ell}}
+      {\binom{n_\ell}{\alpha_\ell}}.
  \label{eq:bernstein-transform}
 \end{equation}
 Every tensor-Bernstein basis function is nonnegative on the unit cube, so \(b_\beta\ge0\) for all indices implies \(P(t)\ge0\) for every real point of that cube. Strictly positive coefficients yield strict positivity on the cube. The converse is not asserted: a nonnegative polynomial can have some negative Bernstein coefficients in a particular degree basis. Hence the method supplies sufficient \emph{sign certificates}, not an exact numerical boundary for every model regime.
@@ -53,13 +53,13 @@ and
  \quad\text{for high }a.
 \]
 Each transformed cube contains the corresponding feasible triangle and the independent deviations needed by the proof. The exact baseline signs are provided by
-\texttt{code/stage18\_agenda\_control\_majority\_coalition\_spe.py}
+\path{code/stage18_agenda_control_majority_coalition_spe.py}
 and
-\texttt{code/stage19\_universal\_agenda\_majority\_global\_two\_firm\_rs\_exclusion.py}.
+\path{code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py}.
 The three-developer aligned and crossed parametrizations in Appendix~\ref{app:global} map all residual tied-maximum cases to \([0,1]^4\).
 Their exact national policy numerators are those in
 (\ref{eq:aligned-numerator}) and (\ref{eq:crossed-numerators}),
-verified by \texttt{code/stage21\_three\_open\_global\_no\_private\_spe.py}.
+verified by \path{code/stage21_three_open_global_no_private_spe.py}.
 
 The follow-up Stage24 certificate simultaneously transforms the parameter intervals for \(\rho\) and \(\kappa\), and checks two \(\phi\) endpoints. Each relevant numerator is affine in \(\phi\), so sign verification at both endpoints proves the whole intervening interval. The 5-dimensional private and 6-dimensional triple-developer coefficient checks total \(251{,}436\) exact rational entries over those two endpoints. These counts are a reproducibility property of the chosen certificate representation, not evidence that the economic content grows proportionally with the number of coefficients.
 
@@ -86,14 +86,14 @@ The Stage26 source defines \(K_V\), \(K_E\), and \(K_W\) using (\ref{eq:KV}), (\
 The derivatives of each cutoff in \(\eta\) and \(a\) have exactly verified negative signs over the entire enclosure \(\eta\in[.10,.14]\), \(a\in[.25,.61]\), using both numerator and denominator Bernstein coefficients. The privately optimal root \(\aR(\eta)\) is bracketed between exact rationals with \(f_a\) positive at the lower bracket and negative at the upper bracket. Strict concavity guarantees exactly one root in each bracket; substituting the appropriate endpoints into the monotone cutoffs proves the two distinct \(\eta\) crossing intervals stated in Proposition~\ref{prop:thresholds}.
 
 The exact scripts for the principal chain are:
-\begin{quote}\small\ttfamily
-code/stage11\_eta\_k\_phase\_certificates.py\\
-code/stage15\_three\_country\_veto\_minimal\_continuous\_spe.py\\
-code/stage19\_universal\_agenda\_majority\_global\_two\_firm\_rs\_exclusion.py\\
-code/stage21\_three\_open\_global\_no\_private\_spe.py\\
-code/stage25\_seven\_parameter\_norm\_robustness.py\\
-code/stage26\_nested\_policy\_welfare\_cutoffs.py\\
-code/stage27\_agenda\_hitting\_set\_spe\_classification.py
+\begin{quote}\small
+\noindent\path{code/stage11_eta_k_phase_certificates.py}\\
+\path{code/stage15_three_country_veto_minimal_continuous_spe.py}\\
+\path{code/stage19_universal_agenda_majority_global_two_firm_rs_exclusion.py}\\
+\path{code/stage21_three_open_global_no_private_spe.py}\\
+\path{code/stage25_seven_parameter_norm_robustness.py}\\
+\path{code/stage26_nested_policy_welfare_cutoffs.py}\\
+\path{code/stage27_agenda_hitting_set_spe_classification.py}
 \end{quote}
 Their version-controlled source files fix the polynomial coordinates, rational parameter bounds, degree assignments, coefficient checks and assertion conditions. The source code is included to make the derivations reproducible; successful automated execution should not be confused with an independent economic validity or literature-novelty certification.
 
