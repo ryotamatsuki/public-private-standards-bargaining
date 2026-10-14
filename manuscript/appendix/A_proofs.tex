@@ -1,0 +1,223 @@
+\section{Equilibrium derivations}\label{app:proofs}
+
+This appendix provides the bridge between the game's primitives and the institutional classification in Proposition~\ref{prop:agenda}. We distinguish analytical reductions from the sign inequalities established by exact-rational Bernstein or Sturm certificates. The code and certificate correspondence are recorded in Appendix~\ref{app:certificates}. We do not rely on a finite search over firms' continuous private investment sets.
+
+\subsection{Private bilateral Cournot design}\label{app:bilateral}
+
+Consider two identical open founders \(O(c,a)\) and an undeveloped outsider. Write
+\[
+ b=\gamma_0+\kappa a-vc,\quad d=\gamma_0-\eta a,
+ \quad z=1+\rho c,\quad D=2m(2m+b)-2d^2.
+\]
+The two symmetric insider quantities \(x\) and the outsider quantity \(y\) solve
+\[
+ \begin{bmatrix}2m+b&d\\ 2d&2m\end{bmatrix}
+ \begin{bmatrix}x\\y\end{bmatrix}
+ =
+ \begin{bmatrix}z\\1\end{bmatrix}.
+\]
+Inverting the matrix gives
+\begin{equation}
+ x=\frac{2mz-d}{D},\qquad
+ y=\frac{2m+b-2dz}{D},\qquad D>0.
+ \label{eq:app-xy}
+\end{equation}
+The gross net-of-stock-but-pre-setup profit of a founder is
+\[
+ F(c,a;\eta)=3m x(c,a,\eta)^2-\frac{\phi}{2}(c^2+a^2).
+\]
+At fixed \(a\) we have the exact comparative-static identity
+\[
+ \frac{\partial x}{\partial c}
+ =\frac{2m(\rho+vx)}{D}>0,
+\quad
+ \frac{\partial F}{\partial c}
+ =6m x\frac{\partial x}{\partial c}-\phi c.
+\]
+The second derivative expression alone does not establish a global optimum. The Stage11 uniform inequality uses a conservative positive lower bound on \(x\,\partial x/\partial c\) and confirms \(\partial F/\partial c>0\) on the full feasible triangle for \(\eta\in[.10,.14]\); hence the optimal pair design has \(c=1\).
+
+Set \(f(a,\eta)=F(1,a;\eta)\) as in (\ref{eq:private-returns}). The exact-rational Stage11 certificate establishes
+\[
+ f_{aa}(a,\eta)<0,\qquad f_{a\eta}(a,\eta)>0
+ \quad \text{for all }a\in[0,1],\quad\eta\in[0,.14],
+\]
+and
+\[
+ f_a(.25,\eta)>0,\qquad
+ f_a(.61,\eta)<0
+ \quad\text{for all }\eta\in[.10,.14].
+\]
+Therefore a unique root of \(f_a=0\) lies inside \((.25,.61)\) and is the global founder-design optimum on the full interval. The implicit function theorem gives
+\[
+ \frac{da_R^*(\eta)}{d\eta}
+ =-\frac{f_{a\eta}}{f_{aa}}>0.
+\]
+Sturm root counting and polynomial Bernstein signs certify these results over intervals rather than at sampled parameter points.
+
+The government continuation at the optimal bilateral design follows from substituting \(f(a_R^*,\eta)\), \(\pi_O(a_R^*,\eta)\) and \(C_R(a_R^*,\eta)\) into the welfare definitions. Direct subtraction gives \((B,B,K_V-K)\), with each entry's sign verified independently on the full \(\eta,a_R^*\) enclosure. By permutation invariance the same signs apply to any founding pair.
+
+\paragraph{Uniform firm deviations at the regional profile.}
+We state the global inequalities used in the full initial-stage Nash argument. A founder's payoff under an arbitrary deviating open design and subsequent \(L\) is no larger than the best feasible paired-design payoff \(f(a_R^*,\eta)-K\): its individual design cannot raise either effective shared attribute above the corresponding pair minima without paying for that increase itself. If the deviation instead induces \(M\), its payoff is bounded above by
+\[
+ \pi_I^g-K-\frac{\phi}{2},
+\]
+because any initially open firm ultimately bears at least \(K+\phi/2\) in total public-interface costs. The verified inequality
+\[
+ \pi_I^g-\frac{\phi}{2}<f(a_R^*,\eta)
+\]
+makes that change unprofitable. A founder choosing \(N\) leaves a singleton open history, which leads to \(M\); the same bound applies.
+
+A previously undeveloped outsider that enters with any legal \(O(c_3,a_3)\) after the founders' pair is installed obtains per-market Cournot quantity strictly below \(3/5\) in the private \(L\) continuation. Its gross three-market profit is therefore below \(3m(3/5)^2=1.0692\), and at \(K\ge.54\) its net profit is strictly below \(0.5292\). The original outsider's gross \(L\) payoff exceeds the certified lower bound \(9{,}114{,}361/16{,}635{,}300\), which is above \(0.5478\). The corresponding public-\(M\) deviation pays \(K+\phi/2\) and is likewise bounded below the original payoff. These calculations cover \emph{every} admissible unilateral \(N\)-to-\(O(c,a)\) choice. Together with government continuation existence, they establish the private RS initial equilibrium when its outsider agenda holder does not introduce \(M\), or when unanimity enables the outsider veto.
+
+\subsection{No two-developer privately retained equilibrium}\label{app:two-investors}
+
+Suppose exactly two firms initially invest, using \(O(c_1,a_1)\) and \(O(c_2,a_2)\), and assume the proposed terminal outcome is \(L\).
+
+If \(a_1>a_2\), reducing \(a_1\) to \(a_2\) leaves the common attribute \(\min\{a_1,a_2\}\) unchanged. Every firm's Cournot output and every government's gain from \(M\) relative to \(L\) are unchanged, but founder 1 saves
+\[
+ \frac{\phi}{2}(a_1^2-a_2^2)>0
+\]
+under either policy. The same argument applies with the firms reversed. Therefore \(a_1=a_2=a\) in any privately stable \(L\) candidate. Given equal \(a\), if \(c_1>c_2\), founder 1 can reduce \(c_1\) to \(c_2\), preserving the effective pair technology and the \(L\) market but saving \(\phi(c_1^2-c_2^2)/2\). The deviator's national government's gain from moving to \(M\) falls weakly, and the other governments' gains remain unchanged; no new mandate can arise from a history at which \(L\) originally prevailed. Thus \(c_1=c_2=c\) also holds at any candidate \(L\)-SPE.
+
+At identical \(O(c,a)\), the two founders have common Cournot output \(x=X/D\), with
+\[
+ X=2m(1+\rho c)-(\gamma_0-\eta a),\qquad
+ D=2m(2m+\gamma_0+\kappa a-vc)-2(\gamma_0-\eta a)^2.
+\]
+Write \(C_R(c,a,\eta)\) for the national consumer surplus calculated from this \(x\) and its outsider quantity. The joint government gain for either founder is
+\[
+ \mathcal B(c,a,\eta)
+ =W_I-\frac{\phi a^2}{2}
+   -\left[3mx^2-\frac{\phi}{2}(c^2+a^2)\right]
+   -C_R(c,a,\eta)
+ =G_I-3mx^2-C_R-\frac{\phi}{2}(1-c^2),
+\]
+where \(G_I=W_I+\phi/2\) is \emph{gross} public national welfare. The exact low-design certificate is
+\begin{equation}
+ \mathcal B(c,a,\eta)>0
+ \quad \forall\,\eta\in[.10,.14],\
+ a\in[0,.75],\ c\in[0,1].
+ \label{eq:app-low-a}
+\end{equation}
+It holds even on the rectangular superset of physically legal designs. Two favorable government votes then mandate \(M\) whenever \(|\calA|\ge2\) and \(r\le2\).
+
+For \(a>.75\), if the same founder vote gain is nonnegative, this contradiction persists. If it is negative, both founder governments strictly prefer \(L\). Let
+\[
+ f_c(a,c,\eta)
+ =3m x(c,a,\eta)^2-\frac{\phi}{2}(c^2+a^2).
+\]
+The separately verified high-design certificate is
+\begin{equation}
+ \frac{\partial f_c}{\partial a}(a,c,\eta)<0
+ \quad \forall\,\eta\in[.10,.14],\
+ a,c\in[.75,1].
+ \label{eq:app-high-a}
+\end{equation}
+An arbitrarily small unilateral reduction of one founder's \(a\) raises its private profit; by continuity the originally negative member-government policy gains stay negative. If \(L\) prevailed before the reduction, the now lower commonality cannot force a mandate through a suddenly favorable founder majority; the no-intervention outcome persists. Hence no two-developer private \(L\)-SPE exists. At policy-gain equality the YES-on-tie convention enacts \(M\), so there is no missing knife-edge.
+
+The code certificates for (\ref{eq:app-low-a})--(\ref{eq:app-high-a}) consist of exact-rational numerator and denominator signs in transformed unit-cube variables. Appendix~\ref{app:certificates} specifies the transformations.
+
+\subsection{The heterogeneous three-developer cases}\label{app:global}
+
+Now every firm has invested \(O(c_i,a_i)\). As a first reduction, if one firm uniquely possesses the highest \(a_i\), it can reduce that attribute to the next-highest \(a\) without changing any of the three pairwise minima. Its sunk capital strictly falls while every market and national policy comparison stays fixed. Such a profile cannot be a private pure equilibrium. After the maximal \(a\) is tied, a uniquely highest \(c_i\) can also be reduced to the next-highest \(c\). Because another holder of maximum \(a\) has \(a_j\le c_j\), this reduction remains feasible. Its private \(L\) payoff strictly increases and only its own country's desire for \(M\) can weakly decline, so an existing \(L\) cannot turn into \(M\). Thus a putative three-developer \(L\)-SPE must tie \emph{both} maxima.
+
+Sort the \(c_i\) so \(c_1\le c_2=c_3\). There are two effective design-order cases, up to permutation. In the \emph{aligned} case the smallest \(c\) holder also has the smallest \(a\). Parametrize this whole feasible case by \(t,s,w,h\in[0,1]\):
+\begin{equation}
+ c_1=ts,\quad c_2=c_3=t,\quad
+ a_1=c_1w,\quad
+ d:=\min\{a_2,a_3\}=a_1+(c_2-a_1)h.
+ \label{eq:aligned-param}
+\end{equation}
+Set
+\[
+ b_1=\gamma_0+\kappa a_1-vc_1,\quad
+ b_2=\gamma_0+\kappa d-vc_2,\quad
+ z_1=1+\rho c_1,\ z_2=1+\rho c_2,
+\]
+and
+\[
+ D_A=2m(2m+b_2)-2b_1^2,\quad
+ Q_1=(2m+b_2)z_1-2b_1z_2,\quad
+ Q_2=2mz_2-b_1z_1.
+\]
+The Cournot quantities are \(q_1=Q_1/D_A\) and \(q_2=q_3=Q_2/D_A\). Put
+\[
+ C_A=mQ_1^2+2mQ_2^2+4b_1Q_1Q_2+2b_2Q_2^2.
+\]
+Direct substitution into the national policy comparison gives the bridge equation
+\begin{equation}
+ 2D_A^2\Delta_2
+ =\left(2G_I-\phi[1-c_2^2]\right)D_A^2
+ -6mQ_2^2-C_A
+ =:\mathcal N_A(t,s,w,h).
+ \label{eq:aligned-numerator}
+\end{equation}
+Here \(2D_A^2>0\). Exact nonnegative tensor-Bernstein coefficients for \(\mathcal N_A\) on \([0,1]^4\) show that government 2 weakly favors \(M\). Since \(q_3=q_2\) and \(c_3\ge c_2\), its government's extra retrofit saving implies \(\Delta_3\ge\Delta_2\ge0\). Therefore governments 2 and 3 weakly support \(M\).
+
+In the \emph{crossed} case, after permutation, \(c_1\le c_2=c_3\) and \(a_1=a_2\ge a_3\). Parameterize it as
+\[
+ c_1=ts,\quad c_2=c_3=t,\quad
+ a_1=a_2=c_1u,\quad a_3=a_1w,
+ \qquad (t,s,u,w)\in[0,1]^4.
+\]
+Define
+\[
+ p=\gamma_0+\kappa a_1-vc_1,\quad
+ r_c=\gamma_0+\kappa a_3-vc_1,\quad
+ b=\gamma_0+\kappa a_3-vc_2.
+\]
+The symmetric three-by-three Cournot first-order matrix has off-diagonal terms \(p,r_c,b\) and diagonal \(2m\). Its determinant and adjugate quantities satisfy
+\[
+ D_C=8m^3+2p r_c b-2m(p^2+r_c^2+b^2)>0,
+ \qquad q_i=\frac{Q_i}{D_C}.
+\]
+With \(Q_i\) obtained from the three-by-three adjugate and \(C_C\equiv D_C^2 CS(q,M)\times2\), the two relevant policy gains satisfy
+\begin{equation}
+ 2D_C^2\Delta_i
+ =\left(2G_I-\phi[1-c_i^2]\right)D_C^2
+ -6mQ_i^2-C_C
+ =:\mathcal N_{C,i}(t,s,u,w),\quad i=1,2.
+ \label{eq:crossed-numerators}
+\end{equation}
+The exact coefficient certificates verify \(\mathcal N_{C,1}\ge0\) and \(\mathcal N_{C,2}\ge0\) throughout the \emph{full} unit cube. Hence governments 1 and 2 weakly support \(M\).
+
+Every possible residual three-developer \(L\)-SPE is covered by one of (\ref{eq:aligned-param}) or the crossed parametrization. The two government supporters identified in each case intersect every two-member agenda set, and their proposal passes any \(r\le2\) vote. Together with the two-developer exclusion and Lemma~\ref{lem:sparse}, this completes the global sufficiency proof of Proposition~\ref{prop:agenda}. The inequalities are weak on some technology-identical boundaries, where the stipulated YES-on-tie rule is essential.
+
+\subsection{Initial public equilibrium and the policy rule}\label{app:continuation}
+
+For clarity, the basic motion/vote rule (\ref{eq:vote-rule}) can be reconstructed directly. At a fixed initial profile, all firms adopt the public interface after \(M\) by Lemma~\ref{lem:adoption}; therefore \(\Delta_i(h)\) is a well-defined real number. Under the specified tie rule, government \(i\) weakly approves iff \(\Delta_i(h)\ge0\). At least \(r\) such approvals are necessary; an entitled government with \(\Delta_i\ge0\) must also be present to introduce a successful motion. No government with \(\Delta_i<0\) chooses to introduce an implementable mandate. This proves the equivalence in (\ref{eq:vote-rule}), including boundary equality.
+
+At \(NNN\), every government strictly wants \(M\), and all firms comply. An initial deviator to any feasible \(O(c_i,a_i)\) creates a singleton open history, at which all governments still enact \(M\). The deviator's public gross revenue is unchanged, and (\ref{eq:final-cost}) gives
+\[
+ \bigl[K+\tfrac{\phi}{2}(1+a_i^2)\bigr]
+ -\bigl[K+\tfrac{\phi}{2}\bigr]
+ =\tfrac{\phi a_i^2}{2}\ge0.
+\]
+Thus no deviation raises its payoff; \(NNN\) is a pure initial Nash profile, and the previously specified credible continuation strategies complete an SPE for every nonempty \(\calA\) and all \(r\le3\).
+
+\subsection{Exact welfare bridge}\label{app:thresholds}
+
+With \(W_I\) defined net of the installation stock but before \(K\), the regional member's two national welfare payoffs are
+\[
+ \mathcal W_{\rm member}^{L}=f+C_R-K,\qquad
+ \mathcal W_{\rm member}^{M}
+ =W_I-K-\frac{\phi}{2}(\aR)^2.
+\]
+The outsider has
+\[
+ \mathcal W_{\rm outsider}^{L}=\pi_O+C_R,\qquad
+ \mathcal W_{\rm outsider}^{M}=W_I-K.
+\]
+Subtracting gives exactly the two member policy gains \(B\) and outsider gain \(K_V-K\) in (\ref{eq:bilateral-votes}). Their sum is \(2B+K_V-K=K_E-K\), while subtracting the two alternative \emph{initial} world-welfare paths gives
+\[
+ 3(W_I-K)-[2f+\pi_O+3C_R-2K]
+ =K_W-K.
+\]
+Consequently
+\[
+ K_W-K_E
+ =[3W_I-2f-\pi_O-3C_R]
+ -[K_V+2B]
+ =\phi(\aR)^2.
+\]
+The same algebra exhibits why \emph{the baseline date} is not incidental: it changes whether the privately installed commonality stock is a required additional investment or a resource already spent.
