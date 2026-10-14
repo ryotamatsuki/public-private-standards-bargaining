@@ -1,0 +1,3 @@
+# Stage 12B–13 independent audit checkpoint
+
+Five market primitives jointly +/-2%: the RS private common-design optimum stays uniquely interior and increasing in eta in [.10,.14]; the RS vs IS terminal-allocation world-welfare ordering crosses exactly once for each K in [.54,.56]. Exact rational interval certificate is available in the conversation artifact bundle. This is an allocation-ordering theorem, NOT an all-history SPE existence proof. Novelty alert: Gil Molto, Georgantzis & Orts (2005), Propositions 1–3 already study endogenous technology differentiation and social optima. Government vote cost accounting W_I includes public variable deployment fee; do not subtract phi/2 twice. The X/Y intellectual property implementation requires a dedicated audit.
