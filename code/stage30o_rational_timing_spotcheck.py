@@ -49,7 +49,7 @@ assert low["Fa"]>0 and high["Fa"]<0
 for y in (low,high):
     assert y["KV"]<y["KE"]<K<y["KW"]
     assert y["KW"]-K>0 and y["KE"]-K<0
-    assert K>y["V"] and y["F"]>=y["P"]
+    assert K>y["V"] and y["F"]>=P
 # The root is UNIQUE only by *inherited* strict concavity proof Stage11, NOT
 # proved by endpoint signs in this single witness checker.
 mid=(lo+hi)/2
