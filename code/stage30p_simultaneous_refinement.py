@@ -32,7 +32,7 @@ def ballot_actions(gains, quorum):
         def finish(a, others):
             count = a + sum(others)
             return int(count >= quorum)
-        ballots[i] = undominated_binary_actions(gains[i], finish, 2)
+        ballots[i] = undominated_binary_actions(1 if gains[i] == 0 else gains[i], finish, 2)
         assert ballots[i] == ({1} if gains[i] >= 0 else {0})
     return ballots
 
@@ -49,7 +49,7 @@ def motion_actions(gains, quorum, agenda):
         def finish(a, others):
             return int(a == 1 or any(others))
         actions[i] = undominated_binary_actions(
-            gains[i], finish, len(agenda) - 1
+            1 if gains[i] == 0 else gains[i], finish, len(agenda) - 1
         )
         assert actions[i] == ({1} if gains[i] >= 0 else {0})
     return actions, passes_if_tabled
