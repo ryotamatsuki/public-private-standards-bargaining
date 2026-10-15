@@ -1,0 +1,20 @@
+name: stage30k-publication-extension-positioning-inventory
+on:
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30K_*'
+      - 'code/stage30k_positioning_gate.py'
+      - '.github/workflows/stage30k-publication-extension-positioning-inventory.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  theory-positioning-documents:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Inspect literature and economic claim positioning scope only
+        run: python code/stage30k_positioning_gate.py
