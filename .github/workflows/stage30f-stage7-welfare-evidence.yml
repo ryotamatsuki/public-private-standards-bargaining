@@ -1,0 +1,26 @@
+name: stage30f-stage7-welfare-evidence
+on:
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30F_*'
+      - 'code/stage30f_*'
+      - '.github/workflows/stage30f-stage7-welfare-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rational-accounting-and-reports:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Independently recompute three-country rational private/public welfare
+        run: python code/stage30f_evidence_gate.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage30f-rational-welfare-samples
+          path: docs/audit/STAGE30F_WELFARE_RECONCILIATION.json
+          retention-days: 14
