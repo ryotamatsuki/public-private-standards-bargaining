@@ -1,0 +1,26 @@
+name: stage30h-bounded-economic-interpretation
+on:
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30H_*'
+      - 'code/stage30h_*'
+      - '.github/workflows/stage30h-bounded-economic-interpretation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  original-branch-rational-consistency:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit Stage7 interpretation sources and original rational demand branches
+        run: python code/stage30h_gate.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage30h-branch-boundary-results
+          path: docs/audit/STAGE30H_BRANCH_IDENTITY_RESULTS.json
+          retention-days: 14
