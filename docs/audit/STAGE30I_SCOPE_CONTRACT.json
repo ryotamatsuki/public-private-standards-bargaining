@@ -1,0 +1,221 @@
+{
+  "schema": "stage30i-preflight-v1",
+  "date_jst": "2026-10-15",
+  "purpose": "PRELIMINARY quantifier/statement-fidelity and formal applicability, not an authorized complete Stage7.5A",
+  "math_certification": "Stage30C baseline C1-C7 AI+independent evaluator PASS",
+  "novelty_certification": "Stage6 CONDITIONAL GO; three published primary theorems author-deferred and UNRESOLVED",
+  "stage75": "CONDITIONAL GO — THEORY NOT FROZEN",
+  "stage75a": "NOT OPEN / NOT EXECUTED",
+  "formal_assistant": "Lean4 + mathlib intended; no toolchain lock or formal source/build",
+  "formal_status": "APPLICABLE / NOT STARTED",
+  "economic_scope": {
+    "fixed_parameters": {
+      "v": "1/100",
+      "gamma0": "7/50",
+      "kappa": "1/50",
+      "rho": "8/25",
+      "phi": "7/50"
+    },
+    "eta": [
+      "1/10",
+      "7/50"
+    ],
+    "K": [
+      "27/50",
+      "14/25"
+    ],
+    "firms": 3,
+    "countries": 3,
+    "investments": "each independently N or O(c,a) with 0<=a<=c<=1; N differs from O(0,0)",
+    "government": "prescribed sincere proposal/vote, YES on national welfare tie; nonempty agenda A and quorum r in {1,2,3}",
+    "solution": "pure SPE in model given imposed policy selector, not unrestricted government strategic voting",
+    "welfare": "ex ante world welfare across constitutional pure SPE sets; not first-best"
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "exact private-terminal pure SPE iff",
+      "quantifier": "forall eta,K,A!=empty,r=1/2/3, all private investment profiles up to permutation",
+      "signs": [
+        "F_a>=0",
+        "F>=P",
+        "K>V"
+      ],
+      "scope": "private only if exactly 2 identical O and outsider N; r3 any A or r<=2 A={outsider}",
+      "formal_priority": "P0",
+      "classification": [
+        "MODEL-SPECIFIC",
+        "INSTITUTION-SPECIFIC"
+      ],
+      "dependencies": [
+        "all four developer counts",
+        "all finite deviations",
+        "policy selector and compliance",
+        "global Cournot profit bound"
+      ],
+      "not_claimed": [
+        "all unrestricted strategic voting SPE",
+        "mixed equilibria",
+        "generic demand"
+      ]
+    },
+    {
+      "id": "C2",
+      "kind": "all public SPE payoffs invariant",
+      "quantifier": "forall eta,K,A,r, every public-terminal pure SPE",
+      "signs": [
+        "all initial O have a=0",
+        "world welfare=3(WI-K)"
+      ],
+      "scope": "unique welfare not unique date1 vector",
+      "formal_priority": "P1",
+      "classification": [
+        "MODEL-SPECIFIC"
+      ],
+      "dependencies": [
+        "C1-style deviation handling",
+        "N withdrawal",
+        "full policy continuations",
+        "sunk-resource accounting"
+      ],
+      "not_claimed": [
+        "all public terminal histories same welfare",
+        "unique investment profile"
+      ]
+    },
+    {
+      "id": "C3",
+      "kind": "full broad-agenda initial pure SPE profiles",
+      "quantifier": "forall eta,K, A with |A|>=2, r<=2, all legal initial profiles",
+      "signs": [
+        "each entry N or O(c_i,0)",
+        "all result M"
+      ],
+      "scope": "not valid under unanimity; O(0,0) distinct from N",
+      "formal_priority": "P0",
+      "classification": [
+        "MODEL-SPECIFIC",
+        "INSTITUTION-SPECIFIC"
+      ],
+      "dependencies": [
+        "C1",
+        "C2",
+        "asymmetric 3-O zero-a gov approval",
+        "all unilateral actions"
+      ],
+      "not_claimed": [
+        "all constitutions",
+        "unrestricted political voting"
+      ]
+    },
+    {
+      "id": "C4",
+      "kind": "weak monotone inclusion of private design set in K",
+      "quantifier": "forall eta,K1<K2 within box for a fixed private-admitting constitution",
+      "signs": [
+        "R(K1) subseteq R(K2)",
+        "exists strict inclusion witness"
+      ],
+      "scope": "strict inclusion is existential only, not selected investment change",
+      "formal_priority": "P1",
+      "classification": [
+        "MODEL-SPECIFIC"
+      ],
+      "dependencies": [
+        "C1",
+        "fixed-cost incidence",
+        "veto strictness"
+      ],
+      "not_claimed": [
+        "strict inclusion for every K1<K2",
+        "selected c,a increasing"
+      ]
+    },
+    {
+      "id": "C5",
+      "kind": "welfare max over all private SPE designs",
+      "quantifier": "forall eta,K within box, every private-admitting constitution",
+      "signs": [
+        "max_R(T-2K)=T(1,a*)-2K",
+        "unique maximizing (c,a)"
+      ],
+      "scope": "not unique equilibrium identities or unconstrained planner's maximum",
+      "formal_priority": "P0",
+      "classification": [
+        "MODEL-SPECIFIC"
+      ],
+      "dependencies": [
+        "C1",
+        "Fa root uniqueness",
+        "T_c>0,T_a>0",
+        "restricted F_ac>0 on a>=.30",
+        "maximizer R-feasible"
+      ],
+      "not_claimed": [
+        "global F_ac>0",
+        "unrestricted social optimum"
+      ]
+    },
+    {
+      "id": "C6",
+      "kind": "world welfare universal pure SPE dominance iff",
+      "quantifier": "forall eta,K, old private-admitting constitution, new |A|>=2,r<=2, every pure SPE pair e_new,e_old",
+      "signs": [
+        "forall new forall old Wnew>=Wold iff K<=KW",
+        "above cutoff inf(new)>inf(old),sup(new)<sup(old)"
+      ],
+      "scope": "ex ante, weak equality at KW, includes old public and old private",
+      "formal_priority": "P1",
+      "classification": [
+        "MODEL-SPECIFIC",
+        "INSTITUTION-SPECIFIC"
+      ],
+      "dependencies": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "old/public existence and low welfare witness"
+      ],
+      "not_claimed": [
+        "expected welfare",
+        "national Pareto",
+        "selected realized gain",
+        "first best"
+      ]
+    },
+    {
+      "id": "C7",
+      "kind": "private firm and national preference wedge",
+      "quantifier": "forall eta,K, constitution and all private pure SPE",
+      "signs": [
+        "founder firm <=0",
+        "founder home government B>0",
+        "outsider V-K<0",
+        "ex ante founder gov B+phi*a*a/2>0"
+      ],
+      "scope": "no strict firm opposition; no same actor ex ante/post preference reversal",
+      "formal_priority": "P1",
+      "classification": [
+        "MODEL-SPECIFIC",
+        "INSTITUTION-SPECIFIC"
+      ],
+      "dependencies": [
+        "C1",
+        "profit/CS accounts",
+        "B>0 restricted sign certificate"
+      ],
+      "not_claimed": [
+        "strictly opposed founding firm everywhere",
+        "generic firm-government wedge novelty"
+      ]
+    }
+  ],
+  "global_critical_gaps": [
+    "Stage6 unpublished/available final published theorem overlap remains unresolved for three papers",
+    "no full positive portability beyond original prescribed government rule and demand branch",
+    "no exact Lean or other proof assistant model/source compiled",
+    "full author intellectual contribution signoff not obtained",
+    "categorical O(0,0) status effect is explicitly assumed reduced-form, not microfounded"
+  ]
+}
