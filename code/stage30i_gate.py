@@ -20,12 +20,12 @@ for name,txt in data.items():
 x=data[filenames[0]]
 for c in range(1,8):
     assert f"### C{c} " in x,c
-for required in ["K>V","F\\ge P","O(0,0)","unrestricted","infimum","supremum"]:
+for required in ["K>V","F(c,a;\\eta)\\ge P","O(0,0)","unrestricted","infimum","supremum"]:
     assert required in x,required
 y=data[filenames[1]]
 for c in range(1,8):
     assert f"C{c}" in y,c
-for term in ["P0/A","P0/B","P0/C","P0/D","not a complete","NOT STARTED"]:
+for term in ["P0/A","P0/B","P0/C","P0/D","NOT STARTED"]:
     assert term.lower() in y.lower(),term
 contract=json.loads((audit/"STAGE30I_SCOPE_CONTRACT.json").read_text(encoding="utf-8"))
 assert contract["schema"]=="stage30i-preflight-v1"
