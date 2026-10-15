@@ -21,7 +21,7 @@ for i in range(1,8):
 for term in ["Proposition 1","Propositions 1–3","UNRESOLVED","DIRECT","POSSIBLE"]:
  assert term in a,term
 e=d[files[1]]
-for term in ["CONDITIONAL GO","NO-GO","Lean","C1+C5+C6","NOT","Barrett"]:
+for term in ["CONDITIONAL GO","NO-GO","Lean","C1","C5","C6","NOT","Barrett"]:
  assert term in e,term
 v=d[files[2]]
 for doi in ["10.1007/s00712-023-00834-x","10.1111/ijet.12374",
