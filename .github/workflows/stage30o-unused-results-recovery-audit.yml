@@ -1,0 +1,26 @@
+name: stage30o-unused-results-recovery-audit
+on:
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30O_*'
+      - 'code/stage30o_*'
+      - '.github/workflows/stage30o-unused-results-recovery-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventoried-stages-and-local-exact-witness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify literature audit inventory and strict exact timing example
+        run: python code/stage30o_scope_gate.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage30o-timing-spotcheck
+          path: docs/audit/STAGE30O_TIMING_RATIONAL_SPOTCHECK.json
+          retention-days: 14
