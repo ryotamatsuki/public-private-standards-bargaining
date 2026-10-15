@@ -1,0 +1,26 @@
+name: stage30n-fixed-quorum-economic-incidence
+on:
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30N_*'
+      - 'code/stage30n_*'
+      - '.github/workflows/stage30n-fixed-quorum-economic-incidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-institutional-accounting:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recompute fixed-quorum institutions, investor deviations and national incidence
+        run: python code/stage30n_gate.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage30n-fixed-quorum-rational-witnesses
+          path: docs/audit/STAGE30N_FIXED_QUORUM_EXACT_RESULTS.json
+          retention-days: 14
