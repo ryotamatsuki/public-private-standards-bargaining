@@ -1,0 +1,20 @@
+name: stage30j-novelty-source-inventory
+on:
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30J_*'
+      - 'code/stage30j_evidence_gate.py'
+      - '.github/workflows/stage30j-novelty-source-inventory.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  documentation-inventory-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Documentary scope inventory (NOT peer-reviewed originality verification)
+        run: python code/stage30j_evidence_gate.py
