@@ -19,3 +19,6 @@ jobs:
           python-version: '3.12'
       - name: Exhaust government SPE policy outcome signs, agenda and voting orders
         run: python code/stage30p_sequential_voting_spe.py
+
+      - name: Check stagewise-admissible original simultaneous motions and ballots
+        run: python code/stage30p_simultaneous_refinement.py
