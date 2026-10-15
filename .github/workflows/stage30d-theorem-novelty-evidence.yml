@@ -1,0 +1,28 @@
+name: stage30d-theorem-novelty-evidence
+on:
+  push:
+    paths:
+      - 'docs/audit/STAGE30D_*'
+      - 'code/stage30d_literature_evidence_gate.py'
+      - '.github/workflows/stage30d-theorem-novelty-evidence.yml'
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30D_*'
+      - 'code/stage30d_literature_evidence_gate.py'
+      - '.github/workflows/stage30d-theorem-novelty-evidence.yml'
+permissions:
+  contents: read
+jobs:
+  evidence-consistency-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python code/stage30d_literature_evidence_gate.py
+      - name: Preserve scope and old manuscript; make no source changes
+        shell: bash
+        run: |
+          echo "This CI does not certify priority or published-article theorem correspondence."
+          echo "Never turn CONDITIONAL GO into GO on the basis of passing this check."
