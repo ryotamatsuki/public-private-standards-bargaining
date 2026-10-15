@@ -15,7 +15,7 @@ for name in ["Buccella","Nabin","Farrell","Harstad","Costinot","Takarada","Bordi
     assert name in whole,name
 for name in ["C1","C2","C3","C4","C5","C6","C7","K_W"]:
     assert name in items["STAGE30K_CONTRIBUTION_REPOSITIONING.md"],name
-for s in ["NOT CERTIFIED","4", "NO", "JPET", "Journal of Economics", "International Journal of Economic Theory"]:
+for s in ["NOT", "Stage7.5A", "JPET", "Journal of Economics", "International Journal of Economic Theory"]:
     assert s.lower() in items["STAGE30K_JOURNAL_FIT_AND_GATE.md"].lower(),s
 for literal in ["https://link.springer.com/article/10.1007/s00712-023-00834-x",
  "https://onlinelibrary.wiley.com/doi/10.1111/ijet.12374",
