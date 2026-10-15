@@ -41,6 +41,6 @@ qa=d["STAGE30L_EDITORIAL_SCOPE_QA.md"]
 for token in ["governments","outsider","strict","infimum","supremum","NO",
               "NOT EXECUTED"]:
     assert token.lower() in qa.lower(),token
-assert "NOT FROZEN" in d["STAGE30L_README.md"] or "no official theory freeze" in d["STAGE30L_README.md"]
+assert "not frozen" in d["STAGE30L_README.md"].lower() or "no official theory freeze" in d["STAGE30L_README.md"].lower()
 print("PASS: 5 Stage30L prewriting files, literature list, C1-C7 claim labels and explicit scope restrictions.")
 print("No Lean, source-priority theorem signoff, theory freeze, full-paper rewrite or submission was tested.")
