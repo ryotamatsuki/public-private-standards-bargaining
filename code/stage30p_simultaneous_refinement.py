@@ -12,17 +12,17 @@ from itertools import combinations, product
 COUNTRIES = range(3)
 
 
-def undominated_binary_actions(sign, outcome):
+def undominated_binary_actions(sign, outcome, rivals_count):
     # outcome(action, other_bits) returns 0=L,1=M
-    rivals = list(product((0, 1), repeat=2))
+    rivals = list(product((0, 1), repeat=rivals_count))
     values = {
         action: [sign * outcome(action, others) for others in rivals]
         for action in (0, 1)
     }
     return {
         a for a in (0, 1)
-        if not all(values[1-a][j] >= values[a][j] for j in range(4))
-        or not any(values[1-a][j] > values[a][j] for j in range(4))
+        if not all(values[1-a][j] >= values[a][j] for j in range(len(rivals)))
+        or not any(values[1-a][j] > values[a][j] for j in range(len(rivals)))
     }
 
 
@@ -32,7 +32,7 @@ def ballot_actions(gains, quorum):
         def finish(a, others):
             count = a + sum(others)
             return int(count >= quorum)
-        ballots[i] = undominated_binary_actions(gains[i], finish)
+        ballots[i] = undominated_binary_actions(gains[i], finish, 2)
         assert ballots[i] == ({1} if gains[i] >= 0 else {0})
     return ballots
 
@@ -49,7 +49,7 @@ def motion_actions(gains, quorum, agenda):
         def finish(a, others):
             return int(a == 1 or any(others))
         actions[i] = undominated_binary_actions(
-            gains[i], finish
+            gains[i], finish, len(agenda) - 1
         )
         assert actions[i] == ({1} if gains[i] >= 0 else {0})
     return actions, passes_if_tabled
