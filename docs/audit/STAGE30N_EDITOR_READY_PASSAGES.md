@@ -13,7 +13,7 @@ Freeze two agenda sets *before investment*:
 | **r=3**, unanimity | Private-terminal pure SPE **exist** | Private-terminal pure SPE **exist** |
 | **r=2**, majority | Private-terminal pure SPE **exist** only with **firm3 outsider** | **No** private-terminal pure SPE; all pure SPE end M |
 
-These refer to **existence of private-terminal pure SPE**, NOT the absence of public equilibria in any of the first three cells. C2 guarantees an all-N public pure SPE in all constitutions. The identity of the N outsider in any private equilibrium is *determined at equilibrium*, and any fixed proposal agenda must refer to **country labels**, not to a movable "outsider" designation.
+These refer to **existence of private-terminal pure SPE**, NOT the absence of public equilibria in any of the first three cells. Stage30C separately establishes an all-N public pure SPE in all constitutions (C2 itself states public-SPE welfare invariance, not existence). The identity of the N outsider in any private equilibrium is *determined at equilibrium*, and any fixed proposal agenda must refer to **country labels**, not to a movable "outsider" designation.
 
 - **Along bottom row** r=2 fixed: \(\mathcal A_s\to\mathcal A_b\) eliminates private equilibria. This is a clean agenda-eligibility treatment.
 - **Along right column** A={1,3} fixed: r=3→r=2 eliminates private equilibria. This is a clean quorum-reduction treatment.
