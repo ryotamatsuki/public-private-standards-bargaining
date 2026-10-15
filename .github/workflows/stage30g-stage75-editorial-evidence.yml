@@ -1,0 +1,26 @@
+name: stage30g-stage75-editorial-evidence
+on:
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30G_*'
+      - 'code/stage30g_*'
+      - '.github/workflows/stage30g-stage75-editorial-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial-inventory-and-rational-boundary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Inventory Stage7.5 A-G and exact N to O(0,0) boundary
+        run: python code/stage30g_gate.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage30g-demand-boundary-rational-result
+          path: docs/audit/STAGE30G_PRIMITIVE_BOUNDARY_RESULTS.json
+          retention-days: 14
