@@ -1,0 +1,26 @@
+name: stage30i-preformal-claim-scope-check
+on:
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30I_*'
+      - 'code/stage30i_*'
+      - '.github/workflows/stage30i-preformal-claim-scope-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preformal-ledger-and-rational-witnesses:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check preformal theorem-quantifier ledger and run 567 selector cases
+        run: python code/stage30i_gate.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage30i-preformal-exact-rational-scope
+          path: docs/audit/STAGE30I_PREFORMAL_RATIONAL_RESULTS.json
+          retention-days: 14
