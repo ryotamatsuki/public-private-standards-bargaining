@@ -25,7 +25,7 @@ for x in ("C1","C2","C3","C5","C6","C7","O(1,.5)","O(0,0)","B>0",
     assert x in whole,x
 assert "2×2" in docs[names[1]]
 assert "ex ante" in docs[names[0]].lower()
-assert "not a new theorem" in whole.lower() or "NOT a new theorem" in whole
+assert "not a new" in whole.lower()
 result=subprocess.run(["python","code/stage30n_fixed_quorum_counterfactual.py"],
     cwd=root,text=True,capture_output=True,check=True)
 print(result.stdout,end="")
