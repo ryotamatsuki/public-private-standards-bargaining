@@ -1,0 +1,23 @@
+name: stage30e-published-priority-document-inventory
+on:
+  push:
+    paths:
+      - 'docs/audit/STAGE30E_*'
+      - 'code/stage30e_source_inventory_check.py'
+      - '.github/workflows/stage30e-published-priority-document-inventory.yml'
+  pull_request:
+    paths:
+      - 'docs/audit/STAGE30E_*'
+      - 'code/stage30e_source_inventory_check.py'
+      - '.github/workflows/stage30e-published-priority-document-inventory.yml'
+permissions:
+  contents: read
+jobs:
+  textual-inventory-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python code/stage30e_source_inventory_check.py
