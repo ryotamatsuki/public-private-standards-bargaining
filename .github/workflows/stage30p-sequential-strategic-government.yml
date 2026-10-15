@@ -1,0 +1,24 @@
+name: stage30p-sequential-strategic-government
+on:
+  pull_request:
+    paths:
+      - 'code/stage30p_*'
+      - 'docs/audit/STAGE30P_*'
+      - '.github/workflows/stage30p-sequential-strategic-government.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  strategic-policy-solution:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Exhaust government SPE policy outcome signs, agenda and voting orders
+        run: python code/stage30p_sequential_voting_spe.py
+
+      - name: Check stagewise-admissible original simultaneous motions and ballots
+        run: python code/stage30p_simultaneous_refinement.py
